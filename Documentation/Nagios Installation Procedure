@@ -1,0 +1,141 @@
+Nagios Installation Process :- 
+
+1. How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu 14.04
+	1. sudo apt-get update
+	2. sudo apt-get install apache2
+	3. To access the web-page :- http://your_server_IP_address
+	
+	[ "Installation of My-SQL" ] 
+	4. sudo apt-get install mysql-server php5-mysql
+	5. sudo mysql_install_db
+	6. sudo mysql_secure_installation
+
+	[ "Installation of PHP" ]
+	7. sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+	8. sudo gedit /etc/apache2/mods-enabled/dir.conf
+			Change :- 
+				<IfModule mod_dir.c>
+				    DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+				</IfModule>
+
+				to
+
+				<IfModule mod_dir.c>
+				    DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+				</IfModule>
+	9. sudo service apache2 restart
+	10. sudo apt-get install php5-cli
+
+	[ "Create Nagios User and Group" ]
+	11. sudo useradd nagios
+    12. sudo groupadd nagcmd
+    13. sudo usermod -a -G nagcmd nagios
+
+    [ "Install Build Dependencies" ]
+    14. sudo apt-get update
+    15. sudo apt-get install build-essential libgd2-xpm-dev openssl libssl-dev xinetd apache2-utils unzip
+
+    [ "Install Nagios Core" ]
+    16. cd ~
+		curl -L -O https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.1.1.tar.gz
+	17. tar xvf nagios-*.tar.gz
+	18. cd nagios-*
+	19. ./configure --with-nagios-group=nagios --with-command-group=nagcmd --with-mail=/usr/sbin/sendmail
+	20. make all
+	21. sudo make install
+    22. sudo make install-commandmode
+    23. sudo make install-init
+    24. sudo make install-config
+    25. sudo /usr/bin/install -c -m 644 sample-config/httpd.conf /etc/apache2/sites-available/nagios.conf
+    26. sudo usermod -G nagcmd www-data
+    
+    [ "Install Nagios Plugins" ]
+    27. cd ~
+		curl -L -O http://nagios-plugins.org/download/nagios-plugins-2.1.1.tar.gz
+	28. tar xvf nagios-plugins-*.tar.gz
+	29. cd nagios-plugins-*
+	30. ./configure --with-nagios-user=nagios --with-nagios-group=nagios --with-openssl
+	31. make
+	32. sudo make install
+
+	[ "Install NRPE" ]
+	33. cd ~
+	    curl -L -O http://downloads.sourceforge.net/project/nagios/nrpe-2.x/nrpe-2.15/nrpe-2.15.tar.gz
+	34. tar xvf nrpe-*.tar.gz
+	35. cd nrpe-*
+	36. ./configure --enable-command-args --with-nagios-user=nagios --with-nagios-group=nagios --with-ssl=/usr/bin/openssl --with-ssl-lib=/usr/lib/x86_64-linux-gnu
+
+	37. make all
+    38. sudo make install
+    39. sudo make install-xinetd
+    40. sudo make install-daemon-config
+	41. sudo gedit /etc/xinetd.d/nrpe
+			Change :- 
+			only_from = 127.0.0.1 <Server IP Address>
+	42. sudo service xinetd restart
+
+	[ "Configure Nagios" ]
+	43. sudo gedit /usr/local/nagios/etc/nagios.cfg
+			Uncomment :- 
+				cfg_dir=/usr/local/nagios/etc/servers
+	44. sudo mkdir /usr/local/nagios/etc/servers
+	45. sudo gedit /usr/local/nagios/etc/objects/contacts.cfg
+			Change :-
+			Change email address.
+	46. sudo gedit /usr/local/nagios/etc/objects/commands.cfg
+			Add to end of file :- 
+				define command{
+			        command_name check_nrpe
+			        command_line $USER1$/check_nrpe -H $HOSTADDRESS$ -c $ARG1$
+				}
+
+	[ "Configure Apache" ]
+	47. sudo a2enmod rewrite
+	48. sudo a2enmod cgi
+
+	49. sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+		[ Enter a password at the prompt.]
+	50. sudo ln -s /etc/apache2/sites-available/nagios.conf /etc/apache2/sites-enabled/
+	51. sudo service nagios start
+	52. sudo service apache2 restart
+	
+	[ "To start nagios during startup" ]
+	53. sudo ln -s /etc/init.d/nagios /etc/rcS.d/S99nagios
+
+	[ "Restrict Access by IP Address" ]
+	54. sudo gedit /etc/apache2/sites-available/nagios.conf
+			Change :- 
+				Find and comment the following two lines by adding # symbols in front of them:
+
+				Order allow,deny
+				Allow from all
+
+				Then uncomment the following lines, by deleting the # symbols, and add the IP addresses or ranges (space delimited) that you want to allow to in the Allow from line:
+
+				#  Order deny,allow
+				#  Deny from all
+				#  Allow from 127.0.0.1
+
+	55. sudo service nagios restart
+	56. sudo service apache2 restart
+
+	[ "Accessing the Nagios Web Interface" ]
+	57. http://<nagios_server_public_ip>/nagios
+
+	[ "Monitor a Host with NRPE" ]
+	[ "Installation steps to be run on host machine "]
+	58. sudo apt-get update
+	59. sudo apt-get install nagios-plugins nagios-nrpe-server
+	60. sudo gedit /etc/nagios/nrpe.cfg
+			Add :- 
+				allowed_hosts=127.0.0.1,<ip address of nagios server>
+
+	[ "Configure Allowed NRPE Commands" ]
+	61. df -h / [ "Find the root file system to monitor" ]
+	62. sudo gedit /etc/nagios/nrpe.cfg
+			Change :-
+				server_address=client_private_IP
+				allowed_hosts=nagios_server_private_IP
+				command[check_hda1]=/usr/lib/nagios/plugins/check_disk -w 20% -c 10% -p /dev/vda
+	63. sudo service nagios-nrpe-server restart
+	64. sudo service nagios restart

@@ -1,0 +1,517 @@
+\documentclass[10pt]{beamer}
+\usetheme{Warsaw}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{array}
+\graphicspath{ {Images/} }
+\author{
+\footnotesize
+\textbf{
+\linebreak Achyuth Rao - 41056
+\linebreak Akib Shaikh - 41062
+\linebreak Arun Pottekat - 41054
+\linebreak Pranav Tale - 41070
+\linebreak 
+\linebreak
+Guide:- Prof. Mrs. Aparna Junnarkar
+}
+}
+
+\title{
+\small
+\textbf{
+Detection of DDoS in SDN environment using SVM and Entropy based mechanism.
+}
+}
+\institute{
+\includegraphics[width=2.75cm, height=2.9cm]{logo.png}\\ \textbf{PES's Modern College Of Engineering}} 
+\date{}
+\setbeamertemplate{footline}[frame number]{}
+\setbeamertemplate{navigation symbols}{} 
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Problem Statement}
+\begin{itemize}
+\footnotesize
+\item
+To provide a solution for the detection of DDoS attack in SDN environment using SVM and Entropy based mechanism and monitoring OpenFlow statistics.
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Motivation}
+\begin{center}
+\begin{itemize}
+\footnotesize
+\item 
+The centralized controller is a potential single point of attack.
+\item
+The Southbound interface, OpenFlow is vulnerable to threats.
+\item
+DDoS attack renders an online service unavailable by overloading it.
+\item
+Thusly, there is a need to optimally detect DDoS in SDN.
+\end{itemize}
+\end{center}
+
+\end{frame}
+
+
+
+%\begin{frame}
+% \frametitle{Literature Survey}
+% \scriptsize
+% \begin{center}
+% \begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} | m{3cm} | } 
+% \hline
+% \textbf{Title} & \textbf{Author} & \textbf{Journal and Year} & \textbf{Description} \\
+% \hline
+% DDoS Detection and Analysis in SDN-based Environment Using Support Vector Machine Classifier & 
+% Kokila RT, S. Thamarai Selvi, Kannan Govindarajan & 
+% IEEE 2014 & 
+% This paper provides information about DDoS attack in SDN environment using Support Vector Machine to classify the attack.\\ 
+% \hline
+% An Entropy-Based Distributed DDoS Detection Mechanism in Software-Defined Networking &
+% Rui Wang, Zhiping Jia, Lei Ju & 
+% IEEE 2015 & 
+% This paper provides information about DDoS attack in SDN environment using Entropy based mechanism to classify the attack.\\ 
+% \hline
+% Software-Defined Networking:The New Norm for Networks & 
+% Open Networking Foundation & 
+% ONF White Paper, 2012 & 
+% Description about Software Defined Networks\\
+% \hline
+% Detection of DDoS Attacks using Enhanced Support Vector Machines with Real Time Generated Dataset & 
+% T.Subbulakshmi, Dr. S. Mercy Shalinie, D. AnandK,  K.Kannatha&
+% IEEE 2013 &
+% Provided information how to create and use datasets for SVM.\\
+% \hline
+% OpenFlow Switch Specification& 
+% Open Networking Foundation &
+% Version 1.3.2 2013 &
+% Description about OpenFlow Protocol\\
+% \hline
+% \end{tabular}
+% \end{center}
+% \end{frame}
+
+\begin{frame}
+\frametitle{Objective}
+\begin{center}
+\begin{itemize}
+\footnotesize
+\item
+To apprehend different types of network attacks which can be launched on SDN.
+\item
+To compare different types of DDoS.
+\item
+To grasp an overview about the different network monitoring tools.
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Scope}
+\begin{center}
+\begin{itemize}
+\footnotesize
+\item
+%OpenFlow protocol in SDN switches.
+Set up of SDN environment.
+\item
+Entropy and SVM based DDoS detection method.
+\item
+OpenFlow Monitoring application using OpenDaylight API.
+\end{itemize}
+\end{center}
+\end{frame}
+
+
+
+%\begin{frame}
+%\frametitle{Synopsis}
+%\begin{center}
+%\begin{itemize}
+%\footnotesize
+%\item
+%SDN involves seperation of control and data plane.
+
+%\item
+%Security is a major concern in SDN architecture.
+
+%\item
+%DDoS attack results in exhaustion of controller resources.
+
+%\item
+%Entropy is a good measure of randomness.
+
+%\item
+%SVM is capable of decision making from uncertain information.
+
+%\item
+%Application for viewing OpenFlow statistics.
+%\end{itemize}
+%\end{center}
+%\end{frame}
+
+
+% \begin{frame}{
+% \small
+% \textbf{
+% Scope
+% }
+% }
+% \begin{itemize}
+% \footnotesize
+% \item
+% Implementation of:
+% \begin{itemize}
+% \footnotesize
+% \item
+% Entropy mechanism.
+
+% \item
+% Support Vector Machine classifier.
+
+% \item
+% OpenFlow statistics monitoring application.
+% \end{itemize}
+% \end{itemize}
+% \end{frame}
+
+% \begin{frame}{
+% \small
+% \textbf{
+% Architecture Diagram
+% }
+% }
+% \begin{figure}[H]
+% \includegraphics[scale=0.25]{Architecture_Diagram.png}
+% \caption{
+% System Architecture
+% }
+% \end{figure}
+% \end{frame}
+
+
+\begin{frame}
+\frametitle{Literature Survey}
+\scriptsize
+\begin{center}
+\begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} | m{3cm} | } 
+\hline
+\textbf{Title} & \textbf{Author} & \textbf{Journal and Year} & \textbf{Description} \\
+\hline
+DDoS Detection and Analysis in SDN-based Environment Using Support Vector Machine Classifier & 
+Kokila RT, S. Thamarai Selvi, Kannan Govindarajan & 
+IEEE 2014 & 
+This paper provides information about DDoS attack in SDN environment using Support Vector Machine to classify the attack.\\ 
+\hline
+An Entropy-Based Distributed DDoS Detection Mechanism in Software-Defined Networking &
+Rui Wang, Zhiping Jia, Lei Ju & 
+IEEE 2015 & 
+This paper provides information about DDoS attack in SDN environment using Entropy based mechanism to classify the attack.\\ 
+\hline
+Software-Defined Networking:The New Norm for Networks & 
+Open Networking Foundation & 
+ONF White Paper, 2012 & 
+Description about Software Defined Networks\\
+\hline
+Detection of DDoS Attacks using Enhanced Support Vector Machines with Real Time Generated Dataset & 
+T.Subbulakshmi, Dr. S. Mercy Shalinie, D. AnandK,  K.Kannatha&
+IEEE 2013 &
+Provided information how to create and use datasets for SVM.\\
+\hline
+OpenFlow Switch Specification& 
+Open Networking Foundation &
+Version 1.3.2 2013 &
+Description about OpenFlow Protocol\\
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Architecture Diagram}
+\begin{figure}[H]
+\includegraphics[scale=0.38]{myarch.png}
+\caption{System Architecture}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mathematical Model}
+\end{frame}
+
+\begin{frame}
+\frametitle{Algorithmic Strategies}
+\end{frame}
+
+	
+
+\begin{frame}
+\frametitle{Software Specifications}
+\begin{itemize}
+\footnotesize
+\item
+Linux based Operating System.
+\item
+OpenDayLight Controller - 0.4.2 Berrylium SR2.
+\item
+Oracle VirtualBox.
+\item
+Mininet 2.2.1
+\item
+POX Controller.
+\item
+Tenzor Flow 1.4
+\item
+LibSVM.
+\item
+Python 2.7 or above.
+\item
+Nagios Core.
+\item
+ReactJS
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hardware Specifications}
+\begin{itemize}
+\footnotesize
+\item
+Raspberry Pi Zero Controller.
+\item
+USB to LAN Connectors
+\item
+Ethernet Cables
+\item
+Zodiac FX OpenFlow Switch.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Dataset Specifications}
+\begin{itemize}
+\footnotesize
+\item
+"DDoS attack 2007" dataset provided by the Center for Applied Internet Data Analysis(CAIDA).
+\item
+The 1998 DARPA's network traffic dataset provided by MIT Lincoln Lab.
+\item
+The 2000 DARPA intrusion detection scenario specific dataset provided by MIT Lincoln Lab which contains:
+\end{itemize}
+
+\begin{table}
+\scriptsize
+\caption{2000 DARPA Dataset details}
+\begin{center}
+\begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} |} 
+\hline
+\textbf{Data Category} & \textbf{No. of training instances} & \textbf{No. of test instances} \\
+\hline
+Break In &
+156 &
+374 \\
+\hline
+DDoS &
+963 &
+1035 \\
+\hline
+Installsw &
+318 &
+204 \\
+\hline
+IPSweep &
+101 &
+684 \\
+\hline
+Normal &
+2500 &
+2501 \\
+\hline
+Probe &
+54 &
+94 \\
+\hline
+Total &
+4092 &
+4892 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Results of Entropy Based Discretization}
+\begin{itemize}
+\footnotesize
+\item
+Machine with Ubuntu 14.04, i5 CPU and 8G RAM.
+\item
+Mininet as a network simulator (Tree Topology, 800Mbps Link speed, 20 hosts).
+\item
+Open vSwitch.
+\item 
+Floodlight controller.
+\item
+CAIDA's "DDoS Attack 2007" dataset.
+\end{itemize}
+\scriptsize
+\vspace{0.1cm}
+\begin{table}
+\caption{parameter values of the Traffic}
+\begin{center}
+\begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} |} 
+\hline
+\textbf{S. No} & \textbf{Average Traffic Rate(Mbps)} & \textbf{Attack Rate(pkts/s)} \\
+\hline
+Exp.1 &
+50 &
+50-200 \\
+\hline
+Exp.2 &
+100 &
+300-500 \\ 
+\hline
+Exp.3 &
+500 &
+1000-2000 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\begin{figure}[h]
+\includegraphics[scale=0.2]{Entropy.png}
+\caption{The normalized entropy value of IPdst Flow}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Results of SVM based Method}
+
+\begin{itemize}
+\footnotesize
+\item
+%The 2000 DARPA intrusion detection scenario specific dataset %provided by MIT Lincoln lab is taken for evaluation.
+The normal traffic data is included from 1998 DARPA dataset.
+\item
+
+The attack traffic data is included from 2000 DARPA dataset.
+\end{itemize}
+
+\begin{table}
+\scriptsize
+\caption{Accuracy with different parameters}
+\begin{center}
+\begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} | m{2cm} |} 
+\hline
+\textbf{Cost} & \textbf{Gamma} & \textbf{Classification Accuracy(\%)} & \textbf{False Positive} \\
+\hline
+10 &
+0.1 &
+94.23 &
+0.011 \\
+\hline
+10 &
+0.01 &
+95.11 &
+0.008 \\
+\hline
+10 &
+0.001 &
+93.86 &
+0.013 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{figure}[h]
+\includegraphics[scale=0.35]{svm.png}
+\caption{Camparison of classification methods	}
+
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Conclusion}
+
+\begin{itemize}
+\footnotesize
+\item
+Taking into consideration the advantages of SDN, security issues need to be resolved.
+\item
+This project will be a step towards enhancing the security in SDN which will soon replace the traditional networks.
+\end{itemize}
+\end{frame}
+
+
+
+
+% \begin{frame}
+% \frametitle{Conclusion}
+% \begin{center}
+% \begin{itemize}
+% \item
+% \end{itemize}
+% \end{center}
+% \end{frame}
+\begin{frame}
+\frametitle{References}
+\begin{itemize}
+\footnotesize
+\item
+"DDoS Detection and Analysis in SDN-based Environment Using Support Vector Machine Classifier" -Kokila RT, S. Thamarai Selvi, Kannan Govindarajan - 2014 Sixth International Conference on Advanced Computing(ICoAC) - Department of Computer Technology, Anna University (MIT Campus), Chennai.
+
+\item
+"An Entropy-Based Distributed DDoS Detection Mechanism in Software-Defined Networking" - Rui Wang, Zhiping Jia, Lei Ju - 2015 IEEE Trustcom/BigDataSE/ISPA - School of Computer Science and Technology Shandong University Jinan, China.
+
+\item
+"Software-Defined Networking:The New Norm for Networks and 
+Open Networking Foundation" - Open Networking Foundation - ONF White Paper April 13, 2012.
+
+\item
+T.Subbulakshmi , Dr. S. Mercy Shalinie, V.GanapathiSubramanian, K.BalaKrishnan, D. AnandK, K.Kannathal - IEEE-ICoAC 2011 - Department of CSE, TCE Madurai, India.
+
+\item
+"OpenFlow Switch Specification" - Open Networking Foundation - Version 1.3.2 2013.
+
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{}
+\Huge
+Thank You\ldots
+\end{frame}
+\end{document}

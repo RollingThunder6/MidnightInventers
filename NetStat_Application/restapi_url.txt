@@ -1,0 +1,6 @@
+Deleting flows using REST API :- 
+http://www.frank-durr.de/?p=68
+
+Network Topology :- 
+http://localhost:8181/restconf/operational/network-topology:network-topology/
+

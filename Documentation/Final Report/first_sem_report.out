@@ -1,0 +1,80 @@
+\BOOKMARK [0][-]{chapter*.2}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{List of Figures}{}% 2
+\BOOKMARK [0][-]{chapter*.2}{List of Tables}{}% 3
+\BOOKMARK [0][-]{chapter*.3}{List of Abbreviations}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
+\BOOKMARK [1][-]{section.1.1}{Overview}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Brief Description}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{Problem Definition}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.4}{Project Objectives}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.5}{Goal}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.6}{Software Engineering Approach:}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Literature Survey}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Literature Survey}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.1.1}{Deciding the Project Topic}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.2}{Understanding Industrial Requirements}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.3}{What is SDN?}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.4}{What is DDoS?}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.5}{Types of DDoS}{section.2.1}% 18
+\BOOKMARK [2][-]{subsection.2.1.6}{DDoS Detection Methods:}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.7}{Support Vector Machine}{section.2.1}% 20
+\BOOKMARK [2][-]{subsection.2.1.8}{Entropy Based Discretization}{section.2.1}% 21
+\BOOKMARK [0][-]{chapter.3}{Software Requirements Specification}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Purpose}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{Project Scope}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.3}{Product Features}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.1}{Runtime Detection of DDoS attack}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.2}{Network Environment Specific Product}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.3}{Automated Alert Mechanism}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.4}{Suitable for all Software Defined Networks}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.5}{Open Source to encourage contribution and research}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.6}{SDN Controller Independent}{section.3.3}% 31
+\BOOKMARK [1][-]{section.3.4}{User Classes and Characteristics}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.4.1}{Network administrative team:}{section.3.4}% 33
+\BOOKMARK [1][-]{section.3.5}{Operating Environment}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.6}{Design and Implementation Constraints}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.7}{Assumptions and Dependencies}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.8}{System Features}{chapter.3}% 37
+\BOOKMARK [2][-]{subsection.3.8.1}{DDoS Detection}{section.3.8}% 38
+\BOOKMARK [2][-]{subsection.3.8.2}{Network Monitoring}{section.3.8}% 39
+\BOOKMARK [2][-]{subsection.3.8.3}{Monitoring Application}{section.3.8}% 40
+\BOOKMARK [1][-]{section.3.9}{External Interface Requirements}{chapter.3}% 41
+\BOOKMARK [2][-]{subsection.3.9.1}{Hardware Interfaces}{section.3.9}% 42
+\BOOKMARK [2][-]{subsection.3.9.2}{Software Interfaces}{section.3.9}% 43
+\BOOKMARK [2][-]{subsection.3.9.3}{Communications Interfaces}{section.3.9}% 44
+\BOOKMARK [2][-]{subsection.3.9.4}{Software Quality Attributes}{section.3.9}% 45
+\BOOKMARK [1][-]{section.3.10}{System Analysis Models}{chapter.3}% 46
+\BOOKMARK [2][-]{subsection.3.10.1}{Use Case Diagram}{section.3.10}% 47
+\BOOKMARK [2][-]{subsection.3.10.2}{Data Flow Diagram}{section.3.10}% 48
+\BOOKMARK [2][-]{subsection.3.10.3}{State Transition Diagram}{section.3.10}% 49
+\BOOKMARK [2][-]{subsection.3.10.4}{Activity Diagram}{section.3.10}% 50
+\BOOKMARK [2][-]{subsection.3.10.5}{Sequence Diagram}{section.3.10}% 51
+\BOOKMARK [0][-]{chapter.4}{System Design}{}% 52
+\BOOKMARK [1][-]{section.4.1}{System Components}{chapter.4}% 53
+\BOOKMARK [1][-]{section.4.2}{System Architecture :}{chapter.4}% 54
+\BOOKMARK [0][-]{chapter.5}{Technical Specification}{}% 55
+\BOOKMARK [1][-]{section.5.1}{Technologies Used}{chapter.5}% 56
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 57
+\BOOKMARK [0][-]{chapter.7}{Bibliography}{}% 58
+\BOOKMARK [0][-]{chapter.8}{Appendix - A}{}% 59
+\BOOKMARK [1][-]{section.8.1}{Appendix A.1}{chapter.8}% 60
+\BOOKMARK [2][-]{subsection.8.1.1}{IDEA Matrix}{section.8.1}% 61
+\BOOKMARK [1][-]{section.8.2}{Appendix A.2}{chapter.8}% 62
+\BOOKMARK [2][-]{subsection.8.2.1}{Mathematical Model}{section.8.2}% 63
+\BOOKMARK [2][-]{subsection.8.2.2}{Input:}{section.8.2}% 64
+\BOOKMARK [2][-]{subsection.8.2.3}{Input for EBD:}{section.8.2}% 65
+\BOOKMARK [2][-]{subsection.8.2.4}{Input for SVM:}{section.8.2}% 66
+\BOOKMARK [2][-]{subsection.8.2.5}{Processing:}{section.8.2}% 67
+\BOOKMARK [2][-]{subsection.8.2.6}{Output:}{section.8.2}% 68
+\BOOKMARK [2][-]{subsection.8.2.7}{Feasibility Study}{section.8.2}% 69
+\BOOKMARK [1][-]{section.8.3}{Appendix A.3}{chapter.8}% 70
+\BOOKMARK [2][-]{subsection.8.3.1}{Distributed Computation}{section.8.3}% 71
+\BOOKMARK [2][-]{subsection.8.3.2}{Functional Dependancies}{section.8.3}% 72
+\BOOKMARK [0][-]{chapter.9}{Appendix - B}{}% 73
+\BOOKMARK [1][-]{section.9.1}{Appendix B.1}{chapter.9}% 74
+\BOOKMARK [2][-]{subsection.9.1.1}{Test Cases :}{section.9.1}% 75
+\BOOKMARK [2][-]{subsection.9.1.2}{Scenario: Attack Traffic}{section.9.1}% 76
+\BOOKMARK [2][-]{subsection.9.1.3}{Scenario: Normal Traffic}{section.9.1}% 77
+\BOOKMARK [0][-]{chapter.10}{Appendix - C}{}% 78
+\BOOKMARK [1][-]{section.10.1}{Appendix C.1}{chapter.10}% 79
+\BOOKMARK [2][-]{subsection.10.1.1}{Milestones}{section.10.1}% 80

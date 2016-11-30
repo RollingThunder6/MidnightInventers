@@ -1,0 +1,34 @@
+For Installation of Mininet either using VM or on host machine view
+    
+    http://mininet.org/download/
+
+1)Login to the VM using following Credentials:
+
+  Username: mininet
+  Password: mininet
+
+2)After this you will get a prompt:
+
+  mininet@mininet-vm:~$ _
+
+3)Here you can run the commands as you can in Linux. Check the network configuration by
+
+  mininet@mininet-vm:~$ ifconfig
+  
+4)Now you can create a SDN virtually by a command mn. Additional arguments can be used to specify the topology, the controller.
+
+  mininet@mininet-vm:~$ sudo mn --switch ovsk --topo linear,3 --controller=remote,ip=192.168.56.1,port=6633 --mac
+  
+5)Now you will get a prompt after creating this SDN topology as
+ 
+  mininet>
+  
+6)You can enter commands like
+
+  mininet> xterm h1 h2
+  
+  mininet> h1 bash
+  
+  mininet> h1 ifconfig
+  
+  mininet> h1 python attack.py &    

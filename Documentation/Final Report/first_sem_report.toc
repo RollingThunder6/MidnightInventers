@@ -1,0 +1,104 @@
+\select@language {english}
+\contentsline {chapter}{Abstract}{i}{chapter*.2}
+\contentsline {chapter}{List of Figures}{ii}{chapter*.2}
+\contentsline {chapter}{List of Tables}{iii}{chapter*.2}
+\contentsline {chapter}{List of Abbreviations}{iv}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Overview}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Brief Description}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Problem Definition}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Project Objectives}{2}{section.1.4}
+\contentsline {section}{\numberline {1.5}Goal}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}Software Engineering Approach:}{3}{section.1.6}
+\contentsline {chapter}{\numberline {2}Literature Survey}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Literature Survey}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Deciding the Project Topic}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Understanding Industrial Requirements}{5}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}What is SDN?}{5}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}What is DDoS?}{6}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Types of DDoS}{6}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}DDoS Detection Methods:}{6}{subsection.2.1.6}
+\contentsline {subsection}{\numberline {2.1.7}Support Vector Machine}{7}{subsection.2.1.7}
+\contentsline {subsection}{\numberline {2.1.8}Entropy Based Discretization}{7}{subsection.2.1.8}
+\contentsline {chapter}{\numberline {3}Software Requirements Specification}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Purpose}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Project Scope}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Product Features}{9}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Runtime Detection of DDoS attack}{9}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Network Environment Specific Product}{9}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Automated Alert Mechanism}{9}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Suitable for all Software Defined Networks}{9}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Open Source to encourage contribution and research}{10}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}SDN Controller Independent}{10}{subsection.3.3.6}
+\contentsline {section}{\numberline {3.4}User Classes and Characteristics}{10}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Network administrative team:}{10}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Operating Environment}{10}{section.3.5}
+\contentsline {section}{\numberline {3.6}Design and Implementation Constraints}{10}{section.3.6}
+\contentsline {section}{\numberline {3.7}Assumptions and Dependencies}{10}{section.3.7}
+\contentsline {section}{\numberline {3.8}System Features}{11}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}DDoS Detection}{11}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Network Monitoring}{11}{subsection.3.8.2}
+\contentsline {subsection}{\numberline {3.8.3}Monitoring Application}{12}{subsection.3.8.3}
+\contentsline {section}{\numberline {3.9}External Interface Requirements}{12}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}Hardware Interfaces}{12}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}Software Interfaces}{12}{subsection.3.9.2}
+\contentsline {subsection}{\numberline {3.9.3}Communications Interfaces}{13}{subsection.3.9.3}
+\contentsline {subsection}{\numberline {3.9.4}Software Quality Attributes}{13}{subsection.3.9.4}
+\contentsline {section}{\numberline {3.10}System Analysis Models}{14}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}Use Case Diagram}{14}{subsection.3.10.1}
+\contentsline {subsection}{\numberline {3.10.2}Data Flow Diagram}{14}{subsection.3.10.2}
+\contentsline {subsection}{\numberline {3.10.3}State Transition Diagram}{15}{subsection.3.10.3}
+\contentsline {subsection}{\numberline {3.10.4}Activity Diagram}{15}{subsection.3.10.4}
+\contentsline {subsection}{\numberline {3.10.5}Sequence Diagram}{16}{subsection.3.10.5}
+\contentsline {chapter}{\numberline {4}System Design}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}System Components}{18}{section.4.1}
+\contentsline {section}{\numberline {4.2}System Architecture :}{18}{section.4.2}
+\contentsline {chapter}{\numberline {5}Technical Specification}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}Technologies Used}{21}{section.5.1}
+\contentsline {chapter}{\numberline {6}Conclusion}{22}{chapter.6}
+\gobblefive 
+\contentsline {chapter}{\numberline {7}Bibliography}{24}{chapter.7}
+\gobblefive 
+\contentsline {chapter}{\numberline {8}Appendix - A}{27}{chapter.8}
+\gobblefive 
+\contentsline {section}{\numberline {8.1}Appendix A.1}{28}{section.8.1}
+\gobblefive 
+\contentsline {subsection}{\numberline {8.1.1}IDEA Matrix}{28}{subsection.8.1.1}
+\gobblefive 
+\contentsline {section}{\numberline {8.2}Appendix A.2}{30}{section.8.2}
+\gobblefive 
+\contentsline {subsection}{\numberline {8.2.1}Mathematical Model}{30}{subsection.8.2.1}
+\gobblefive 
+\contentsline {subsection}{\numberline {8.2.2}Input:}{30}{subsection.8.2.2}
+\gobblefive 
+\contentsline {subsection}{\numberline {8.2.3}Input for EBD:}{30}{subsection.8.2.3}
+\gobblefive 
+\contentsline {subsection}{\numberline {8.2.4}Input for SVM:}{30}{subsection.8.2.4}
+\gobblefive 
+\contentsline {subsection}{\numberline {8.2.5}Processing:}{30}{subsection.8.2.5}
+\gobblefive 
+\contentsline {subsection}{\numberline {8.2.6}Output:}{31}{subsection.8.2.6}
+\gobblefive 
+\contentsline {subsection}{\numberline {8.2.7}Feasibility Study}{31}{subsection.8.2.7}
+\gobblefive 
+\contentsline {section}{\numberline {8.3}Appendix A.3}{34}{section.8.3}
+\gobblefive 
+\contentsline {subsection}{\numberline {8.3.1}Distributed Computation}{34}{subsection.8.3.1}
+\gobblefive 
+\contentsline {subsection}{\numberline {8.3.2}Functional Dependancies}{34}{subsection.8.3.2}
+\gobblefive 
+\contentsline {chapter}{\numberline {9}Appendix - B}{35}{chapter.9}
+\gobblefive 
+\contentsline {section}{\numberline {9.1}Appendix B.1}{36}{section.9.1}
+\gobblefive 
+\contentsline {subsection}{\numberline {9.1.1}Test Cases :}{36}{subsection.9.1.1}
+\gobblefive 
+\contentsline {subsection}{\numberline {9.1.2}Scenario: Attack Traffic}{36}{subsection.9.1.2}
+\gobblefive 
+\contentsline {subsection}{\numberline {9.1.3}Scenario: Normal Traffic}{36}{subsection.9.1.3}
+\gobblefive 
+\contentsline {chapter}{\numberline {10}Appendix - C}{37}{chapter.10}
+\gobblefive 
+\contentsline {section}{\numberline {10.1}Appendix C.1}{38}{section.10.1}
+\gobblefive 
+\contentsline {subsection}{\numberline {10.1.1}Milestones}{38}{subsection.10.1.1}
