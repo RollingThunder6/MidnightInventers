@@ -33,11 +33,45 @@ Detection of DDoS in SDN environment using SVM and Entropy based mechanism.
 \date{}
 \setbeamertemplate{footline}[frame number]{}
 \setbeamertemplate{navigation symbols}{} 
+\setbeamertemplate{caption}[numbered]
 \begin{document}
 
 \begin{frame}
 \titlepage
 \end{frame}
+
+
+\begin{frame}
+\frametitle{Contents}
+\tableofcontents
+\end{frame}
+
+
+
+\begin{frame}
+
+\frametitle{Introduction}
+\begin{itemize}
+\footnotesize
+\item
+SDN separates intelligence from the hardware.
+\item
+SDN controller acts as network Operating System.
+\item
+This networking paradigm faces a lot of issues.
+%\item
+\item
+DDoS attack makes the network resources unavailable.
+\end{itemize}
+\begin{figure}
+\includegraphics[scale=0.3]{SdnArchitecture.png}
+\caption{\footnotesize SDN Architecture}
+\end{figure}
+\end{frame}
+
+
+
+
 
 
 \begin{frame}
@@ -52,22 +86,22 @@ To provide a solution for the detection of DDoS attack in SDN environment using 
 
 
 
-
-
-
 \begin{frame}
 \frametitle{Motivation}
 \begin{center}
 \begin{itemize}
 \footnotesize
 \item 
-The centralized controller is a potential single point of attack.
+Number of cyber attacks is increasing day by day.
 \item
-The Southbound interface, OpenFlow is vulnerable to threats.
+Reluctance to adopt SDN due to lack of security solutions.
 \item
-DDoS attack renders an online service unavailable by overloading it.
+A single DDoS attack can cost an enterprise over \$1.6 million.
 \item
-Thusly, there is a need to optimally detect DDoS in SDN.
+SDN market is expected to grow to \$56 Billion by 2022.
+\item
+Automation of attack detection is required.
+ 
 \end{itemize}
 \end{center}
 
@@ -260,7 +294,70 @@ Description about OpenFlow Protocol\\
 
 \begin{frame}
 \frametitle{Mathematical Model}
+\footnotesize
+$S = \lbrace \lbrace I \rbrace ,\lbrace P \rbrace ,\lbrace O \rbrace \rbrace $\newline\newline
+$I = \lbrace N \rbrace$
+
+\noindent
+where,\\
+$N = \lbrace $ Network Statistics $ \rbrace $, \\
+$F =\lbrace F_{i} \mid F_{i} \in T , \forall i$ $ F_{i} =$ Individual entry $ \rbrace$, \\
+$T = \lbrace $ Flow Table $ \rbrace$, \\
+$F \subseteq N$
+\newline
+
+$P = \lbrace P_{EBD}, P_{SVM} \rbrace$
+\newline
+
+$O = \lbrace O_{EBD} \cup O_{SVM} \rbrace$
+
 \end{frame}
+
+\begin{frame}
+\frametitle{Mathematical Model}
+\footnotesize
+$P_{EBD} $ $ (I_{EBD},$ $O_{EBD})$\\
+$\lbrace$
+
+
+\begin{itemize}
+\item $I_{EBD} = \lbrace U_{i} \mid U_{i} = ($ Src. Addr., Dest. Addr., Port no., Count$),  $ $ U_{i}  \subset F_{i} \rbrace$
+
+\item $P_{i} = \frac{C_{i}}{N}$  
+
+\item $\varepsilon = \sum_{i=0}^{n} - P_{i} log P_{i}$
+
+\item $(\lambda < \varepsilon) \rightarrow  $ $ (\beta = 0)$ \\ $(\lambda > \varepsilon) \rightarrow  $ $ (\beta = 1)$
+
+\item $ O_{EBD} = \lbrace \beta \mid \beta \in (0, $ $1) \rbrace$
+
+\item $O_{EBD} = \lbrace z \mid \exists z, $ $ z \in \beta \rbrace$ \\
+
+\end{itemize}
+$ \rbrace$
+\newline
+
+$P_{SVM} $ $ (I_{SVM},$ $O_{SVM})$\\
+$\lbrace$
+\indent
+\begin{itemize}
+\item $I_{SVM} = \lbrace V_{i} \mid V_{i} = ($ Src. Addr., Dest. Addr., Port no., Time, Prot., Count$) \rbrace$
+
+\item $RBF = e^{-\gamma(\mid x_{1}-x_{2} \mid)+c}$ 
+
+\item $y = \overline{\omega} * x + b$ 
+
+\item $(y \leq -1) \rightarrow  $ $ (\alpha = 1)$ \\ $(y \geq 1) \rightarrow  $ $ (\alpha = 0)$
+
+\item $ O_{SVM} = \lbrace \alpha \mid \alpha \in (0, $ $1) \rbrace$
+
+\item $O_{SVM} = \lbrace x \mid \exists x, $ $ x \in \alpha \rbrace$ \\
+
+\end{itemize}
+$ \rbrace$
+
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Algorithmic Strategies}
@@ -277,13 +374,15 @@ Linux based Operating System.
 \item
 OpenDayLight Controller - 0.4.2 Berrylium SR2.
 \item
+Open vSwitch (OVS).
+\item
+PicOS / OpenSwitch.
+\item
 Oracle VirtualBox.
 \item
-Mininet 2.2.1
+Mininet 2.2.1.
 \item
 POX Controller.
-\item
-Tenzor Flow 1.4
 \item
 LibSVM.
 \item
@@ -291,7 +390,7 @@ Python 2.7 or above.
 \item
 Nagios Core.
 \item
-ReactJS
+NodeJS + AngularJS (JavaScript Framework). 
 \end{itemize}
 \end{frame}
 
@@ -326,7 +425,6 @@ The 2000 DARPA intrusion detection scenario specific dataset provided by MIT Lin
 
 \begin{table}
 \scriptsize
-\caption{2000 DARPA Dataset details}
 \begin{center}
 \begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} |} 
 \hline
@@ -362,6 +460,7 @@ Total &
 \hline
 \end{tabular}
 \end{center}
+\caption{\footnotesize 2000 DARPA Dataset details}
 \end{table}
 \end{frame}
 
@@ -385,7 +484,6 @@ CAIDA's "DDoS Attack 2007" dataset.
 \scriptsize
 \vspace{0.1cm}
 \begin{table}
-\caption{parameter values of the Traffic}
 \begin{center}
 \begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} |} 
 \hline
@@ -405,10 +503,11 @@ Exp.3 &
 \hline
 \end{tabular}
 \end{center}
+\caption{parameter values of the Traffic}
 \end{table}
 \begin{figure}[h]
 \includegraphics[scale=0.2]{Entropy.png}
-\caption{The normalized entropy value of IPdst Flow}
+\caption{\footnotesize The normalized entropy value of IPdst Flow}
 \end{figure}
 
 \end{frame}
@@ -428,7 +527,6 @@ The attack traffic data is included from 2000 DARPA dataset.
 
 \begin{table}
 \scriptsize
-\caption{Accuracy with different parameters}
 \begin{center}
 \begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} | m{2cm} |} 
 \hline
@@ -451,6 +549,7 @@ The attack traffic data is included from 2000 DARPA dataset.
 \hline
 \end{tabular}
 \end{center}
+\caption{\footnotesize Accuracy with different parameters}
 \end{table}
 
 \begin{figure}[h]
