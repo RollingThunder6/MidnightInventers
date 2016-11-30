@@ -290,9 +290,27 @@ Description about OpenFlow Protocol\\
 \frametitle{Architecture Diagram}
 \begin{figure}[H]
 \includegraphics[scale=0.38]{myarch.png}
-\caption{System Architecture}
+\caption{\footnotesize System Architecture}
 \end{figure}
 \end{frame}
+
+
+\begin{frame}
+\frametitle{UML Diagrams}
+\begin{figure}
+\includegraphics[scale=0.3]{use_case.png}
+\caption{\footnotesize Use Case Diagram}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{UML Diagrams}
+\begin{figure}
+\includegraphics[scale=0.3]{sequence.png}
+\caption{\footnotesize Sequence Diagram}
+\end{figure}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Mathematical Model}
@@ -482,6 +500,37 @@ Total &
 \end{table}
 \end{frame}
 
+
+\begin{frame}
+\frametitle{Test Cases}
+\footnotesize
+\begin{center}
+\begin{tabular}{|p{0.5cm}|p{3.8cm}|p{2.2cm}|p{2.5cm}|}
+\hline 
+ \textbf{Id} & \textbf{Description} & \textbf{Scenario} & \textbf{Expected Output} \\ 
+\hline 
+ 1 & Time span between attack detection and alert generation & Attack has occured & Instantaneous alert generation\\
+ \hline
+ 2 & Normal Network Traffic, Log file not altered and attack is not detected & SDN functioning in normal mode & Alert not generated\\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+\textbf{Scenario: Attack Traffic}
+\begin{center}
+\begin{tabular}{|p{0.5cm}|p{3.8cm}|p{2.2cm}|p{2.5cm}|}
+\hline 
+ \textbf{Id} & \textbf{Description} & \textbf{Input} & \textbf{Expected Output} \\ 
+\hline 
+ 1 & Simple DoS attack & Large no. of same type of packets & Attack detected\\
+ \hline
+ 2 & UDP flood attack & Large no. of UDP packets & Attack detected\\ 
+ \hline
+ 3 & Varying DDoS attack bandwidth & Large no. of packets & DDoS attack should be detected only when bandwidth exceeds normal threshold traffic. \\
+\hline 
+\end{tabular} 
+\end{center}
+\end{frame}
 
 
 \begin{frame}
