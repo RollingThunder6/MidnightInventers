@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.3.21)  30 NOV 2016 13:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.3.31)  30 NOV 2016 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1358,35 +1358,35 @@ Package pdftex.def Info: Images/myarch.png used on input line 293.
 [15
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 513--513
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
 []|\OT1/cmss/bx/n/7 Average Traf-fic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--513
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
 []|\OT1/cmss/bx/n/7 Attack
  []
 
-<Images/Entropy.png, id=118, 691.58376pt x 462.72874pt>
+<Images/Entropy.png, id=120, 691.58376pt x 462.72874pt>
 File: Images/Entropy.png Graphic file (type png)
 
 <use Images/Entropy.png>
-Package pdftex.def Info: Images/Entropy.png used on input line 513.
+Package pdftex.def Info: Images/Entropy.png used on input line 525.
 (pdftex.def)             Requested size: 138.3143pt x 92.5441pt.
 
-Overfull \vbox (19.64305pt too high) detected at line 513
+Overfull \vbox (19.64305pt too high) detected at line 525
  []
 
 [16
 
- <./Images/Entropy.png>] <Images/svm.png, id=124, 410.53375pt x 299.1175pt>
+ <./Images/Entropy.png>] <Images/svm.png, id=126, 410.53375pt x 299.1175pt>
 File: Images/svm.png Graphic file (type png)
 
 <use Images/svm.png>
-Package pdftex.def Info: Images/svm.png used on input line 560.
+Package pdftex.def Info: Images/svm.png used on input line 572.
 (pdftex.def)             Requested size: 143.68896pt x 104.69269pt.
 
-Overfull \vbox (4.25175pt too high) detected at line 560
+Overfull \vbox (4.25175pt too high) detected at line 572
  []
 
 [17
@@ -1422,13 +1422,13 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 616.
  ) 
 Here is how much of TeX's memory you used:
- 17297 strings out of 494977
- 326788 string characters out of 6180183
+ 17329 strings out of 494977
+ 327798 string characters out of 6180183
  408552 words of memory out of 5000000
- 20045 multiletter control sequences out of 15000+600000
+ 20077 multiletter control sequences out of 15000+600000
  12141 words of font info for 45 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 48i,11n,59p,416b,524s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,11n,59p,416b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/te
@@ -1440,10 +1440,10 @@ e1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb>
-Output written on second_presentation.pdf (20 pages, 338780 bytes).
+Output written on second_presentation.pdf (20 pages, 341366 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
+ 197 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
  41 named destinations out of 1000 (max. 500000)
- 104 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
