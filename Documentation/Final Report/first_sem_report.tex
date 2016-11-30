@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper,final]{report}
 \usepackage[english]{babel}
-\usepackage{amsmath}
+\usepackage[fleqn]{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{mathptmx}
@@ -1236,7 +1236,10 @@ Analyse & The system will \textbf{analyse} the data acquired from the switches t
 \newpage
 \SkipTocEntry\section{Appendix A.2}
 \SkipTocEntry\subsection{Mathematical Model}
-$S = \lbrace \lbrace I \rbrace ,\lbrace P \rbrace,\lbrace O \rbrace \rbrace $
+{\setlength{\mathindent}{0cm}
+\begin{equation}
+S = \lbrace \lbrace I \rbrace ,\lbrace P \rbrace,\lbrace O \rbrace \rbrace
+\end{equation}
 
 \noindent
 where,\\
@@ -1245,8 +1248,10 @@ $P = \lbrace P_{EBD}, P_{SVM} \rbrace$ Processing set, \\
 $O =$ Output set
 
 \SkipTocEntry\subsection{Input:}
-
-$I = \lbrace N \rbrace$
+{\setlength{\mathindent}{0cm}
+\begin{equation}
+I = \lbrace N \rbrace
+\end{equation}
 
 \noindent
 where,\\
@@ -1257,14 +1262,17 @@ $F \subseteq N$
 
 \SkipTocEntry\subsection{Input for EBD:}
 
-$I_{EBD} = \lbrace U_{i} \mid U_{i} = ($ Source Address, Destination Address, Port no., Count$),  $ $ U_{i}  \subset F_{i} \rbrace$
-
+{\setlength{\mathindent}{0cm}
+\begin{equation}
+I_{EBD} = \lbrace U_{i} \mid U_{i} = ($ Source Address, Destination Address, Port no., Count$),  $ $ U_{i}  \subset F_{i} \rbrace
+\end{equation}
 
 \SkipTocEntry\subsection{Input for SVM:}
 
-$I_{SVM} = \lbrace V_{i} \mid V_{i} = ($ Source Address, Destination Address, Port no., Time, Protocol, Count$),  $ $ V_{i}  \subset F_{i} \rbrace$
-
-
+{\setlength{\mathindent}{0cm}
+\begin{equation}
+I_{SVM} = \lbrace V_{i} \mid V_{i} = ($ Source Address, Destination Address, Port no., Time, Protocol, Count$),  $ $ V_{i}  \subset F_{i} \rbrace
+\end{equation}
 
 \SkipTocEntry\subsection{Processing:}
 $P_{EBD} $ $ (I_{EBD},$ $O_{EBD})$\\
@@ -1272,20 +1280,38 @@ $\lbrace$
 
 \begin{enumerate}
 
-\item $P_{i} = \frac{C_{i}}{N}$ \\ \\where, \\ $c =$ counter, \\ $N = \sum_{i=0}^{n} C_{i}$, \\ $n =$ no. of entries.
+\item 
+{\setlength{\mathindent}{0cm}}
+\begin{equation}
+P_{i} = \frac{C_{i}}{N}
+\end{equation}
+where, \\ $c =$ counter, \\ $N = \sum_{i=0}^{n} C_{i}$, \\ $n =$ no. of entries.
 
-\item $\varepsilon = \sum_{i=0}^{n} - P_{i} log P_{i}$
+\item 
+{\setlength{\mathindent}{0cm}}
+\begin{equation}
+\varepsilon = \sum_{i=0}^{n} - P_{i} log P_{i}
+\end{equation}
 
-\item $(\lambda < \varepsilon) \rightarrow  $ $ (\beta = 0)$ \\ $(\lambda > \varepsilon) \rightarrow  $ $ (\beta = 1)$
+\newpage
+\item 
+\begin{equation}
+(\lambda < \varepsilon) \rightarrow (\beta = 0)
+\end{equation}
+\begin{equation}
+(\lambda > \varepsilon) \rightarrow (\beta = 1)
+\end{equation}
 
-\item $ O_{EBD} = \lbrace \beta \mid \beta \in (0, $ $1) \rbrace$
+\item  
+\begin{equation}
+O_{EBD} = \lbrace \beta \mid \beta \in (0,1) \rbrace
+\end{equation}
 
 \end{enumerate}
 
-$\\ \rbrace$
+$\rbrace$
 \\
 
-\newpage
 \noindent
 $P_{SVM} $ $ (I_{SVM},$ $O_{SVM})$\\
 $\lbrace$
@@ -1298,14 +1324,31 @@ Here, \\
 
 \begin{enumerate}
 
-\item $RBF = e^{-\gamma(\mid x_{1}-x_{2} \mid)+c}$\\ \\where, \\ $\gamma =$ width of boundries of hyperplane, \\ $c =$ soft margin parameter, \\ $x_{1}, $ $x_{2} =$ support vectors.
+\item 
+\begin{equation}
+RBF = e^{-\gamma(\mid x_{1}-x_{2} \mid)+c}
+\end{equation}
+where, \\ $\gamma =$ width of boundries of hyperplane, \\ $c =$ soft margin parameter, \\ $x_{1}, $ $x_{2} =$ support vectors.
 
 
-\item $y = \overline{\omega} * x + b$\\ \\where, \\ $x =$ support vector, \\ $b =$ boundary width, \\ $\overline{\omega} =$ libsvm.w().
+\item
+\begin{equation}
+y = \overline{\omega} * x + b
+\end{equation}
+where, \\ $x =$ support vector, \\ $b =$ boundary width, \\ $\overline{\omega} =$ libsvm.w().
 
-\item $(y \leq -1) \rightarrow  $ $ (\alpha = 1)$ \\ $(y \geq 1) \rightarrow  $ $ (\alpha = 0)$
+\item
+\begin{equation}
+(y \leq -1) \rightarrow (\alpha = 1)
+\end{equation}
+\begin{equation}
+(y \geq 1) \rightarrow (\alpha = 0)
+\end{equation}
 
-\item $ O_{SVM} = \lbrace \alpha \mid \alpha \in (0, $ $1) \rbrace$
+\item
+\begin{equation}
+O_{SVM} = \lbrace \alpha \mid \alpha \in (0, 1) \rbrace
+\end{equation}
 
 \end{enumerate}
 
@@ -1313,10 +1356,15 @@ $\\ \rbrace$
 
 \SkipTocEntry\subsection{Output:}
 
-$O_{EBD} = \lbrace z \mid \exists z, $ $ z \in \beta \rbrace$ \\
-$O_{SVM} = \lbrace x \mid \exists x, $ $ x \in \alpha \rbrace$ \\
-\\
-$O_{system} = \lbrace O_{EBD} \cup O_{SVM} \rbrace$
+\begin{equation}
+O_{EBD} = \lbrace z \mid \exists z, z \in \beta \rbrace
+\end{equation}
+\begin{equation}
+O_{SVM} = \lbrace x \mid \exists x, x \in \alpha \rbrace
+\end{equation}
+\begin{equation}
+O_{system} = \lbrace O_{EBD} \cup O_{SVM} \rbrace
+\end{equation}
 
 \SkipTocEntry\subsection{Feasibility Study}
 To check the feasibility of Entropy Based Discretization and Support Vector Machine:
@@ -1325,19 +1373,22 @@ To check the feasibility of Entropy Based Discretization and Support Vector Mach
 Now, we will find the computational complexity for Support Vector Machines:\\
 For a training dataset D=\{$x_i$,$y_i$\} where, $x_i$ $\in$ $\Re$ and $y_i$ $\in$ \{+1,-1\}.\\
 The Support Vector Machine classifies with seperating hyperplane given by:\\
-\begin{center}
-D(x)=$w^T$x+b
-\end{center}
-The above equation is obtained by:\\
-\begin{center}
-L=$\frac{1}{2}$ $\emph{w}^2$ - $\sum_{}^{} \zeta_i$ \\
-\end{center}
+
+\begin{equation}
+D(x)=w^Tx+b
+\end{equation}
+
+The above equation is obtained by:
+\begin{equation}
+L=\frac{1}{2} \emph{w}^2 - \sum_{}^{} \zeta_i
+\end{equation}
+
 s.t. $y_i$($w^T$ $x_i$ + b) $\geq$ 1 - $\zeta_i$, $\zeta_i$ $>$ 0 for i=1,2,...,m \\
 \newline The problem is equivalent to the problem:\\
-\begin{center}
-Max L($\alpha$)= $\sum_{i=1}^{M} \alpha_i - \frac{1}{2} \sum_{i=1}^{m}\sum_{j=1}^{m} y_iy_j\alpha_i\alpha_jk(x_i,y_j)$ \\
+\begin{equation}
+Max L(\alpha)= \sum_{i=1}^{M} \alpha_i - \frac{1}{2} \sum_{i=1}^{m}\sum_{j=1}^{m} y_iy_j\alpha_i\alpha_jk(x_i,y_j)
+\end{equation}
 
-\end{center}
 where k($x_1$,$y_1$) is the Mercer's Kernel which is used for the 
 Dimensional reduction.\\
 \newline We will use the following four steps to prove the complexity of the SVM problem:
@@ -1352,11 +1403,17 @@ Construct a tranformation function from $\pi$' to $\pi$.
 Prove that the transformation function is polynomial.
 \end{enumerate}
 \begin{itemize}
+\newpage
 \item
 \textbf{The SVM Problem ($\pi$)}
 \newline For a set of kernels A=\{$k_1,k_2,...,k_n$\} the objective function can be written as:\\
-	C(A')=	\Big[$\sum_{k \in A'}^{}$\Big($\frac{1}{q}$\Big[$\sum_{i=1}^{m} \alpha_i - \frac{1}{2q^2} \sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk(x_i,x_j)\alpha_i\alpha_j\Big]\Big)^2- B\Big]^2$ \\
-\newline Where, we have to find a subset A' $\subseteq$ A of size q to minimize the cost. The cost function is used for reaching a bound B using set of Kernels, dataset and the Support Vectors.\\
+
+\begin{equation}
+C(A')=	\Big[\sum_{k \in A'}^{}\Big(\frac{1}{q}\Big[\sum_{i=1}^{m} \alpha_i - \frac{1}{2q^2} \sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk(x_i,x_j)\alpha_i\alpha_j\Big]\Big)^2- B\Big]^2
+\end{equation}	
+\newline 
+
+Where, we have to find a subset A' $\subseteq$ A of size q to minimize the cost. The cost function is used for reaching a bound B using set of Kernels, dataset and the Support Vectors.\\
 \item
 \textbf{SVM is in NP}
 \newline To justify that SVM is in NP, we have to show that any instance of the problem can be guessed and verified to solve or not in polynomial time.\\
@@ -1376,42 +1433,42 @@ Solve SVM for all k $\in$ A with dataset D.
 \item
 Use the kernel $k^*$ and the dataset D to find the most optimal solution for SVM denoted by $M^* = (V^*,k^*)$
 \item 
-Now, B can be calculated by:- \\
-\begin{center}
-$B = \Big[\sum_{i=1}^{m} \alpha_i - \frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk^*(x_i,x_j)\alpha_i,\alpha_j\Big]^2$
-\end{center} 
+Now, B can be calculated by:- 
+\begin{equation}
+B = \Big[\sum_{i=1}^{m} \alpha_i - \frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk^*(x_i,x_j)\alpha_i,\alpha_j\Big]^2
+\end{equation} 
 \item
 Finally we have to calculate the size function s(a)=s(k $\in$ A) which can be done by the formula:- \\
-\begin{center}
-s(k) = $\Big[\big(\frac{1}{q}\sum_{i=1}^{m}\alpha_i - \frac{1}{2q^2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk(x_i,x_j)\alpha_i\alpha_j\Big)\Big]^2$ \\
-\end{center}
+\begin{equation}
+s(k) = \Big[\big(\frac{1}{q}\sum_{i=1}^{m}\alpha_i - \frac{1}{2q^2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk(x_i,x_j)\alpha_i\alpha_j\Big)\Big]^2
+\end{equation}
 Where, s(k) is the value of the objective function. 
 \end{enumerate} 
 Now, we know that $\sum_{k \in A}^{}s(k)=B$ when $k^*(x_i,x_j)=\frac{1}{q^2}\sum_{k \in A'}^{},(k_i,k_j)$ \\
 This can be written in the form: \\
-\begin{center}
-$\Big[\sum_{k \in A'}^{}\Big(\frac{1}{q}\sum_{i=1}^{m}\alpha_i - \frac{1}{2q^2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk(x_i,x_j)\alpha_i\alpha_j\Big) \Big]^2 = \Big[\sum_{i=1}^{m} \alpha_i - \frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk^*(x_i,x_j)\alpha_i\alpha_j\Big]^2$ \\
-\end{center}
+\begin{equation}
+\Big[\sum_{k \in A'}^{}\Big(\frac{1}{q}\sum_{i=1}^{m}\alpha_i - \frac{1}{2q^2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk(x_i,x_j)\alpha_i\alpha_j\Big) \Big]^2 = \Big[\sum_{i=1}^{m} \alpha_i - \frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk^*(x_i,x_j)\alpha_i\alpha_j\Big]^2
+\end{equation}
 Taking squared-root and using summation property, \\
-\begin{center}
-$\sum_{k \in A'}\Big(\frac{1}{q}\sum_{i=1}^{m}\alpha_i\Big)+\sum_{k \in A'}^{}\Big[-\frac{1}{2q^2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk(x_i,x_j)\alpha_i\alpha_j\Big] = \sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk^*(x_i,x_j)\alpha_i\alpha_j$ \\
-\end{center}
+\begin{equation}
+\sum_{k \in A'}\Big(\frac{1}{q}\sum_{i=1}^{m}\alpha_i\Big)+\sum_{k \in A'}^{}\Big[-\frac{1}{2q^2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk(x_i,x_j)\alpha_i\alpha_j\Big] = \sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk^*(x_i,x_j)\alpha_i\alpha_j
+\end{equation}
 Simplifying the equation,
-\begin{center}
-$\sum_{k \in A'}\Big[\frac{1}{q^2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk(x_i,x_j)\alpha_i\alpha_j\Big] = \sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk^*(x_i,x_j)\alpha_i\alpha_j$
-\end{center}
+\begin{equation}
+\sum_{k \in A'}\Big[\frac{1}{q^2}\sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk(x_i,x_j)\alpha_i\alpha_j\Big] = \sum_{i=1}^{m}\sum_{j=1}^{m}y_iy_jk^*(x_i,x_j)\alpha_i\alpha_j
+\end{equation}
 Substituting $\Delta_{i,j}$ = $y_iy_j\alpha_i\alpha_j$ for simplification purpose \\
-\begin{center}
-$\sum_{k \in A'}\Big[\frac{1}{q^2}\sum_{i=1}^{m}\sum_{j=1}^{m}\Delta_{i,j}k(x_i,x_j)\Big] = \sum_{i=1}^{m}\sum_{j=1}^{m}\Delta_{i,j}k^*(x_i,x_j)$
-\end{center}
+\begin{equation}
+\sum_{k \in A'}\Big[\frac{1}{q^2}\sum_{i=1}^{m}\sum_{j=1}^{m}\Delta_{i,j}k(x_i,x_j)\Big] = \sum_{i=1}^{m}\sum_{j=1}^{m}\Delta_{i,j}k^*(x_i,x_j)
+\end{equation}
 Cancelling common terms,
-\begin{center}
-$\frac{1}{q^2}\sum_{k \in A'}{}k(x_i,x_j)=k^*(x_i,x_j)$
-\end{center}
+\begin{equation}
+\frac{1}{q^2}\sum_{k \in A'}{}k(x_i,x_j)=k^*(x_i,x_j)
+\end{equation}
 Thus, 
-\begin{center}
-$\sum_{k \in A'}s(k) = B \leftrightarrow k^*(x_i,x_j) = \frac{1}{q^2}\sum_{k \in A'}k(x_i,x_j)$
-\end{center}
+\begin{equation}
+\sum_{k \in A'}s(k) = B \leftrightarrow k^*(x_i,x_j) = \frac{1}{q^2}\sum_{k \in A'}k(x_i,x_j)
+\end{equation}
 This implies that the transformed subset problem is equivalent to SVM classification using an optimum kernel. Thus, for every instance of (\emph{I')} if the answer is "yes" the answer can be mapped for the instance  of (\emph{I}). \\
 \item
 \textbf{$\mathcal{F}$ is a polynomial Transformation}
