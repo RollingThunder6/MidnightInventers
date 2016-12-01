@@ -1,2 +1,20 @@
 \beamer@endinputifotherversion {3.36pt}
 \select@language {english}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Problem Statement}{4}{0}{2}
+\beamer@sectionintoc {3}{Motivation}{5}{0}{3}
+\beamer@sectionintoc {4}{Objective}{6}{0}{4}
+\beamer@sectionintoc {5}{Scope}{7}{0}{5}
+\beamer@sectionintoc {6}{Literature Survey}{8}{0}{6}
+\beamer@sectionintoc {7}{Architecture Diagram}{9}{0}{7}
+\beamer@sectionintoc {8}{UML Diagrams}{10}{0}{8}
+\beamer@sectionintoc {9}{Mathematical Model}{12}{0}{9}
+\beamer@sectionintoc {10}{Algorithmic Strategies}{14}{0}{10}
+\beamer@sectionintoc {11}{Software Specifications}{15}{0}{11}
+\beamer@sectionintoc {12}{Hardware Specifications}{16}{0}{12}
+\beamer@sectionintoc {13}{Dataset Specifications}{17}{0}{13}
+\beamer@sectionintoc {14}{Test Cases}{18}{0}{14}
+\beamer@sectionintoc {15}{Results of Entropy Based Discretization}{19}{0}{15}
+\beamer@sectionintoc {16}{Results of SVM based Method}{20}{0}{16}
+\beamer@sectionintoc {17}{Conclusion}{21}{0}{17}
+\beamer@sectionintoc {18}{References}{22}{0}{18}
