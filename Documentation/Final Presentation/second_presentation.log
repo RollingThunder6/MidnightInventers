@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.30)  1 DEC 2016 16:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.30)  1 DEC 2016 23:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1263,7 +1263,7 @@ File: Images/logo.png Graphic file (type png)
 Package pdftex.def Info: Images/logo.png used on input line 42.
 (pdftex.def)             Requested size: 78.2392pt x 82.51334pt.
 
-Overfull \vbox (13.52783pt too high) detected at line 42
+Overfull \vbox (5.33339pt too high) detected at line 42
  []
 
 
@@ -1276,7 +1276,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (./second_presentation.toc) [2
 
 ]
-<Images/SdnArchitecture.png, id=79, 471.7625pt x 418.56375pt>
+<Images/SdnArchitecture.png, id=78, 471.7625pt x 418.56375pt>
 File: Images/SdnArchitecture.png Graphic file (type png)
 
 <use Images/SdnArchitecture.png>
@@ -1429,7 +1429,7 @@ Underfull \hbox (badness 3826) in paragraph at lines 294--294
 
 [8
 
-] <Images/myarch.png, id=112, 737.75626pt x 474.77374pt>
+] <Images/myarch.png, id=111, 737.75626pt x 474.77374pt>
 File: Images/myarch.png Graphic file (type png)
 
 <use Images/myarch.png>
@@ -1438,7 +1438,7 @@ Package pdftex.def Info: Images/myarch.png used on input line 305.
  [9
 
  <./Images/myarch.png>]
-<Images/use_case.png, id=120, 558.085pt x 436.63126pt>
+<Images/use_case.png, id=119, 558.085pt x 436.63126pt>
 File: Images/use_case.png Graphic file (type png)
 
 <use Images/use_case.png>
@@ -1447,7 +1447,7 @@ Package pdftex.def Info: Images/use_case.png used on input line 315.
  [10
 
  <./Images/use_case.png>]
-<Images/sequence.png, id=127, 700.6175pt x 541.02126pt>
+<Images/sequence.png, id=126, 700.6175pt x 541.02126pt>
 File: Images/sequence.png Graphic file (type png)
 
 <use Images/sequence.png>
@@ -1460,7 +1460,7 @@ Package pdftex.def Info: Images/sequence.png used on input line 323.
 ] [13
 
 ]
-<Images/SVM.png, id=151, 619.31375pt x 516.93124pt>
+<Images/SVM.png, id=150, 619.31375pt x 516.93124pt>
 File: Images/SVM.png Graphic file (type png)
  <use Images/SVM.png>
 Package pdftex.def Info: Images/SVM.png used on input line 397.
@@ -1468,7 +1468,7 @@ Package pdftex.def Info: Images/SVM.png used on input line 397.
 
 [14
 
- <./Images/SVM.png>] <Images/EBD.png, id=158, 659.46375pt x 686.565pt>
+ <./Images/SVM.png>] <Images/EBD.png, id=157, 659.46375pt x 686.565pt>
 File: Images/EBD.png Graphic file (type png)
 
 <use Images/EBD.png>
@@ -1538,7 +1538,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 606--606
 []|\OT1/cmss/bx/n/7 Attack
  []
 
-<Images/Entropy.png, id=189, 691.58376pt x 462.72874pt>
+<Images/Entropy.png, id=188, 691.58376pt x 462.72874pt>
 File: Images/Entropy.png Graphic file (type png)
 
 <use Images/Entropy.png>
@@ -1550,7 +1550,7 @@ Overfull \vbox (19.64305pt too high) detected at line 606
 
 [20
 
- <./Images/Entropy.png>] <Images/svm.png, id=195, 410.53375pt x 299.1175pt>
+ <./Images/Entropy.png>] <Images/svm.png, id=194, 410.53375pt x 299.1175pt>
 File: Images/svm.png Graphic file (type png)
 
 <use Images/svm.png>
@@ -1595,7 +1595,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 698.
 Here is how much of TeX's memory you used:
  17589 strings out of 494910
  332108 string characters out of 6179836
- 413830 words of memory out of 5000000
+ 413828 words of memory out of 5000000
  20376 multiletter control sequences out of 15000+600000
  12141 words of font info for 45 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1603,19 +1603,18 @@ Here is how much of TeX's memory you used:
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy8.pfb>
-Output written on second_presentation.pdf (24 pages, 504462 bytes).
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb>
+Output written on second_presentation.pdf (24 pages, 495789 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
+ 269 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
  68 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
