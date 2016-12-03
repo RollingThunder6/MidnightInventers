@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.30)  1 DEC 2016 23:44
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  1 DEC 2016 20:23
->>>>>>> 89ca65532e1e90638b68d19c68ee70e2537795cb
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.30)  2 DEC 2016 08:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1467,19 +1463,29 @@ Package pdftex.def Info: Images/sequence.png used on input line 323.
 <Images/SVM.png, id=150, 619.31375pt x 516.93124pt>
 File: Images/SVM.png Graphic file (type png)
  <use Images/SVM.png>
-Package pdftex.def Info: Images/SVM.png used on input line 397.
-(pdftex.def)             Requested size: 185.79555pt x 155.08057pt.
+Package pdftex.def Info: Images/SVM.png used on input line 400.
+(pdftex.def)             Requested size: 154.82805pt x 129.23248pt.
+
+<Images/SVM_Image.png, id=151, 339.2675pt x 326.21875pt>
+File: Images/SVM_Image.png Graphic file (type png)
+
+<use Images/SVM_Image.png>
+Package pdftex.def Info: Images/SVM_Image.png used on input line 400.
+(pdftex.def)             Requested size: 57.6747pt x 55.45645pt.
+
+Overfull \vbox (14.7424pt too high) detected at line 400
+ []
 
 [14
 
- <./Images/SVM.png>] <Images/EBD.png, id=157, 659.46375pt x 686.565pt>
+ <./Images/SVM.png> <./Images/SVM_Image.png>]
+<Images/EBD.png, id=159, 659.46375pt x 686.565pt>
 File: Images/EBD.png Graphic file (type png)
-
-<use Images/EBD.png>
-Package pdftex.def Info: Images/EBD.png used on input line 407.
+ <use Images/EBD.png>
+Package pdftex.def Info: Images/EBD.png used on input line 410.
 (pdftex.def)             Requested size: 197.84064pt x 205.97108pt.
 
-Overfull \vbox (7.27455pt too high) detected at line 407
+Overfull \vbox (7.27455pt too high) detected at line 410
  []
 
 [15
@@ -1491,77 +1497,77 @@ Overfull \vbox (7.27455pt too high) detected at line 407
 ] [18
 
 ]
-Underfull \hbox (badness 5105) in paragraph at lines 558--558
+Underfull \hbox (badness 5105) in paragraph at lines 561--561
 []|\OT1/cmss/m/n/8 Attack has oc-
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 558--558
+Underfull \hbox (badness 1735) in paragraph at lines 561--561
 []|\OT1/cmss/m/n/8 Instantaneous alert
  []
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 558--558
+Underfull \hbox (badness 1314) in paragraph at lines 561--561
 []|\OT1/cmss/m/n/8 SDN func-tion-ing
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 558--558
+Underfull \hbox (badness 1043) in paragraph at lines 561--561
 []|\OT1/cmss/m/n/8 Varying DDoS at-tack band-
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 558--558
+Underfull \hbox (badness 3601) in paragraph at lines 561--561
 []|\OT1/cmss/m/n/8 Large no. of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--558
+Underfull \hbox (badness 10000) in paragraph at lines 561--561
 \OT1/cmss/m/n/8 be de-tected only
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--558
+Underfull \hbox (badness 10000) in paragraph at lines 561--561
 \OT1/cmss/m/n/8 when band-width
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--558
+Underfull \hbox (badness 10000) in paragraph at lines 561--561
 \OT1/cmss/m/n/8 ex-ceeds nor-mal
  []
 
 [19
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 606--606
+Underfull \hbox (badness 10000) in paragraph at lines 609--609
 []|\OT1/cmss/bx/n/7 Average Traf-fic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 606--606
+Underfull \hbox (badness 10000) in paragraph at lines 609--609
 []|\OT1/cmss/bx/n/7 Attack
  []
 
-<Images/Entropy.png, id=188, 691.58376pt x 462.72874pt>
+<Images/Entropy.png, id=190, 691.58376pt x 462.72874pt>
 File: Images/Entropy.png Graphic file (type png)
 
 <use Images/Entropy.png>
-Package pdftex.def Info: Images/Entropy.png used on input line 606.
+Package pdftex.def Info: Images/Entropy.png used on input line 609.
 (pdftex.def)             Requested size: 138.3143pt x 92.5441pt.
 
-Overfull \vbox (19.64305pt too high) detected at line 606
+Overfull \vbox (19.64305pt too high) detected at line 609
  []
 
 [20
 
- <./Images/Entropy.png>] <Images/svm.png, id=194, 410.53375pt x 299.1175pt>
+ <./Images/Entropy.png>] <Images/svm.png, id=196, 410.53375pt x 299.1175pt>
 File: Images/svm.png Graphic file (type png)
 
 <use Images/svm.png>
-Package pdftex.def Info: Images/svm.png used on input line 654.
+Package pdftex.def Info: Images/svm.png used on input line 657.
 (pdftex.def)             Requested size: 143.68896pt x 104.69269pt.
 
-Overfull \vbox (4.25175pt too high) detected at line 654
+Overfull \vbox (4.25175pt too high) detected at line 657
  []
 
 [21
@@ -1582,11 +1588,11 @@ Overfull \vbox (4.25175pt too high) detected at line 654
 \tf@snm=\write8
 \openout8 = `second_presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 698.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 698.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 701.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 701.
  (./second_presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 698.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 698.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 701.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 701.
 Package rerunfilecheck Info: File `second_presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1594,20 +1600,19 @@ Package rerunfilecheck Info: File `second_presentation.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 698.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 701.
  ) 
 Here is how much of TeX's memory you used:
- 17589 strings out of 494910
- 332108 string characters out of 6179836
+ 17594 strings out of 494910
+ 332220 string characters out of 6179836
  413828 words of memory out of 5000000
- 20376 multiletter control sequences out of 15000+600000
+ 20380 multiletter control sequences out of 15000+600000
  12141 words of font info for 45 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  48i,11n,59p,416b,620s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/te
-<<<<<<< HEAD
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fo
@@ -1616,22 +1621,10 @@ e1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb>
-Output written on second_presentation.pdf (24 pages, 495789 bytes).
-=======
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy8.pfb>
-Output written on second_presentation.pdf (24 pages, 505485 bytes).
->>>>>>> 89ca65532e1e90638b68d19c68ee70e2537795cb
+Output written on second_presentation.pdf (24 pages, 510250 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
+ 271 PDF objects out of 1000 (max. 8388607)
  202 compressed objects within 3 object streams
  68 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
 
