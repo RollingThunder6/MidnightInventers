@@ -8,8 +8,12 @@ Author - Midnight Inventers
 # switch_ip = ["10.0.0.1", "10.0.0.2"]
 
 fh = open("dummy.txt")
+
 i = 0
 flows = []
+rp_local = []
+N = []
+
 for line in fh:
 	if i != 0:
 		line = line.strip().split(",")
@@ -20,14 +24,22 @@ for line in fh:
 
 		# [ Adding rp_local to flow entry depending on whether host is present or not ]
 		# if src_ip[1] in switch_ip and dst_ip[1] in switch_ip:	
-		# 	line.append(0)
+		# 	rp_local.append(0)
 		# else:
-		# 	line.append(-1)
+		# 	rp_local.append(-1)
 
-		# [ rp_local attribute added to flow entry without checking ]
-		line.append(0)
+		# [ rp_local attribute added without checking ]
+		rp_local.append(0)
 		flows.append(line)
 	i = i + 1
 
+# packet count calculation for delta_t
+i = 0
 for flow in flows:
-	print(flow)
+	received_packets = flow[3].split("=")
+	received_packets = int(received_packets[1])
+
+	num_packets = received_packets - rp_local[i]
+	rp_local[i] = received_packets
+	i = i + 1
+	N.append(num_packets)
