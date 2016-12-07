@@ -110,7 +110,7 @@ def main():
 				i = i + 1
 				N.append(num_packets)
 
-			print(hash_flows)
+			# print(hash_flows)
 
 		program_counter = program_counter + 1
 
