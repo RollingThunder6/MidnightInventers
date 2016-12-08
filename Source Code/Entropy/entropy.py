@@ -156,7 +156,11 @@ def main():
 				entropy = entropy + (-(probability_val * log(probability_val, 2)))
 
 			# [ Normalising entropy ]
-			entropy = entropy / (log(N.__len__()))
+			try:
+				entropy = entropy / (log(N.__len__()))
+			except ValueError as e:
+				print("Value Error generated. Application continued without halt.")
+
 			prev_entropy.append(entropy)
 
 			# [ Detection of DDoS ]
