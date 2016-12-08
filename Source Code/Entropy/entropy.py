@@ -4,8 +4,9 @@ Entropy based Discretization
 Author - Midnight Inventers
 """
 
-import time
-import math
+from time import sleep
+from math import log, sqrt
+from os import system
 
 # [ Static initialisation of hosts connected directly to switch ]
 # switch_ip = ["10.0.0.1", "10.0.0.2"]
@@ -18,6 +19,7 @@ hash_flows = {}
 def hash_function():
 	global hash_flows	
 
+	system("")
 	fh = open("dummy.txt")
 
 	if hash_flows == {}:
@@ -73,14 +75,9 @@ def hash_function():
 					received_packets = flow_entry[3].split("=")
 					received_packets = int(received_packets[1])
 					hash_flows[val][3] = "n_packets="+str(received_packets)
-
-					print("Matched entry")
 				else:
 					flow_entry.append(0)
 					hash_flows[val] = flow_entry
-
-					print("Unmatched entry")
-
 			i = i + 1	
 
 	fh.close()	
@@ -133,7 +130,6 @@ def main():
 				hash_flows[hash_value].insert(hash_flows[hash_value].__len__(), rp_local)
 
 				N[hash_value] = num_packets
-				print(N)
 				
 			# [ Clubbing similar keys into a single unit ]
 			for hash_value, packet_count in N.items():
@@ -144,7 +140,6 @@ def main():
 				else:
 					X[club_key] = packet_count
 				total_packet_count = total_packet_count + X[club_key]
-				print(X)
 
 			# [ Calculating entropy ]
 			for club_key, club_value in X.items():
@@ -153,10 +148,10 @@ def main():
 				except ZeroDivisionError as e:
 					probability_val = 1
 				
-				entropy = entropy + (-(probability_val * math.log(probability_val, 2)))
+				entropy = entropy + (-(probability_val * log(probability_val, 2)))
 
 			# [ Normalising entropy ]
-			entropy = entropy / (math.log(N.__len__()))
+			entropy = entropy / (log(N.__len__()))
 			prev_entropy.append(entropy)
 
 			# [ Detection of DDoS ]
@@ -183,12 +178,11 @@ def main():
 				# [ Calculating standard deviation ]
 				for entropy_index in range(0,prev_entropy.__len__()):
 					deviation_sum = deviation_sum + ((prev_entropy[entropy_index] - standard_entropy) ** 2)
-					deviation = math.sqrt(deviation_sum/prev_entropy.__len__())
+					deviation = sqrt(deviation_sum/prev_entropy.__len__())
 					threshold = deviation * multiplication_factor
 
 		# [ Waiting for delta_t time ]
-		print("sleeping for", delta_t,"seconds")
-		time.sleep(delta_t)
+		sleep(delta_t)
 		program_counter = program_counter + 1
 
 if __name__ == '__main__':
