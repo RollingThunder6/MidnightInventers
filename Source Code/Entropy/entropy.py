@@ -19,11 +19,17 @@ hash_flows = {}
 def hash_function():
 	global hash_flows	
 
-	system("")
-	fh = open("dummy.txt")
+	system("sudo ovs-ofctl dump-flows tcp:127.0.0.1:6634 > dummy.txt")
+	try:
+		fh = open("dummy.txt")
+	except FileNotFoundError as e:
+		print("Flow table file not found. Exiting application with code -1")
+		exit(-1)
 
 	if hash_flows == {}:
 		i = 0
+		if fh.closed:
+			pass
 		for flow_entry in fh:
 			if i != 0:
 				flow_entry = flow_entry.strip().split(",")
@@ -79,7 +85,6 @@ def hash_function():
 					flow_entry.append(0)
 					hash_flows[val] = flow_entry
 			i = i + 1	
-
 	fh.close()	
 
 def main():
