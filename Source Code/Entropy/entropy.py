@@ -153,7 +153,10 @@ def main():
 				except ZeroDivisionError as e:
 					probability_val = 1
 				
-				entropy = entropy + (-(probability_val * log(probability_val, 2)))
+				try:
+					entropy = entropy + (-(probability_val * log(probability_val, 2)))					
+				except ValueError as e:
+					print("-1")
 
 			# [ Normalising entropy ]
 			try:
@@ -190,7 +193,28 @@ def main():
 					deviation = sqrt(deviation_sum/prev_entropy.__len__())
 					threshold = deviation * multiplication_factor
 
+	
+			print("Previos Entropy values :- ")
+			print(prev_entropy)
+
+			print("")
+			print("Program Counter :- ")
+			print(program_counter)
+
+			print("")
+			print("Entropy value :- ")
+			print(entropy)
+
+			print("")
+			print("X Dictionary :- ")
+			print(X)
+
+			print("")
+			print("N Dictionary :- ")
+			print(N)
+
 		# [ Waiting for delta_t time ]
+		print("Sleeping - 2s")
 		sleep(delta_t)
 		program_counter = program_counter + 1
 
