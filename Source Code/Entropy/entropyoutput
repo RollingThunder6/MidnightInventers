@@ -1,0 +1,514 @@
+Previos Entropy values :- 
+[0]
+
+Program Counter :- 
+1
+
+Entropy value :- 
+0
+
+X Dictionary :- 
+{}
+
+N Dictionary :- 
+{}
+Sleeping - 2s
+Value Error generated. Application continued without halt.
+Previos Entropy values :- 
+[0, 0]
+
+Program Counter :- 
+2
+
+Entropy value :- 
+0
+
+X Dictionary :- 
+{}
+
+N Dictionary :- 
+{}
+Sleeping - 2s
+Value Error generated. Application continued without halt.
+Previos Entropy values :- 
+[0, 0, 0]
+
+Program Counter :- 
+3
+
+Entropy value :- 
+0
+
+X Dictionary :- 
+{}
+
+N Dictionary :- 
+{}
+Sleeping - 2s
+^CTraceback (most recent call last):
+  File "entropy.py", line 222, in <module>
+    main()
+  File "entropy.py", line 218, in main
+    sleep(delta_t)
+KeyboardInterrupt
+mininet@mininet-vm:~$ 
+mininet@mininet-vm:~$ python3 entropy.py 
+Sleeping - 2s
+Value Error generated. Application continued without halt.
+Previos Entropy values :- 
+[0]
+
+Program Counter :- 
+1
+
+Entropy value :- 
+0
+
+X Dictionary :- 
+{}
+
+N Dictionary :- 
+{}
+Sleeping - 2s
+Previos Entropy values :- 
+[0, 1.4426950408889632]
+
+Program Counter :- 
+2
+
+Entropy value :- 
+1.4426950408889632
+
+X Dictionary :- 
+{'10001arp': 1, '10001icmp': 1, '10002icmp': 1}
+
+N Dictionary :- 
+{'10002/10001arp': 1, '10002/10001icmp': 1, '10001/10002icmp': 1}
+Sleeping - 2s
+-1
+Previos Entropy values :- 
+[0, 1.4426950408889632, 0.9102392266268373]
+
+Program Counter :- 
+3
+
+Entropy value :- 
+0.9102392266268373
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 1, '10002icmp': 1}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 1, '10001/10002icmp': 1}
+Sleeping - 2s
+Previos Entropy values :- 
+[0, 1.4426950408889632, 0.9102392266268373, 0.0]
+
+Program Counter :- 
+4
+
+Entropy value :- 
+0.0
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 0, '10002icmp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 0, '10001/10002icmp': 0}
+Sleeping - 2s
+-1
+-1
+-1
+Previos Entropy values :- 
+[0, 1.4426950408889632, 0.9102392266268373, 0.0, 0.0]
+
+Program Counter :- 
+5
+
+Entropy value :- 
+0.0
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 0, '10002icmp': 0, '10002arp': 1}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 0, '10001/10002arp': 1, '10001/10002icmp': 0}
+Sleeping - 2s
+Previos Entropy values :- 
+[1.4426950408889632, 0.9102392266268373, 0.0, 0.0, 0.0]
+
+Program Counter :- 
+6
+
+Entropy value :- 
+0.0
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 0, '10002icmp': 0, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 0, '10001/10002arp': 0, '10001/10002icmp': 0}
+Sleeping - 2s
+Previos Entropy values :- 
+[0.9102392266268373, 0.0, 0.0, 0.0, 0.0]
+
+Program Counter :- 
+7
+
+Entropy value :- 
+0.0
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 0, '10002icmp': 0, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 0, '10001/10002arp': 0, '10001/10002icmp': 0}
+Sleeping - 2s
+Previos Entropy values :- 
+[0.0, 0.0, 0.0, 0.0, 0.0]
+
+Program Counter :- 
+8
+
+Entropy value :- 
+0.0
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 0, '10002icmp': 0, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 0, '10001/10002arp': 0, '10001/10002icmp': 0}
+Sleeping - 2s
+-1
+-1
+Previos Entropy values :- 
+[0.0, 0.0, 0.0, 0.0, 0.7213475204444817]
+
+Program Counter :- 
+9
+
+Entropy value :- 
+0.7213475204444817
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 1, '10002icmp': 1, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 1, '10001/10002arp': 0, '10001/10002icmp': 1}
+Sleeping - 2s
+-1
+-1
+Previos Entropy values :- 
+[0.0, 0.0, 0.0, 0.7213475204444817, 0.7213475204444817]
+
+Program Counter :- 
+10
+
+Entropy value :- 
+0.7213475204444817
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 2, '10002icmp': 2, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 2, '10001/10002arp': 0, '10001/10002icmp': 2}
+Sleeping - 2s
+-1
+-1
+Previos Entropy values :- 
+[0.0, 0.0, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817]
+
+Program Counter :- 
+11
+
+Entropy value :- 
+0.7213475204444817
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 2, '10002icmp': 2, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 2, '10001/10002arp': 0, '10001/10002icmp': 2}
+Sleeping - 2s
+-1
+-1
+Previos Entropy values :- 
+[0.0, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817]
+
+Program Counter :- 
+12
+
+Entropy value :- 
+0.7213475204444817
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 2, '10002icmp': 2, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 2, '10001/10002arp': 0, '10001/10002icmp': 2}
+Sleeping - 2s
+-1
+-1
+Previos Entropy values :- 
+[0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817]
+
+Program Counter :- 
+13
+
+Entropy value :- 
+0.7213475204444817
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 2, '10002icmp': 2, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 2, '10001/10002arp': 0, '10001/10002icmp': 2}
+Sleeping - 2s
+-1
+-1
+Previos Entropy values :- 
+[0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817]
+
+Program Counter :- 
+14
+
+Entropy value :- 
+0.7213475204444817
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 2, '10002icmp': 2, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 2, '10001/10002arp': 0, '10001/10002icmp': 2}
+Sleeping - 2s
+-1
+-1
+Previos Entropy values :- 
+[0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817]
+
+Program Counter :- 
+15
+
+Entropy value :- 
+0.7213475204444817
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 2, '10002icmp': 2, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 2, '10001/10002arp': 0, '10001/10002icmp': 2}
+Sleeping - 2s
+-1
+-1
+Previos Entropy values :- 
+[0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817]
+
+Program Counter :- 
+16
+
+Entropy value :- 
+0.7213475204444817
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 2, '10002icmp': 2, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 2, '10001/10002arp': 0, '10001/10002icmp': 2}
+Sleeping - 2s
+-1
+-1
+Previos Entropy values :- 
+[0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817]
+
+Program Counter :- 
+17
+
+Entropy value :- 
+0.7213475204444817
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 2, '10002icmp': 2, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 2, '10001/10002arp': 0, '10001/10002icmp': 2}
+Sleeping - 2s
+Previos Entropy values :- 
+[0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 1.383757943374185]
+
+Program Counter :- 
+18
+
+Entropy value :- 
+1.383757943374185
+
+X Dictionary :- 
+{'10001arp': 1, '10001icmp': 2, '10002icmp': 2, '10002arp': 1}
+
+N Dictionary :- 
+{'10002/10001arp': 1, '10002/10001icmp': 2, '10001/10002arp': 1, '10001/10002icmp': 2}
+Sleeping - 2s
+-1
+-1
+Previos Entropy values :- 
+[0.7213475204444817, 0.7213475204444817, 0.7213475204444817, 1.383757943374185, 0.7213475204444817]
+
+Program Counter :- 
+19
+
+Entropy value :- 
+0.7213475204444817
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 1, '10002icmp': 1, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 1, '10001/10002arp': 0, '10001/10002icmp': 1}
+Sleeping - 2s
+Previos Entropy values :- 
+[0.7213475204444817, 0.7213475204444817, 1.383757943374185, 0.7213475204444817, 0.0]
+
+Program Counter :- 
+20
+
+Entropy value :- 
+0.0
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 0, '10002icmp': 0, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 0, '10001/10002arp': 0, '10001/10002icmp': 0}
+Sleeping - 2s
+Previos Entropy values :- 
+[0.7213475204444817, 1.383757943374185, 0.7213475204444817, 0.0, 0.0]
+
+Program Counter :- 
+21
+
+Entropy value :- 
+0.0
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 0, '10002icmp': 0, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 0, '10001/10002arp': 0, '10001/10002icmp': 0}
+Sleeping - 2s
+DDoS detected
+Previos Entropy values :- 
+[1.383757943374185, 0.7213475204444817, 0.0, 0.0, 0.0]
+
+Program Counter :- 
+22
+
+Entropy value :- 
+0.0
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 0, '10002icmp': 0, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 0, '10001/10002arp': 0, '10001/10002icmp': 0}
+Sleeping - 2s
+Previos Entropy values :- 
+[0.7213475204444817, 0.0, 0.0, 0.0, 0.0]
+
+Program Counter :- 
+23
+
+Entropy value :- 
+0.0
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 0, '10002icmp': 0, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 0, '10001/10002arp': 0, '10001/10002icmp': 0}
+Sleeping - 2s
+Previos Entropy values :- 
+[0.0, 0.0, 0.0, 0.0, 0.0]
+
+Program Counter :- 
+24
+
+Entropy value :- 
+0.0
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 0, '10002icmp': 0, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 0, '10001/10002arp': 0, '10001/10002icmp': 0}
+Sleeping - 2s
+-1
+-1
+Previos Entropy values :- 
+[0.0, 0.0, 0.0, 0.0, 0.7213475204444817]
+
+Program Counter :- 
+25
+
+Entropy value :- 
+0.7213475204444817
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 31882, '10002icmp': 31882, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 31882, '10001/10002arp': 0, '10001/10002icmp': 31882}
+Sleeping - 2s
+-1
+-1
+Previos Entropy values :- 
+[0.0, 0.0, 0.0, 0.7213475204444817, 0.7213475204444817]
+
+Program Counter :- 
+26
+
+Entropy value :- 
+0.7213475204444817
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 38767, '10002icmp': 38767, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 38767, '10001/10002arp': 0, '10001/10002icmp': 38767}
+Sleeping - 2s
+Previos Entropy values :- 
+[0.0, 0.0, 0.7213475204444817, 0.7213475204444817, 0.0]
+
+Program Counter :- 
+27
+
+Entropy value :- 
+0.0
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 0, '10002icmp': 0, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 0, '10001/10002arp': 0, '10001/10002icmp': 0}
+Sleeping - 2s
+Previos Entropy values :- 
+[0.0, 0.7213475204444817, 0.7213475204444817, 0.0, 0.0]
+
+Program Counter :- 
+28
+
+Entropy value :- 
+0.0
+
+X Dictionary :- 
+{'10001arp': 0, '10001icmp': 0, '10002icmp': 0, '10002arp': 0}
+
+N Dictionary :- 
+{'10002/10001arp': 0, '10002/10001icmp': 0, '10001/10002arp': 0, '10001/10002icmp': 0}
+Sleeping - 2s
+^CTraceback (most recent call last):
+  File "entropy.py", line 222, in <module>
+    main()
+  File "entropy.py", line 218, in main
+    sleep(delta_t)
+KeyboardInterrupt
+mininet@mininet-vm:~$ 
+
