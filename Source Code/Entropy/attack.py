@@ -12,7 +12,7 @@ ether_pkt.src = "00:00:01:02:05:05"
 ether_pkt.display()
 
 ip_addr = []
-ans.summary(lambda(s,r): ip_addr.append(s.pdst))
+ans.summary(lambda(sender,receiver): ip_addr.append(sender.pdst))
 
 while True:
 	for ip in ip_addr:

@@ -28,8 +28,6 @@ def hash_function():
 
 	if hash_flows == {}:
 		i = 0
-		if fh.closed:
-			pass
 		for flow_entry in fh:
 			if i != 0:
 				flow_entry = flow_entry.strip().split(",")
