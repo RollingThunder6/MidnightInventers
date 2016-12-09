@@ -56,6 +56,7 @@ def hash_function():
 				# 	rp_local.append(-1)
 
 				# [ rp_local attribute added without checking ]
+				
 				flow_entry.append(0)
 				
 				hash_flows[val] = flow_entry		
@@ -103,10 +104,10 @@ def main():
 	ddos_detect_counter = 0
 	delta_t = 2
 	threshold = 0
-	standard_entropy = 0
+	standard_entropy = 0.5
 	alpha = [0.04, 0.11, 0.19, 0.28, 0.38]
 	deviation = 0
-	multiplication_factor = 0
+	multiplication_factor = 1
 
 	while True:
 		N = {}
@@ -154,15 +155,15 @@ def main():
 					probability_val = 1
 				
 				try:
-					entropy = entropy + (-(probability_val * log(probability_val, 2)))					
+					entropy = entropy + (-(probability_val * log(probability_val, 10)))					
 				except ValueError as e:
 					print("-1")
 
 			# [ Normalising entropy ]
 			try:
-				entropy = entropy / (log(N.__len__()))
-			except ValueError as e:
-				print("Value Error generated. Application continued without halt.")
+				entropy = entropy / (log(N.__len__(), 10))
+			except (ZeroDivisionError, ValueError) as e:
+				print("-2")
 
 			prev_entropy.append(entropy)
 
@@ -175,6 +176,7 @@ def main():
 
 				if ddos_detect_counter == m:
 					print("DDoS detected")
+				print("DDoS detect counter :- ", ddos_detect_counter)
 
 			# [ Standard entropy adaptation ]
 			if prev_entropy.__len__() > 5:
@@ -192,26 +194,6 @@ def main():
 					deviation_sum = deviation_sum + ((prev_entropy[entropy_index] - standard_entropy) ** 2)
 					deviation = sqrt(deviation_sum/prev_entropy.__len__())
 					threshold = deviation * multiplication_factor
-
-	
-			print("Previos Entropy values :- ")
-			print(prev_entropy)
-
-			print("")
-			print("Program Counter :- ")
-			print(program_counter)
-
-			print("")
-			print("Entropy value :- ")
-			print(entropy)
-
-			print("")
-			print("X Dictionary :- ")
-			print(X)
-
-			print("")
-			print("N Dictionary :- ")
-			print(N)
 
 		# [ Waiting for delta_t time ]
 		print("Sleeping - 2s")
