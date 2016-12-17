@@ -29,8 +29,8 @@ def input_details():
 	ether_pkt.src = "00:00:01:02:05:05"
 	ether_pkt.display()
 
-	payload = "X"*1450
-	ip_pkt = IP()/ICMP()/payload
+	payload = "X"*1460
+	ip_pkt = IP(proto=17)/UDP(len=104)/payload
 	# ip_pkt.dst = dst_ip
 	ip_pkt.dst = "172.16.0.86"
 

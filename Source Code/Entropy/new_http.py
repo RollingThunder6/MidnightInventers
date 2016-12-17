@@ -1,4 +1,3 @@
-import os, sys
 from multiprocessing import Pool, Process
 from scapy.all import *
 
