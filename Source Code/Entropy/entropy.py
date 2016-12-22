@@ -116,12 +116,6 @@ def main():
 		if program_counter != 0:
 			hash_function()
 
-			# [ Check key and values of hashed flow table ]
-			# for key, value in hash_flows.items():
-			# 	print(key)
-			# 	print(value)
-			# 	print()
-
 			for hash_value, flow in hash_flows.items():
 				received_packets = flow[3].split("=")
 				received_packets = int(received_packets[1])
@@ -174,7 +168,6 @@ def main():
 
 				if ddos_detect_counter == m:
 					print("DDoS detected")
-				print("DDoS detect counter :- ", ddos_detect_counter)
 
 			# [ Standard entropy adaptation ]
 			if prev_entropy.__len__() > 5:

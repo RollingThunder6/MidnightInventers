@@ -7,16 +7,20 @@ ip_addr = []
 send_packet= None
 
 def send_packets():
-	global send_packet
-	sendp(send_packet, count=1000, inter=0)
+	global ip_addr
+	global ip_pkt
+	global ether_pkt
+
+	for ip in ip_addr:
+		ip_pkt.src = ip
+		send_packet = ether_pkt/ip_pkt
+		sendp(send_packet, count=1000, inter=0)
 
 def input_details():
 	global ip_pkt
 	global ether_pkt
 	global ip_addr
-	global data
-	global send_packet
-
+	
 	# subnet_addr = raw_input("Enter subnet address (192.168.1.0/24) :- ")
 	# dst_ip = raw_input("Enter destination ip :- ")
 
@@ -33,10 +37,8 @@ def input_details():
 	ip_pkt = IP()/ICMP()/payload
 	# ip_pkt.dst = dst_ip
 	ip_pkt.dst = "172.16.0.86"
-
-	ip_pkt.src = ip_addr[0]
+	
 	# ip_pkt.src = "172.16.0.72"
-	send_packet = ether_pkt/ip_pkt
 
 def main():
 	input_details()

@@ -2,6 +2,8 @@
 Entropy based Discretization
 
 Author - Midnight Inventers
+
+Program for calculation of standard entropy values.
 """
 
 from time import sleep
