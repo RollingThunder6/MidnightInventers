@@ -1,0 +1,23 @@
+{% extends "header.html" %}
+
+{% block title %}
+	Devices
+{% endblock %}
+
+{% block page_content %}
+	<h4 class="h4">
+		List of Devices connected :- 
+	</h4>
+	<ul>
+		{% for line_count in range(resp.__len__()) %}
+		<li>
+			Device {{line_count + 1}} :-
+		</li>
+		<ul>
+			{% for key,value in resp[line_count].items() %}
+				<li>{{key}} : {{value}}</li>
+			{% endfor %}
+		</ul>
+		{% endfor %}			
+	</ul>
+{% endblock %}

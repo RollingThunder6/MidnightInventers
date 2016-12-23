@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+<link rel="shortcut-icon" type="image/x-icon" href="{{url_for('static', filename='images/image.ico')}}">
+<link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/image.ico')}}">
+{% endblock %}
+
+{% block title %}Midnight Inventers{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+				<span class="sr-only">Toggle Navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="{{url_for('index', _external=True)}}">
+				<strong>
+					Midnight Inventers	
+				</strong>
+			</a>
+		</div>
+
+		{% if name %}
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="{{url_for('devices', _external=True)}}">
+							Devices
+						</a>
+					</li>
+					<li>
+						<a href="{{url_for('switches', _external=True)}}">
+							Switches
+						</a>
+					</li>
+					<li>
+						<a href="{{url_for('links', _external=True)}}">
+							Links
+						</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="{{url_for('index', redirect=True)}}">
+							<span class="glyphicon glyphicon-log-out"></span>
+							<strong>
+								Logout
+							</strong>
+						</a>
+					</li>
+				</ul>
+			</div>
+		{% endif %}
+
+	</div>
+</nav>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+	{% for category, message in get_flashed_messages(with_categories=true) %}
+		{% if category == "success" %}
+			<div class="alert alert-success">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				{{ message }}
+			</div>
+		{% else %}
+			<div class="alert alert-danger">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				{{ message }}
+			</div>
+		{% endif %}
+	{% endfor %}
+
+	{% block page_content %}{% endblock %}
+</div>
+{% endblock %}
+
+
+

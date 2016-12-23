@@ -1,0 +1,36 @@
+{% block doc %}
+<!DOCTYPE html>
+<html>
+{% block html %}
+<head>
+	{% block head %}
+		{% block meta %}
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{% endblock %}
+
+		<title>{% block title %}{% endblock %}</title>
+
+		{% block styles %}
+			<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+		{% endblock %}
+	{% endblock %}
+</head>
+<body>
+{% block body %}
+	{% block navbar %}
+
+	{% endblock %}
+
+	{% block content %}
+
+	{% endblock %}
+
+	{% block scripts %}
+		<script type="text/javascript" src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>		
+	{% endblock %}
+{% endblock %}
+</body>
+{% endblock %}
+</html>
+{% endblock %}
