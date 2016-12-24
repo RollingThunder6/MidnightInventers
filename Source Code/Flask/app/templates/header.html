@@ -18,7 +18,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{{url_for('index', _external=True)}}">
+			<a class="navbar-brand" href="{{url_for('main.index', _external=True)}}">
 				<strong>
 					Midnight Inventers	
 				</strong>
@@ -29,17 +29,17 @@
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="{{url_for('devices', _external=True)}}">
+						<a href="{{url_for('main.devices', _external=True)}}">
 							Devices
 						</a>
 					</li>
 					<li>
-						<a href="{{url_for('switches', _external=True)}}">
+						<a href="{{url_for('main.switches', _external=True)}}">
 							Switches
 						</a>
 					</li>
 					<li>
-						<a href="{{url_for('links', _external=True)}}">
+						<a href="{{url_for('main.links', _external=True)}}">
 							Links
 						</a>
 					</li>
@@ -47,7 +47,7 @@
 
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a href="{{url_for('index', redirect=True)}}">
+						<a href="{{url_for('main.index', redirect=True)}}">
 							<span class="glyphicon glyphicon-log-out"></span>
 							<strong>
 								Logout
