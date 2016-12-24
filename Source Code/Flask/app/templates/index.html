@@ -8,18 +8,18 @@
 {% block page_content %}
 	<div class="page-header">
 		<h2 class="h2">
-			Hello, {% if name %}{{ name }}{% else %}Anonymous{% endif %}!
+			Midnight Inventers
 		</h2>
+		<h3 class="h3">
+			Web Interface for POX SDN Controller
+		</h3>
 	</div>
 
 	<h3 class="h3">
-		Midnight Inventers
+		{% if name %}Welcome, {{ name }}!{% else %}Anonymous Session{% endif %}
 	</h3>
-	<h4 class="h4">
-		Web Interface for POX SDN Controller
-	</h4>
-
-	<div class="container">
+	
+	{% if not name %}	
 		{{ wtf.quick_form(form) }}
-	</div>
+	{% endif %}
 {% endblock %}

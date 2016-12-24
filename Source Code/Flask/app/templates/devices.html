@@ -5,9 +5,11 @@
 {% endblock %}
 
 {% block page_content %}
-	<h4 class="h4">
-		List of Devices connected :- 
-	</h4>
+	<div class="page-header">
+		<h3 class="h3">
+			List of Devices connected :- 
+		</h3>
+	</div>
 	<ul>
 		{% for line_count in range(resp.__len__()) %}
 		<li>

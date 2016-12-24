@@ -47,11 +47,14 @@
 
 				<ul class="nav navbar-nav navbar-right">
 					<li>
+						<a href="{{url_for('main.credentials')}}">
+							Change Credentials
+						</a>
+					</li>
+					<li>
 						<a href="{{url_for('main.index', redirect=True)}}">
 							<span class="glyphicon glyphicon-log-out"></span>
-							<strong>
-								Logout
-							</strong>
+							Logout
 						</a>
 					</li>
 				</ul>
@@ -69,12 +72,12 @@
 		{% if category == "success" %}
 			<div class="alert alert-success">
 				<button type="button" class="close" data-dismiss="alert">&times;</button>
-				{{ message }}
+				<strong>{{ message }}</strong>
 			</div>
 		{% else %}
 			<div class="alert alert-danger">
 				<button type="button" class="close" data-dismiss="alert">&times;</button>
-				{{ message }}
+				<strong>{{ message }}</strong>
 			</div>
 		{% endif %}
 	{% endfor %}
