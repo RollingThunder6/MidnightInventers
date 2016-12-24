@@ -22,7 +22,6 @@ class NameForm(FlaskForm):
 	password = PasswordField('Password', validators=[Required()])
 	submit = SubmitField('Submit')
 
-
 # [ Application routes ]
 @app.route("/", methods=['GET', 'POST'])
 def index():
