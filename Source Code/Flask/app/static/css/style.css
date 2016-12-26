@@ -1,0 +1,18 @@
+.header{
+	display: block;
+	height: 30px;
+	font-size: 14px;
+}
+
+.device-number{
+	padding-right: 25%;
+}
+
+.content{
+	display: none;
+	height: 120px;
+}
+
+.click-dropdown-field{
+	cursor: pointer;
+}

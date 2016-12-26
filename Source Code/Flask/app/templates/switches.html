@@ -7,19 +7,40 @@
 {% block page_content %}
 	<div class="page-header">
 		<h3 class="h3">
-			List of Switches connected :- 
+			List of Switches connected :
 		</h3>
 	</div>
-	<ul>
-		{% for line_count in range(resp.__len__()) %}
-		<li>
-			Switch {{line_count + 1}} :-
-		</li>
-		<ul>
-			{% for key,value in resp[line_count].items() %}
-				<li>{{key}} : {{value}}</li>
+	<div class="table-responsive">
+		<table class="table table-hover">
+			{% for line_count in range(resp.__len__()) %}
+			<tr>
+				<td class="click-dropdown-field">
+					<div class="header">
+						<strong>
+							<span class="device-number">
+								Switch {{line_count + 1}} :
+							</span>
+
+							<span class="device-address">
+								Datapath Address : {{resp[line_count].dpid}}
+							</span>
+						</strong>
+					</div>
+
+					<div class="content">
+						{% for key,value in resp[line_count].items() %}
+							{{key}} : {{value}}
+							<br/>
+						{% endfor %}
+					</div>
+				</td>
+			</tr>
 			{% endfor %}
-		</ul>
-		{% endfor %}			
-	</ul>
+		</table>
+	</div>
+{% endblock %}
+
+{% block scripts %}
+	{{ super() }}
+	<script type="text/javascript" src="{{url_for('static', filename='js/switches.js')}}"></script>
 {% endblock %}
