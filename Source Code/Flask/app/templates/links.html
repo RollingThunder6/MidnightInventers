@@ -7,38 +7,174 @@
 {% block page_content %}
 	<div class="page-header">
 		<h3 class="h3">
-			Links Present :
+			Topology
 		</h3>
 	</div>
-	<div class="table-responsive">
-		<table class="table table-hover">
-			{% for line_count in range(resp.__len__()) %}
-			<tr>
-				<td class="click-dropdown-field">
-					<div class="header">
-						<strong>
-							<span class="device-number">
-								Link {{line_count + 1}}
-							</span>
-						</strong>
-					</div>
-
-					<div class="content">
-						{% for key,value in resp[line_count].items() %}
-							{{key}} : {{value}}
-							<br/>
-						{% endfor %}
-					</div>
-				</td>
-			</tr>
-			{% endfor %}
-		</table>
-	</div>
-
-{{switch_nodes}}
+	<svg width="960" height="500"></svg>
 {% endblock %}
 
 {% block scripts %}
 	{{ super() }}
 	<script type="text/javascript" src="{{url_for('static', filename='js/links.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='js/d3.min.js')}}"></script>
+
+	<script type="text/javascript">
+		var svg = d3.select("svg");
+		var width = +svg.attr("width");
+		var height = +svg.attr("height");
+
+		var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+		var simulation = d3.forceSimulation().force("link", d3.forceLink().id(function(d) { return d.id; }).distance(60)).force("charge", d3.forceManyBody()).force("center", d3.forceCenter(width / 2, height / 2));
+
+		d3.json("{{url_for('static', filename='json/topo.json')}}", function(error, graph) { 
+		if (error) throw error;
+
+		var link = svg.append("g")
+					.attr("class", "links")
+					.selectAll("line")
+					.data(graph.links)
+					.enter()
+					.append("line")
+					.attr("stroke-width", function(d) { 
+						return Math.sqrt(d.value); 
+					});
+
+		var node = svg.append("g")
+					.attr("class", "nodes")
+					.selectAll("circle")
+					.data(graph.nodes)
+					.enter()
+					.append("circle")
+					.attr("r", 7)
+					.attr("fill", function(d) { 
+						return color(d.group); 
+					})
+					.on('dblclick', function(event) {
+						connectedNodes(d3.select(this).node().__data__)
+					})
+					.call(d3.drag()
+							.on("start", dragstarted)
+							.on("drag", dragged)
+							.on("end", dragended)					
+					); 
+
+		node.append("title")
+			.text(function(d) { 
+				return d.id; 
+			});
+
+		simulation.nodes(graph.nodes).on("tick", ticked);
+
+		simulation.force("link").links(graph.links);
+
+		function ticked() {
+			link.attr("x1", function(d) { 
+				return d.source.x; 
+			}).attr("y1", function(d) { 
+				return d.source.y; 
+			}).attr("x2", function(d) { 
+				return d.target.x; 
+			}).attr("y2", function(d) { 
+				return d.target.y; 
+			});
+
+			node.attr("cx", function(d) { 
+				return d.x; 
+			}).attr("cy", function(d) { 
+				return d.y; 
+			});
+		}
+		var padding = 1, radius=6;
+		function collide(alpha) {
+			var quadtree = d3.geom.quadtree(graph.nodes);
+			return function(d) {
+		    var rb = 2*radius + padding,
+		        nx1 = d.x - rb,
+		        nx2 = d.x + rb,
+		        ny1 = d.y - rb,
+		        ny2 = d.y + rb;
+		    quadtree.visit(function(quad, x1, y1, x2, y2) {
+			if (quad.point && (quad.point !== d)) {
+				var x = d.x - quad.point.x,
+				y = d.y - quad.point.y,
+				l = Math.sqrt(x * x + y * y);
+				if (l < rb) {
+					l = (l - rb) / l * alpha;
+					d.x -= x *= l;
+					d.y -= y *= l;
+					quad.point.x += x;
+					quad.point.y += y;
+				}
+			}
+			return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+			});
+			};
+		}
+		
+		var toggle = 0;
+		var linkedByIndex = {};
+		for (i = 0; i < graph.nodes.length; i++) {
+		    linkedByIndex[i + "," + i] = 1;
+		};
+		graph.links.forEach(function (d) {
+		    linkedByIndex[d.source.index + "," + d.target.index] = 1;
+		});
+		function neighboring(a, b) {
+		    return linkedByIndex[a.index + "," + b.index];
+		}
+		function connectedNodes(d) {
+		    if (toggle == 0) {
+		        node.style("opacity", function (o) {
+		            return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1;
+		        });
+		        link.style("opacity", function (o) {
+		            return d.index==o.source.index | d.index==o.target.index ? 1 : 0.1;
+		        });
+		        toggle = 1;
+		    } 
+		    else {
+		        node.style("opacity", 1);
+		        link.style("opacity", 1);
+		        toggle = 0;
+		    }
+		}
+
+		force.on("tick", function () {
+		    link.attr("x1", function (d) {
+		        return d.source.x;
+		    }).attr("y1", function (d) {
+		        return d.source.y;
+		    }).attr("x2", function (d) {
+		        return d.target.x;
+		    }).attr("y2", function (d) {
+		        return d.target.y;
+		    });
+		    node.attr("cx", function (d) {
+		        return d.x;
+		    }).attr("cy", function (d) {
+		        return d.y;
+		    });
+		    node.each(collide(0.5));
+		});
+
+		});
+
+		function dragstarted(d) {
+			if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+			d.fx = d.x;
+			d.fy = d.y;
+		}
+
+		function dragged(d) {
+			d.fx = d3.event.x;
+			d.fy = d3.event.y;
+		}
+
+		function dragended(d) {
+			if (!d3.event.active) simulation.alphaTarget(0);
+			d.fx = null;
+			d.fy = null;
+		}
+	</script>
 {% endblock %}
