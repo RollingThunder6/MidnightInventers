@@ -12,30 +12,32 @@
 	</div>
 	<div class="table-responsive">
 		<table class="table table-hover">
-			{% for line_count in range(resp.__len__()) %}
-			<tr>
-				<td class="click-dropdown-field">
-					<div class="header">
-						<strong>
-							<span class="device-number">
-								Device {{line_count + 1}} :
-							</span>
+			{% if resp %}
+				{% for line_count in range(resp.__len__()) %}
+				<tr>
+					<td class="click-dropdown-field">
+						<div class="header">
+							<strong>
+								<span class="device-number">
+									Device {{line_count + 1}} :
+								</span>
 
-							<span class="device-address">
-								Network Address : {{resp[line_count].networkAddresses}}
-							</span>
-						</strong>
-					</div>
+								<span class="device-address">
+									Network Address : {{resp[line_count].networkAddresses}}
+								</span>
+							</strong>
+						</div>
 
-					<div class="content">
-						{% for key,value in resp[line_count].items() %}
-							{{key}} : {{value}}
-							<br/>
-						{% endfor %}
-					</div>
-				</td>
-			</tr>
-			{% endfor %}
+						<div class="content">
+							{% for key,value in resp[line_count].items() %}
+								{{key}} : {{value}}
+								<br/>
+							{% endfor %}
+						</div>
+					</td>
+				</tr>
+				{% endfor %}
+			{% endif %}
 		</table>
 	</div>
 {% endblock %}
@@ -43,4 +45,14 @@
 {% block scripts %}
 	{{ super() }}
 	<script type="text/javascript" src="{{url_for('static', filename='js/devices.js')}}"></script>
+	<script type="text/javascript">
+		setInterval(function(){
+			$.ajax({
+				type : "GET",
+				url : "{{ url_for('main.devices') }}",
+				/*data: JSON.stringify(response_json, null, '\t'),*/
+				contentType: 'application/json;charset=UTF-8',
+			});
+		}, 5000);
+	</script>
 {% endblock %}

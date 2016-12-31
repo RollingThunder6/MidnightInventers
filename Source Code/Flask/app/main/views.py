@@ -3,9 +3,8 @@ from . import main
 from .. import db
 from ..models import Credentials
 from .forms import NameForm, ChangeCredentials
-from .methods import delete_link
-from .nodes import Node
-import requests, json, os
+import requests, json
+import logging, sys, os
 
 @main.route("/", methods=['GET', 'POST'])
 def index():
@@ -35,7 +34,22 @@ def index():
 @main.route("/devices", methods=['GET'])
 def devices():
 	resp = requests.get("http://localhost:8002/web/jsonrest/host_tracker/devices")
-	return render_template("devices.html", resp=resp.json(), name=session.get("name")), 200
+	
+	logger = logging.getLogger(__name__)
+	logger.setLevel(logging.DEBUG)
+	root = logging.getLogger()
+	root.setLevel(logging.DEBUG)
+	
+	ch = logging.StreamHandler(sys.stdout)
+	ch.setLevel(logging.DEBUG)
+	formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+	ch.setFormatter(formatter)
+	root.addHandler(ch)
+
+	if resp != None:
+		return render_template("devices.html", resp=resp.json(), name=session.get("name")), 200
+	else:
+		return render_template("devices.html", name=session.get("name")), 200
 
 @main.route("/switches", methods=['GET'])
 def switches():
@@ -44,7 +58,6 @@ def switches():
 
 @main.route("/links", methods=['GET'])
 def links():
-	resp = requests.get("http://localhost:8002/web/jsonrest/discovery/links")
 	links_rest = requests.get("http://localhost:8002/web/jsonrest/discovery/links")
 	switches_rest = requests.get("http://localhost:8002/web/jsonrest/of/switches")
 	devices_rest = requests.get("http://localhost:8002/web/jsonrest/host_tracker/devices")
@@ -52,46 +65,6 @@ def links():
 	links_json = links_rest.json()
 	switches_json = switches_rest.json()
 	devices_json = devices_rest.json()
-
-	# switch_id = []
-	# switch_nodes = []
-	# switch_set = []
-
-	# for entry in switches_json:
-	# 	switch_id.append(entry["dpid"])
-
-	# for entry in devices_json:
-	# 	if entry["switch_dpid"] in switch_id:
-	# 		temp_id = switch_id.pop(switch_id.index(entry["switch_dpid"]))
-	# 		switch_nodes.append(temp_id)
-	# switch_set.append(switch_nodes)
-
-	# while links_json.__len__() != 0:
-	# 	new_switch_nodes = []
-	# 	root_nodes = []
-
-	# 	for node in switch_nodes:
-	# 		link_counter = 0
-	# 		flag = False
-	# 		for entry in links_json:
-	# 			if node == entry["dataLayerDestination"]:
-	# 				destination = entry["dataLayerDestination"]
-	# 				source = entry["dataLayerSource"]
-	# 				links_json.pop(link_counter)
-	# 				index = delete_link(links_json, source, destination)
-	# 				links_json.pop(index)
-	# 				if source not in new_switch_nodes:
-	# 					new_switch_nodes.append(source)
-	# 				flag = True
-	# 			link_counter = link_counter + 1
-
-	# 		if flag == False:
-	# 			root_nodes.append(node)
-		
-	# 	switch_nodes = []
-	# 	switch_nodes.extend(root_nodes)
-	# 	switch_nodes.extend(new_switch_nodes)
-	# 	switch_set.append(switch_nodes)
 
 	json_data = {"nodes":[], "links":[]}
 	for switch in switches_json:
@@ -122,7 +95,7 @@ def links():
 	with open("app/static/json/topo.json", 'w') as outfile:
 		json.dump(json_data, outfile)
 
-	return render_template("links.html", json_data=json_data, resp=resp.json(), name=session.get("name")), 200
+	return render_template("links.html", json_data=json_data, name=session.get("name")), 200
 
 @main.route("/credentials", methods=['GET', 'POST'])
 def credentials():
