@@ -9,7 +9,7 @@ class Config():
 
 class development_config(Config):
 	"""configuration in development mode"""
-	DEBUG = True		
+	DEBUG = True
 	SQLALCHEMY_DATABASE_URI = "mysql://root:root@localhost/flask"
 
 config = {

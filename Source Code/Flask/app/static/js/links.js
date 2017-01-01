@@ -4,4 +4,8 @@ $(document).ready(function() {
 			console.log("Slide event success.")
 		})
 	});
+
+	$(".custom-btn").click(function(event) {
+		location.reload(true);
+	});
 });

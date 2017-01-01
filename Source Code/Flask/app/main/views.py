@@ -31,25 +31,24 @@ def index():
 		redirect(url_for("main.index"))
 	return render_template("index.html", form=form, name=session.get("name")), 200
 
-@main.route("/devices", methods=['GET'])
+@main.route("/devices", methods=['GET', 'POST'])
 def devices():
 	resp = requests.get("http://localhost:8002/web/jsonrest/host_tracker/devices")
-	
-	logger = logging.getLogger(__name__)
-	logger.setLevel(logging.DEBUG)
-	root = logging.getLogger()
-	root.setLevel(logging.DEBUG)
-	
-	ch = logging.StreamHandler(sys.stdout)
-	ch.setLevel(logging.DEBUG)
-	formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-	ch.setFormatter(formatter)
-	root.addHandler(ch)
 
-	if resp != None:
-		return render_template("devices.html", resp=resp.json(), name=session.get("name")), 200
-	else:
-		return render_template("devices.html", name=session.get("name")), 200
+	# [ 'Logging functionality' ]
+	# logger = logging.getLogger(__name__)
+	# logger.setLevel(logging.DEBUG)
+	# root = logging.getLogger()
+	# root.setLevel(logging.DEBUG)
+	
+	# ch = logging.StreamHandler(sys.stdout)
+	# ch.setLevel(logging.DEBUG)
+	# formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+	# ch.setFormatter(formatter)
+	# root.addHandler(ch)
+	# logger.info()
+
+	return render_template("devices.html", resp=resp.json(), name=session.get("name")), 200
 
 @main.route("/switches", methods=['GET'])
 def switches():
