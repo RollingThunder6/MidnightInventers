@@ -1,10 +1,5 @@
 {% extends "header.html" %}
 
-{% block meta %}
-{{super()}}
-<meta http-equiv="refresh" content="5;url='http://localhost:5000/devices'">
-{% endblock %}
-
 {% block title %}
 	Devices
 {% endblock %}
@@ -51,13 +46,9 @@
 {% block scripts %}
 	{{ super() }}
 	<script type="text/javascript" src="{{url_for('static', filename='js/devices.js')}}"></script>
-	<!-- <script type="text/javascript">
+	<script type="text/javascript">
 		setInterval(function(){
-			$.ajax({
-				type : "POST",
-				url : "{{ url_for('main.devices') }}",
-				data: "ajax-call",
-			});
+			$('.table-responsive').load(document.URL +  ' .table-responsive');
 		}, 5000);
-	</script> -->
+	</script>
 {% endblock %}

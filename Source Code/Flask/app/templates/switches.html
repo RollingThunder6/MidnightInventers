@@ -48,4 +48,9 @@
 {% block scripts %}
 	{{ super() }}
 	<script type="text/javascript" src="{{url_for('static', filename='js/switches.js')}}"></script>
+	<script type="text/javascript">
+		setInterval(function(){
+			$('.table-responsive').load(document.URL +  ' .table-responsive');
+		}, 5000);
+	</script>
 {% endblock %}
