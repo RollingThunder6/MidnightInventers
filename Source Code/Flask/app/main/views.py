@@ -4,7 +4,7 @@ from .. import db
 from ..models import Credentials
 from .forms import NameForm, ChangeCredentials
 import requests, json
-import logging, sys, os
+import logging, sys, os, socket
 
 @main.route("/", methods=['GET', 'POST'])
 def index():
@@ -93,7 +93,7 @@ def links():
 
 	with open("app/static/json/topo.json", 'w') as outfile:
 		json.dump(json_data, outfile)
-
+		
 	return render_template("links.html", json_data=json_data, name=session.get("name")), 200
 
 @main.route("/credentials", methods=['GET', 'POST'])
@@ -123,3 +123,14 @@ def credentials():
 			redirect(url_for("main.credentials"))
 
 	return render_template("credentials.html", form=form, name=session.get("name")), 200
+
+@main.route("/ddos", methods=['GET', 'POST'])
+def ddos():
+	if request.method == "POST":
+		fw = open("app/static/json/attack_topo.json","w")
+		fw.close()
+		
+	if os.stat("app/static/json/attack_topo.json").st_size == 0:
+		return render_template("ddos.html", flag=False, name=session.get("name")), 200
+	else:
+		return render_template("ddos.html", flag=True, name=session.get("name")), 200

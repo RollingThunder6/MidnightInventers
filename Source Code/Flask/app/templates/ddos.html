@@ -1,27 +1,47 @@
 {% extends "header.html" %}
 
 {% block title %}
-	Links
+	DDoS Attack Location
 {% endblock %}
 
 {% block page_content %}
 	<div class="page-header">
 		<h3 class="h3">
-			Topology
+			DDoS Attack Location
 		</h3>
 	</div>
-	<div class="container svg-block">
-		<button class="btn btn-success custom-btn">Reload Topology</button>
-		<br/><br/>
-		<svg width="960" height="500"></svg>
-	</div>
+	{% if flag == True %}
+		<div class="container svg-block">
+			<button class="btn btn-success custom-btn">Clear Notification</button>
+			<br/><br/>
+			<svg width="960" height="500"></svg>
+		</div>
+	{% else %}
+		<div class="container">
+			<h4 class="h4">
+				Network is not yet under attack.
+			</h4>
+		</div>
+	{% endif %}
 {% endblock %}
 
 {% block scripts %}
 	{{ super() }}
-	<script type="text/javascript" src="{{url_for('static', filename='js/links.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='js/ddos.js')}}"></script>
 	<script type="text/javascript" src="{{url_for('static', filename='js/d3.min.js')}}"></script>
 
+	<script type="text/javascript">
+		$(".custom-btn").click(function(event) {
+			$.ajax({
+				url:"{{url_for('main.ddos')}}",
+				type: 'POST',
+				contentType: 'application/json;charset=UTF-8',
+			});	
+			location.reload(true);
+		});
+	</script>
+
+	{% if flag == True %}
 	<script type="text/javascript">
 		var svg = d3.select("svg");
 		var width = +svg.attr("width");
@@ -33,7 +53,7 @@
 
 		var simulation = d3.forceSimulation().force("link", d3.forceLink().id(function(d) { return d.id; }).distance(60)).force("charge", d3.forceManyBody()).force("center", d3.forceCenter(width / 2, height / 2));
 
-		d3.json("{{url_for('static', filename='json/topo.json')}}", function(error, graph) { 
+		d3.json("{{url_for('static', filename='json/attack_topo.json')}}", function(error, graph) { 
 		if (error) throw error;
 
 		var link = svg.append("g")
@@ -183,4 +203,5 @@
 			d.fy = null;
 		}
 	</script>
+	{% endif %}
 {% endblock %}
