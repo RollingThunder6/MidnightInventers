@@ -32,11 +32,10 @@
 						</strong>
 					</div>
 
-					<div class="content">
-						{% for key,value in resp[line_count].items() %}
-							{{key}} : {{value}}
-							<br/>
-						{% endfor %}
+					<div class="content-switches">
+						Remote IP Address : {{resp[line_count].remoteIp}}
+						<br/>
+						Port Number : {{resp[line_count].remotePort}}
 					</div>
 				</td>
 			</tr>

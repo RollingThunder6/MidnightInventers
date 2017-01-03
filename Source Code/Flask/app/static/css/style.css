@@ -9,8 +9,13 @@
 }
 
 .content{
-	display: none;
-	height: 120px;
+	/*display: none;*/
+	height: 80px;
+}
+
+.content-switches{
+	/*display: none;*/
+	height: 50px;
 }
 
 .click-dropdown-field{

@@ -29,10 +29,11 @@
 						</div>
 
 						<div class="content">
-							{% for key,value in resp[line_count].items() %}
-								{{key}} : {{value}}
-								<br/>
-							{% endfor %}
+							Switch Datapath Id : {{resp[line_count].switch_dpid}}
+							<br/>
+							Hardware Address : {{resp[line_count].dataLayerAddress}}
+							<br/>
+							Port Number : {{resp[line_count].port}}
 						</div>
 					</td>
 				</tr>
@@ -47,6 +48,12 @@
 	{{ super() }}
 	<script type="text/javascript" src="{{url_for('static', filename='js/devices.js')}}"></script>
 	<script type="text/javascript">
+		/*$(".click-dropdown-field").click(function(event) {
+			$(this).children('.content').slideToggle(300, function() {
+				console.log("Slide event success.")
+			})
+		});*/
+
 		setInterval(function(){
 			$('.table-responsive').load(document.URL +  ' .table-responsive');
 		}, 5000);
