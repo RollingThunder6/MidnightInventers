@@ -23,7 +23,12 @@
 								</span>
 
 								<span class="device-address">
-									Network Address : {{resp[line_count].networkAddresses}}
+									{% set network_addr = resp[line_count].networkAddresses.split(" ") %}
+									{% if network_addr[0] == "0.0.0.0" %}
+										Network Address : {{network_addr[1]}}
+									{% else %}
+										Network Address : {{network_addr[0]}}
+									{% endif %}
 								</span>
 							</strong>
 						</div>
@@ -48,12 +53,6 @@
 	{{ super() }}
 	<script type="text/javascript" src="{{url_for('static', filename='js/devices.js')}}"></script>
 	<script type="text/javascript">
-		/*$(".click-dropdown-field").click(function(event) {
-			$(this).children('.content').slideToggle(300, function() {
-				console.log("Slide event success.")
-			})
-		});*/
-
 		setInterval(function(){
 			$('.table-responsive').load(document.URL +  ' .table-responsive');
 		}, 5000);

@@ -15,7 +15,7 @@
 
 .content-switches{
 	/*display: none;*/
-	height: 50px;
+	height: 80px;
 }
 
 .click-dropdown-field{
@@ -34,4 +34,28 @@
 
 svg{
 	border: 1px solid #ccc;
+	float: left;
+}
+
+.legend{
+	border: 1px solid #ccc;
+	float: right;
+	width: 150px;
+	height: 80px;
+	margin-top: -44%;
+}
+
+.circle-legend{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin: 4px;
+}
+
+.green-circle{
+	background: #65C400;
+}
+
+.blue-circle{
+	background: #2290EE;
 }

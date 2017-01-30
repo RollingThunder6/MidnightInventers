@@ -3,7 +3,7 @@ import json
 
 s = socket.socket()
 host = socket.gethostname()
-port = 1341
+port = 13410
 
 s.connect((host, port))
 
