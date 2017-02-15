@@ -19,7 +19,7 @@ hash_flows = {}
 def hash_function():
 	global hash_flows	
 
-	system("sudo ovs-ofctl dump-flows tcp:127.0.0.1:6634 > dummy.txt")
+	system("sudo ovs-ofctl dump-flows s1 > dummy.txt")
 	try:
 		fh = open("dummy.txt")
 	except FileNotFoundError as e:
