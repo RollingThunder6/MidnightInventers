@@ -1,5 +1,5 @@
 """
-Fuzzy C Means Algorithm
+Subtractive Clustering Algorithm
 
 Author - Midnight Inventers
 """
@@ -13,7 +13,7 @@ potential = []
 prev_potential = None
 prev_entry = None
 
-with open("dummy.csv") as csvfile:
+with open("70_entries_normal.csv") as csvfile:
 	reader = csv.reader(csvfile)
 	for line in reader:
 		entries.append(line[1])
@@ -67,6 +67,7 @@ def calculate_potential():
 			potential_sum = potential_sum + val
 
 		potential.append(potential_sum)
+		print(count_i)
 
 	potential_index = potential.index(max(potential))
 	prev_potential = max(potential)
