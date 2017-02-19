@@ -25,7 +25,7 @@ cluster_count = None
 membership = []
 new_centroids = []
 
-with open("10000.csv") as csvfile:
+with open("dummy.csv") as csvfile:
 	reader = csv.reader(csvfile)
 	entries = [[line[0], line[1]] for line in reader]
 
@@ -157,7 +157,7 @@ def main():
 		membership.append([])
 
 	calculate_membership()
-	generate_centroid()
+	# generate_centroid()
 
 	# initial_membership = membership.copy()
 
