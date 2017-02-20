@@ -39,13 +39,31 @@ def generate_centroid():
 		new_centroids.append(round(float(numerator/denominator),6))
 	return new_centroids
 
+def calculate_membership_test(data):
+	global centroids
+	global cluster_count
+	global membership
+	global distance
+
+	distance= [[abs(point[1] - cluster) for cluster in centroids] for point in data.itertuples()]
+	membership = [[[] for i in centroids] for point in data.itertuples()]
+
+	# [ Time complexity :- O(c*c*n) ]
+	for cluster_j in range(cluster_count):
+		for point in range(len(data)):
+			dst = 0
+			for cluster_k in range(cluster_count):
+				dst = dst + ((distance[point][cluster_j] / distance[point][cluster_k])**2)
+			membership[point][cluster_j] = 1/dst
+	return
+
 """
 Method :- calculate_membership()
 Return :- None
 
 Calculate membership values using euclidean distances between centroid and each point
 """
-def calculate_membership(data):
+def calculate_membership_train(data):
 	global centroids
 	global cluster_count
 	global membership
@@ -155,7 +173,7 @@ def main():
 		membership.append([[] for i in centroids])
 	
 	# [ Calculate memberhship values ]
-	calculate_membership(training_data)
+	calculate_membership_train(training_data)
 	membership_df = pd.DataFrame(membership, columns=centroids).fillna(1)
 	centroids = generate_centroid()
 	membership_df.columns = centroids
@@ -165,7 +183,7 @@ def main():
 	while True:
 		old_membership = membership_df.as_matrix()
 		old_membership_df = membership_df
-		calculate_membership(training_data)
+		calculate_membership_train(training_data)
 		membership_df = pd.DataFrame(membership, columns=centroids).fillna(1)	
 		centroids = generate_centroid()
 		membership_df.columns = centroids
@@ -192,16 +210,18 @@ def main():
 	
 	# [ Detection phase ]
 	while True:
-		testing_data = pd.read_csv("5000_normal.csv", usecols=[0], names=["Interval"], header=0)
 		# testing_data = pd.read_csv("5000_normal.csv", usecols=[0,1], names=["Nature","Interval"], header=0)
+		testing_data = pd.read_csv("20_normal.csv", usecols=[0], names=["Interval"], header=0)
 		total_packets = len(testing_data)
 		
-		calculate_membership(testing_data)
+		calculate_membership_test(testing_data)
 		testing_membership_df = pd.DataFrame(membership, columns=centroids).fillna(1)
 		packet_arrangement = pd.DataFrame(columns=centroids)
 		for centroid in centroids:
-			packet_arrangement[centroid] = (testing_membership_df[centroid] > 0.75)
+			packet_arrangement[centroid] = (testing_membership_df[centroid] >= 0.99999)
 
+		print(testing_membership_df)
+		print(packet_arrangement)
 		for values in attack_clusters:
 			if (packet_arrangement[centroids[values]] == True).sum() > 0.6*total_packets:
 				print("DDoS detected")
