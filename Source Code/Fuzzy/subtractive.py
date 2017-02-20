@@ -13,7 +13,7 @@ potential = []
 prev_potential = None
 prev_entry = None
 
-with open("70_entries_normal.csv") as csvfile:
+with open("70.csv") as csvfile:
 	reader = csv.reader(csvfile)
 	for line in reader:
 		entries.append(line[1])
