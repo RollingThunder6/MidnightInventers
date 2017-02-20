@@ -8,7 +8,7 @@ import pandas as pd
 import timeit
 
 # [ Load training data into memory ]
-training_data = pd.read_csv("200.csv", usecols=[0,1], names=["Nature","Interval"], header=0)
+training_data = pd.read_csv("normal.csv", usecols=[0,1], names=["Nature","Interval"], header=0)
 
 # [ initialize global variables ]
 centroids = []
@@ -192,9 +192,9 @@ def main():
 	
 	# [ Detection phase ]
 	while True:
-		testing_data = pd.read_csv("200.csv", usecols=[0,1], names=["Nature","Interval"], header=0)
+		testing_data = pd.read_csv("5000_normal.csv", usecols=[0], names=["Interval"], header=0)
+		# testing_data = pd.read_csv("5000_normal.csv", usecols=[0,1], names=["Nature","Interval"], header=0)
 		total_packets = len(testing_data)
-		# testing_data = pd.read_csv("200.csv", usecols=[0], names=["Interval"], header=0)
 		
 		calculate_membership(testing_data)
 		testing_membership_df = pd.DataFrame(membership, columns=centroids).fillna(1)
@@ -208,4 +208,4 @@ def main():
 		return
 
 if __name__ == '__main__':
-	main()
+	main()	
