@@ -8,7 +8,7 @@ import pandas as pd
 import timeit
 
 # [ Load training data into memory ]
-training_data = pd.read_csv("normal.csv", usecols=[0,1], names=["Nature","Interval"], header=0)
+training_data = pd.read_csv("29000.csv", usecols=[0,1], names=["Nature","Interval"], header=0)
 
 # [ initialize global variables ]
 centroids = []
@@ -39,6 +39,12 @@ def generate_centroid():
 		new_centroids.append(round(float(numerator/denominator),6))
 	return new_centroids
 
+"""
+Method :- calculate_membership_train()
+Return :- None
+
+Calculate membership values for testing data using euclidean distances between centroid and each point
+"""
 def calculate_membership_test(data):
 	global centroids
 	global cluster_count
@@ -58,10 +64,10 @@ def calculate_membership_test(data):
 	return
 
 """
-Method :- calculate_membership()
+Method :- calculate_membership_train()
 Return :- None
 
-Calculate membership values using euclidean distances between centroid and each point
+Calculate membership values for training data using euclidean distances between centroid and each point
 """
 def calculate_membership_train(data):
 	global centroids
@@ -210,15 +216,14 @@ def main():
 	
 	# [ Detection phase ]
 	while True:
-		# testing_data = pd.read_csv("5000_normal.csv", usecols=[0,1], names=["Nature","Interval"], header=0)
-		testing_data = pd.read_csv("20_normal.csv", usecols=[0], names=["Interval"], header=0)
+		testing_data = pd.read_csv("70.csv", usecols=[0], names=["Interval"], header=0)
 		total_packets = len(testing_data)
 		
 		calculate_membership_test(testing_data)
 		testing_membership_df = pd.DataFrame(membership, columns=centroids).fillna(1)
 		packet_arrangement = pd.DataFrame(columns=centroids)
 		for centroid in centroids:
-			packet_arrangement[centroid] = (testing_membership_df[centroid] >= 0.99999)
+			packet_arrangement[centroid] = (testing_membership_df[centroid] >= 0.999975)
 
 		print(testing_membership_df)
 		print(packet_arrangement)
