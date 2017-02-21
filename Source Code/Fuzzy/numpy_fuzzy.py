@@ -40,7 +40,7 @@ def generate_centroid():
 	return new_centroids
 
 """
-Method :- calculate_membership_train()
+Method :- calculate_membership_test()
 Return :- None
 
 Calculate membership values for testing data using euclidean distances between centroid and each point
