@@ -5,10 +5,10 @@ Author - Midnight Inventers
 """
 import numpy as np
 import pandas as pd
-import timeit
+import timeit, os, time
 
 # [ Load training data into memory ]
-training_data = pd.read_csv("29000.csv", usecols=[0,1], names=["Nature","Interval"], header=0)
+training_data = pd.read_csv("training.csv", usecols=[0,1], names=["Nature","Interval"], header=0)
 
 # [ initialize global variables ]
 centroids = []
@@ -30,9 +30,10 @@ def generate_centroid():
 	global membership_df
 
 	# [ Time complexity :- O(c*n) ]
+	m = 2	
 	new_centroids = []
 	for centroid in centroids:
-		value_df = membership_df[centroid].apply(lambda x:x**2)
+		value_df = membership_df[centroid].apply(lambda x:x**m)
 		numerator_df = value_df.multiply(training_data["Interval"])
 		numerator = numerator_df.sum()
 		denominator = value_df.sum()
@@ -55,11 +56,12 @@ def calculate_membership_test(data):
 	membership = [[[] for i in centroids] for point in data.itertuples()]
 
 	# [ Time complexity :- O(c*c*n) ]
+	m = 2
 	for cluster_j in range(cluster_count):
 		for point in range(len(data)):
 			dst = 0
 			for cluster_k in range(cluster_count):
-				dst = dst + ((distance[point][cluster_j] / distance[point][cluster_k])**2)
+				dst = dst + ((distance[point][cluster_j] / distance[point][cluster_k])**(2/(m-1)))
 			membership[point][cluster_j] = 1/dst
 	return
 
@@ -79,11 +81,12 @@ def calculate_membership_train(data):
 	membership = [[[] for i in centroids] for point in data.itertuples()]
 
 	# [ Time complexity :- O(c*c*n) ]
+	m = 2
 	for cluster_j in range(cluster_count):
 		for point in range(len(data)):
 			dst = 0
 			for cluster_k in range(cluster_count):
-				dst = dst + ((distance[point][cluster_j] / distance[point][cluster_k])**2)
+				dst = dst + ((distance[point][cluster_j] / distance[point][cluster_k])**(2/(m-1)))
 			membership[point][cluster_j] = 1/dst
 	return
 
@@ -215,22 +218,35 @@ def main():
 			attack_clusters.append(value)
 	
 	# [ Detection phase ]
+	counter = 0
 	while True:
-		testing_data = pd.read_csv("70.csv", usecols=[0], names=["Interval"], header=0)
-		total_packets = len(testing_data)
-		
-		calculate_membership_test(testing_data)
-		testing_membership_df = pd.DataFrame(membership, columns=centroids).fillna(1)
-		packet_arrangement = pd.DataFrame(columns=centroids)
-		for centroid in centroids:
-			packet_arrangement[centroid] = (testing_membership_df[centroid] >= 0.999975)
+		start = timeit.default_timer()
+		testing_data = None
+		if counter % 2 == 0:
+			os.system("tshark -i any -f 'icmp or udp or tcp' -T fields -E separator=, -e frame.time_delta_displayed -e ip.addr -e ip.proto > detection_a.csv &")
+			time.sleep(1)
+			testing_data = pd.read_csv("detection_b.csv", usecols=[0], names=["Interval"], header=0)
+		else:
+			os.system("tshark -i any -f 'icmp or udp or tcp' -T fields -E separator=, -e frame.time_delta_displayed -e ip.addr -e ip.proto > detection_b.csv &")
+			time.sleep(1)
+			testing_data = pd.read_csv("detection_a.csv", usecols=[0], names=["Interval"], header=0)
 
-		print(testing_membership_df)
-		print(packet_arrangement)
-		for values in attack_clusters:
-			if (packet_arrangement[centroids[values]] == True).sum() > 0.6*total_packets:
-				print("DDoS detected")
-		return
+		counter += 1
+		total_packets = len(testing_data)
+
+		if total_packets > 1:
+			calculate_membership_test(testing_data)
+			testing_membership_df = pd.DataFrame(membership, columns=centroids).fillna(1)
+			packet_arrangement = pd.DataFrame(columns=centroids)
+			for centroid in centroids:
+				packet_arrangement[centroid] = (testing_membership_df[centroid] >= 0.999)
+
+			for values in attack_clusters:
+				if (packet_arrangement[centroids[values]] == True).sum() == (total_packets):
+					print("DDoS detected")
+			end = timeit.default_timer()
+			print("Testing time :", end-start)
+		os.system("pkill tshark")
 
 if __name__ == '__main__':
 	main()	
