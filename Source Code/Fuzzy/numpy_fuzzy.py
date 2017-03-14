@@ -18,6 +18,22 @@ membership = []
 distance = []
 membership_df = None
 
+def find_membership_value(membership_df, attack_clusters):
+	global training_data
+	global cluster_count
+	membership_df["Nature"] = training_data["Nature"].astype(int)
+	membership_df = membership_df[membership_df["Nature"] == 1]
+
+	normal_clusters = [x for x in range(cluster_count) if x not in attack_clusters]
+	membership_df = membership_df.drop(membership_df.columns[normal_clusters], axis=1)
+
+	max_values = []
+	membership_df = membership_df.drop("Nature", axis=1)
+	for column in membership_df:
+		max_values.append(membership_df[column].min())
+
+	return min(max_values)
+
 """
 Method :- generate_centroid()
 Return :- list of centroid values
@@ -214,14 +230,15 @@ def main():
 		classes.append((attack_membership[centroid] == True).sum())
 
 	for value in range(len(classes)):
-		if classes[value] > 0.75 * attack_packets:
+		if classes[value] > 0.8 * attack_packets:
 			attack_clusters.append(value)
 	
+	max_membership = find_membership_value(membership_df, attack_clusters)
+
 	# [ Detection phase ]
 	counter = 0
 	attack_counter = 0
 	while True:
-		start = timeit.default_timer()
 		testing_data = None
 		if counter % 2 == 0:
 			os.system("tshark -i any -f 'icmp or udp or tcp' -T fields -E separator=, -e frame.time_delta_displayed -e ip.addr -e ip.proto > detection_a.csv &")
@@ -237,22 +254,21 @@ def main():
 		total_packets = len(testing_data)
 
 		if total_packets > 1:
+			start = timeit.default_timer()
 			calculate_membership_test(testing_data)
 			testing_membership_df = pd.DataFrame(membership, columns=centroids).fillna(1)
 			packet_arrangement = pd.DataFrame(columns=centroids)
 			for centroid in centroids:
-				packet_arrangement[centroid] = (testing_membership_df[centroid] >= 0.9998)
+				packet_arrangement[centroid] = (testing_membership_df[centroid] >= max_membership)
 
-			print(testing_membership_df)
 			for values in attack_clusters:
-				if (packet_arrangement[centroids[values]] == True).sum() == (total_packets):
+				if (packet_arrangement[centroids[values]] == True).sum() >= (0.95 * total_packets):
 					print("DDoS detected")
 					attack_counter += 1
 					os.system("notify-send 'DDoS Detected "+str(attack_counter)+"'")
 			end = timeit.default_timer()
 			print("Testing time :", end-start)
 		os.system("pkill tshark")
-		# os.system("notify-send 'Done Testing'")
 
 if __name__ == '__main__':
 	main()	
