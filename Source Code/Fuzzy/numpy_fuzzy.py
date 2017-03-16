@@ -236,7 +236,6 @@ def main():
 	max_membership = find_membership_value(membership_df, attack_clusters)
 
 	# [ Detection phase ]
-	counter = 0
 	attack_counter = 0
 	while True:
 		testing_data = None
