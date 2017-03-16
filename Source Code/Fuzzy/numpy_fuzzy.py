@@ -18,6 +18,13 @@ membership = []
 distance = []
 membership_df = None
 
+"""
+Method :- find_membership_value(membership_df, attack_clusters)
+Return :- minimum membership value
+
+Find minimum membership value to be checked for an attack packet to belong 
+to attack cluster
+"""
 def find_membership_value(membership_df, attack_clusters):
 	global training_data
 	global cluster_count
@@ -27,12 +34,12 @@ def find_membership_value(membership_df, attack_clusters):
 	normal_clusters = [x for x in range(cluster_count) if x not in attack_clusters]
 	membership_df = membership_df.drop(membership_df.columns[normal_clusters], axis=1)
 
-	max_values = []
+	min_values = []
 	membership_df = membership_df.drop("Nature", axis=1)
 	for column in membership_df:
-		max_values.append(membership_df[column].min())
+		min_values.append(membership_df[column].min())
 
-	return min(max_values)
+	return min(min_values)
 
 """
 Method :- generate_centroid()
@@ -233,22 +240,29 @@ def main():
 		if classes[value] > 0.8 * attack_packets:
 			attack_clusters.append(value)
 	
-	max_membership = find_membership_value(membership_df, attack_clusters)
+	min_membership = find_membership_value(membership_df, attack_clusters)
 
 	# [ Detection phase ]
-	attack_counter = 0
+	program_counter = 0
+	window = 5
+	counter = 0
+	ddos_attack_counter = 3
+
 	while True:
+		program_counter += 1
+		if (program_counter % window) == 0:
+			counter = 0
+
 		testing_data = None
-		if counter % 2 == 0:
+		if program_counter % 2 == 0:
 			os.system("tshark -i any -f 'icmp or udp or tcp' -T fields -E separator=, -e frame.time_delta_displayed -e ip.addr -e ip.proto > detection_a.csv &")
-			time.sleep(2)
-			testing_data = pd.read_csv("detection_b.csv", usecols=[0], names=["Interval"], header=0)
+			time.sleep(1.5)
+			testing_data = pd.read_csv("detection_b.csv", usecols=[0], names=["Interval"], header=None)
 		else:
 			os.system("tshark -i any -f 'icmp or udp or tcp' -T fields -E separator=, -e frame.time_delta_displayed -e ip.addr -e ip.proto > detection_b.csv &")
-			time.sleep(2)
-			testing_data = pd.read_csv("detection_a.csv", usecols=[0], names=["Interval"], header=0)
+			time.sleep(1.5)
+			testing_data = pd.read_csv("detection_a.csv", usecols=[0], names=["Interval"], header=None)
 
-		counter += 1
 		# testing_data = pd.read_csv("attack_test.csv", usecols=[0], names=["Interval"], header=0)
 		total_packets = len(testing_data)
 
@@ -258,13 +272,16 @@ def main():
 			testing_membership_df = pd.DataFrame(membership, columns=centroids).fillna(1)
 			packet_arrangement = pd.DataFrame(columns=centroids)
 			for centroid in centroids:
-				packet_arrangement[centroid] = (testing_membership_df[centroid] >= max_membership)
+				packet_arrangement[centroid] = (testing_membership_df[centroid] >= min_membership)
 
 			for values in attack_clusters:
-				if (packet_arrangement[centroids[values]] == True).sum() >= (0.95 * total_packets):
-					print("DDoS detected")
-					attack_counter += 1
-					os.system("notify-send 'DDoS Detected "+str(attack_counter)+"'")
+				if (packet_arrangement[centroids[values]] == True).sum() >= (0.9 * total_packets):
+					print("Inside DDoS")
+					counter += 1
+					if counter == ddos_attack_counter:
+						print("DDoS detected")
+						os.system("notify-send 'DDoS Detected "+str(counter)+"'")
+						counter = 0
 			end = timeit.default_timer()
 			print("Testing time :", end-start)
 		os.system("pkill tshark")
