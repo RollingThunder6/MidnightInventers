@@ -29,7 +29,7 @@ def hash_function():
 	if hash_flows == {}:
 		i = 0
 		for flow_entry in fh:
-			if i != 0:
+			if i > 3:
 				flow_entry = flow_entry.strip().split(",")
 				
 				src_ip = flow_entry[13].split("=")
@@ -41,7 +41,7 @@ def hash_function():
 				src = "".join(src_ip_val)
 				dst = "".join(dst_ip_val)
 				
-				val = src + "/" + dst + flow_entry[8]
+				val = src + "/" + dst + flow_entry[8]		
 
 				# [ Filtering src ip and dst ip from flow table ]
 				# src_ip = line[13].split("=")
@@ -103,7 +103,7 @@ def main():
 	delta_t = 2
 	threshold = 0
 	standard_entropy = 0.5
-	alpha = [0.04, 0.11, 0.19, 0.28, 0.38]
+	alpha = [0.04, 0.11, 0.19, 0.28, 0.38	]
 	deviation = 0
 	multiplication_factor = 1
 
