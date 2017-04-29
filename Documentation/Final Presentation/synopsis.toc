@@ -8,6 +8,6 @@
 \contentsline {section}{\numberline {8}Technical Details}{2}
 \contentsline {section}{\numberline {9}Innovativeness and Usefulness}{3}
 \contentsline {section}{\numberline {10}Market Potential and Competitive Advantage}{3}
-\contentsline {section}{\numberline {11}Brief Description}{4}
-\contentsline {section}{\numberline {12}Major Milestones and Dates}{6}
-\contentsline {section}{\numberline {13}References}{6}
+\contentsline {section}{\numberline {11}Brief Description}{3}
+\contentsline {section}{\numberline {12}Major Milestones and Dates}{5}
+\contentsline {section}{\numberline {13}References}{5}
