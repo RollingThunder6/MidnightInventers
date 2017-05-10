@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.25)  28 APR 2017 23:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.29)  4 MAY 2017 23:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **first_sem_report.tex
 (./first_sem_report.tex
 LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 4 languages loaded.
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -1057,11 +1057,11 @@ File: Images/data_flow.png Graphic file (type png)
 Package pdftex.def Info: Images/data_flow.png used on input line 780.
 (pdftex.def)             Requested size: 368.37535pt x 190.21014pt.
  [14 <./Images/use_case.png> <./Images/data_flow.png>] <Images/state.png, id=57
-5, 730.73pt x 359.3425pt>
+5, 729.72626pt x 357.335pt>
 File: Images/state.png Graphic file (type png)
  <use Images/state.png>
 Package pdftex.def Info: Images/state.png used on input line 789.
-(pdftex.def)             Requested size: 438.44138pt x 215.60715pt.
+(pdftex.def)             Requested size: 437.83914pt x 214.40265pt.
 
 <Images/activity.png, id=576, 945.5325pt x 513.92pt>
 File: Images/activity.png Graphic file (type png)
@@ -1219,13 +1219,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1491--1492
 
  []
 
-<Images/functionalDependency.png, id=740, 414.54875pt x 274.02374pt>
+<Images/functionalDependency.png, id=740, 467.7475pt x 161.60374pt>
 File: Images/functionalDependency.png Graphic file (type png)
 
 <use Images/functionalDependency.png>
 Package pdftex.def Info: Images/functionalDependency.png used on input line 150
 9.
-(pdftex.def)             Requested size: 207.27386pt x 137.01154pt.
+(pdftex.def)             Requested size: 233.87317pt x 80.80167pt.
  [35 <./Images/functionalDependency.png>]
 Chapter 9.
 [36
@@ -1378,12 +1378,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1620.
 ### simple group (level 1) entered at line 1239 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18204 strings out of 494957
- 329107 string characters out of 6180028
- 411659 words of memory out of 5000000
- 20806 multiletter control sequences out of 15000+600000
+ 18204 strings out of 493085
+ 329107 string characters out of 6136917
+ 417316 words of memory out of 5000000
+ 21049 multiletter control sequences out of 15000+600000
  55950 words of font info for 125 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  55i,12n,54p,923b,735s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
@@ -1395,7 +1395,7 @@ t/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on first_sem_report.pdf (50 pages, 524420 bytes).
+Output written on first_sem_report.pdf (50 pages, 513815 bytes).
 PDF statistics:
  861 PDF objects out of 1000 (max. 8388607)
  776 compressed objects within 8 object streams
