@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.25)  26 MAY 2017 11:21
-=======
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  26 MAY 2017 11:15
->>>>>>> 6b6ee3d13afab23e1032250af43f49ae5cf86a17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1799,17 +1795,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2601.
 ### simple group (level 1) entered at line 1901 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 19294 strings out of 493029
- 344627 string characters out of 6136234
- 433364 words of memory out of 5000000
- 21927 multiletter control sequences out of 15000+600000
-=======
  19295 strings out of 494910
  344631 string characters out of 6179836
  427673 words of memory out of 5000000
  21683 multiletter control sequences out of 15000+600000
->>>>>>> 6b6ee3d13afab23e1032250af43f49ae5cf86a17
  46748 words of font info for 95 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  55i,13n,54p,1018b,840s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1823,11 +1812,7 @@ t/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmri8a.pfb>
-<<<<<<< HEAD
-Output written on second_sem.pdf (85 pages, 2220205 bytes).
-=======
 Output written on second_sem.pdf (85 pages, 2209507 bytes).
->>>>>>> 6b6ee3d13afab23e1032250af43f49ae5cf86a17
 PDF statistics:
  1362 PDF objects out of 1440 (max. 8388607)
  1225 compressed objects within 13 object streams
