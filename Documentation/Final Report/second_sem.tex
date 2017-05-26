@@ -9,6 +9,7 @@
 \usepackage{array}
 \usepackage{wrapfig}
 \usepackage{algorithm}
+\usepackage{algcompatible}
 \usepackage{algpseudocode}
 
 \usepackage[%
@@ -1338,13 +1339,13 @@ There was always an option to implement the project by creating a Software Defin
 \caption{Fuzzy C Means Clustering}
 \begin{algorithmic}[1]
 \Function{Calculate\_membership}{$cluster\_count, centroids, dataset$}
-\State $membership[i,j] = \frac{\frac{-2}{d_{ij}^{m-1}}}{\sum_{i=1}^{c}{{d_{ij}^{m-1}}}}$
+\State $membership[i,j] \leftarrow \frac{\frac{-2}{d_{ij}^{m-1}}}{\sum_{i=1}^{c}{{d_{ij}^{m-1}}}}$
 \newline
 \hspace*{1cm}
 where, 
 \newline
 \hspace*{1cm}
-$m = Fuzzifier (default 2)$
+$m = Fuzzifier (default\ 2)$
 \newline
 \hspace*{1cm}
 $c = cluster\ count$
@@ -1358,13 +1359,13 @@ $d = euclidean\ distance\ between\ i\ and\ j$
 \EndFunction
 
 \Function{Calculate\_centroid}{$cluster\_count, centroids, dataset$}
-\State $centroid_{i} = \frac{\sum_{j=1}^{n}u_{ij}^{m}X_{ij}}{\sum_{n}^{j=1}u_{ij}^{m}}$
+\State $centroid_{i} \leftarrow \frac{\sum_{j=1}^{n}u_{ij}^{m}X_{ij}}{\sum_{n}^{j=1}u_{ij}^{m}}$
 \newline
 \hspace*{1cm}
 where, 
 \newline
 \hspace*{1cm}
-$m = Fuzzifier (default 2)$
+$m = Fuzzifier (default\ 2)$
 \newline
 \hspace*{1cm}
 $c = cluster\ count$
@@ -1389,34 +1390,34 @@ $d = euclidean\ distance\ between\ i\ and\ j$
 where, 
 \newline
 \hspace*{1cm}
-n = number of data points
+n $=$ number of data points
 \newline
 \hspace*{1cm}
-c = number of centroids
-\State $ membership\_df $ be a dataframe representing the 2 dimensional $membership$ list
-\State $training\_data = pandas.read\_csv(training\_dataset)$
-\State $membership = calculate\_membership(cluster\_count, centroids, training\_data)$
-\State $centroid = calculate\_centroid(cluster\_count, centroids, training\_data)$
+c $=$ number of centroids
+\State $ membership\_df $ be a dataframe representing the 2-dimensional $membership$ list
+\State $training\_data \leftarrow dataframe\ for\ training\ data $
+\State $membership \leftarrow calculate\_membership(cluster\_count, centroids, training\_data)$
+\State $centroid \leftarrow calculate\_centroid(cluster\_count, centroids, training\_data)$
 
-\While{$True$}
-\State $old\_membership = membership$
-\State $old\_membership\_df = membership\_df$
-\State $membership = calculate\_membership(cluster\_count, centroids, training\_data)$
-\If {$old\_membership = membership$}
+\While{True}
+\State $old\_membership \leftarrow membership$
+\State $old\_membership\_df \leftarrow membership\_df$
+\State $membership \leftarrow calculate\_membership(cluster\_count, centroids, training\_data)$
+\If {$old\_membership == membership$}
 \State \textbf{break}
 \EndIf
 \EndWhile
 
-\State Identify attack clusters.
-\State Find $min\_membership$.
+\State Identify \textbf{attack clusters}.
+\State $min\_membership \leftarrow$ minimum membership in attack clutser.
 
-\While{$True$}
+\While{True}
 \State Capture packets during runtime.
-\State $testing\_data = pandas.read\_csv(testing\_dataset)$
-\State $membership = calculate\_membership(cluster\_count, centroids, testing\_data)$
-\State $attack\_packets = $ Total packets having membership value above $min\_membership$ value.
-\If {$attack\_packets >= 0.95 * total_packets$}
-\State Detect DDoS
+\State $testing\_data \leftarrow dataframe\ for\ testing\ data$
+\State $membership \leftarrow calculate\_membership(cluster\_count, centroids, testing\_data)$
+\State $attack\_packets \leftarrow $ Total packets having membership value above $min\_membership$ value.
+\If {$attack\_packets >= threshold * total\_packets$}
+\State \Return DDoS
 \EndIf
 \EndWhile
 \EndFunction

@@ -245,9 +245,9 @@ def main():
 
 	# [ Detection phase ]
 	program_counter = 0
-	window = 5
+	window = 3
 	counter = 0
-	ddos_attack_counter = 3
+	ddos_attack_counter = 2
 
 	while True:
 		program_counter += 1
@@ -255,16 +255,9 @@ def main():
 			counter = 0
 
 		testing_data = None
-		if program_counter % 2 == 0:
-			os.system("tshark -i any -f 'icmp or udp or tcp' -T fields -E separator=, -e frame.time_delta_displayed -e ip.addr -e ip.proto > detection_a.csv &")
-			time.sleep(1.5)
-			testing_data = pd.read_csv("detection_b.csv", usecols=[0], names=["Interval"], header=None)
-			testing_data["Interval"] = testing_data["Interval"]
-		else:
-			os.system("tshark -i any -f 'icmp or udp or tcp' -T fields -E separator=, -e frame.time_delta_displayed -e ip.addr -e ip.proto > detection_b.csv &")
-			time.sleep(1.5)
-			testing_data = pd.read_csv("detection_a.csv", usecols=[0], names=["Interval"], header=None)
-			testing_data["Interval"] = testing_data["Interval"]
+		os.system("tshark -i any -a duration:1 -f 'icmp or udp or tcp' -T fields -E separator=, -e frame.time_delta_displayed -e ip.addr -e ip.proto > detection_b.csv")
+		testing_data = pd.read_csv("detection_b.csv", usecols=[0], names=["Interval"], header=None)
+		testing_data["Interval"] = testing_data["Interval"]
 
 		# testing_data = pd.read_csv("attack_test.csv", usecols=[0], names=["Interval"], header=0)
 		total_packets = len(testing_data)
@@ -276,17 +269,17 @@ def main():
 			for centroid in centroids:
 				packet_arrangement[centroid] = (testing_membership_df[centroid] >= 0.999)
 
+			print(float((packet_arrangement[centroids[0]] == True).sum()) / total_packets)
 			for values in attack_clusters:
 				if (packet_arrangement[centroids[values]] == True).sum() >= (0.95 * total_packets):
 					print("Inside DDoS")
 					counter += 1
 					if counter == ddos_attack_counter:
-						print("DDoS detected")
-						os.system("notify-send 'DDoS Detected "+str(counter)+"'")
+						print("-------------------------------------DDoS detected-----------------------------------------")
+						with open("/var/log/ddos_log", "a+") as fh:
+							fh.write("DDoS Detected")
 						counter = 0
 			end = timeit.default_timer()
-			print("Testing time :", end-start)
-		os.system("pkill tshark")
 
 if __name__ == '__main__':
 	main()
