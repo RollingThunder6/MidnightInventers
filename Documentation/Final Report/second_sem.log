@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.25)  29 MAY 2017 12:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.3.21)  29 MAY 2017 14:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **second_sem.tex
 (./second_sem.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 4 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -25,13 +25,13 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2016/02/24 3.9q The Babel package
+Package: babel 2014/09/25 3.9l The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2016/02/24 3.9q Babel common definitions
+File: babel.def 2014/09/25 3.9l Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
@@ -40,40 +40,40 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 \l@newzealand = a dialect from \language\l@british 
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/03 v2.15a AMS math features
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
+Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
+File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen104
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen105
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count89
-LaTeX Info: Redefining \frac on input line 199.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count90
 \leftroot@=\count91
-LaTeX Info: Redefining \overline on input line 297.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count92
 \DOTSCASE@=\count93
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen106
-LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count94
 \c@MaxMatrixCols=\count95
 \dotsspace@=\muskip10
@@ -94,8 +94,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2735.
-LaTeX Info: Redefining \] on input line 2736.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -155,22 +155,22 @@ LaTeX Info: Redefining \hbar on input line 50.
 \f@ncyO@orf=\skip54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -310,14 +310,14 @@ ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
 ))
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
 
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks28
@@ -350,7 +350,7 @@ File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 Driver file for pgf: pgfsys-pdftex.def
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
 f
@@ -367,7 +367,7 @@ tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
@@ -426,13 +426,13 @@ File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
-File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
 \pgf@shorten@end@additional=\dimen154
 \pgf@shorten@start@additional=\dimen155
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
-File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
 \pgfpic=\box33
 \pgf@hbox=\box34
 \pgf@layerbox@main=\box35
@@ -440,12 +440,12 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
-File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
 \pgflinewidth=\dimen156
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
-File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
 \pgf@pt@x=\dimen157
 \pgf@pt@y=\dimen158
 \pgf@pt@temp=\dimen159
@@ -463,7 +463,7 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
-File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
 \pgfarrowsep=\dimen160
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
@@ -476,7 +476,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
-File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
 \pgfexternal@startupbox=\box36
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
@@ -492,27 +492,27 @@ tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
 \pgfnodeparttextbox=\box37
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen162
 \pgf@nodesepend=\dimen163
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
 )) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen164
@@ -521,11 +521,11 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 \pgffor@toks=\toks38
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 \pgf@plot@mark@count=\count126
 \pgfplotmarksize=\dimen166
 )
@@ -554,20 +554,20 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box42
 \beforetitleunit=\skip61
 \aftertitleunit=\skip62
@@ -579,7 +579,7 @@ Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
 \titlewidthfirst=\dimen177
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/block.tss
-File: block.tss 2016/03/15
+File: block.tss 2011/12/15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
@@ -867,7 +867,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 111.
 
-<Images/collegelogo.png, id=431, 85.2786pt x 107.4414pt>
+<Images/collegelogo.png, id=443, 85.2786pt x 107.4414pt>
 File: Images/collegelogo.png Graphic file (type png)
 
 <use Images/collegelogo.png>
@@ -1057,179 +1057,179 @@ Missing character: There is no ù in font ptmr7t!
 Chapter 5.
 [17
 
-] [18]
+] [18] [19]
 Chapter 6.
-[19
+[20
 
-] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 971--971
+] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 1070--1070
 []|\OT1/ptm/b/n/12 Sr.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 973--973
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
 []|\OT1/ptm/m/n/12 DDoS No-ti-fi-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 973--973
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
 \OT1/ptm/m/n/12 the three al-go-rithms
  []
 
 
-Underfull \hbox (badness 3302) in paragraph at lines 973--973
+Underfull \hbox (badness 3302) in paragraph at lines 1072--1072
 \OT1/ptm/m/n/12 i.e. Sup-port Vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 973--973
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
 \OT1/ptm/m/n/12 Ma-chine, En-tropy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 973--973
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
 \OT1/ptm/m/n/12 based dis-cretiza-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 973--973
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
 \OT1/ptm/m/n/12 and Fuzzy C-Means
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 973--973
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
 []|\OT1/ptm/m/n/12 Network Ad-min-is-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 973--974
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1073
 []|\OT1/ptm/m/n/12 SDN is es-tab-lished
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 973--974
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1073
 \OT1/ptm/m/n/12 within the en-vi-ron-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 973--974
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1073
 \OT1/ptm/m/n/12 is launched on the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 975--975
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
 []|\OT1/ptm/m/n/12 Network Mon-i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 975--975
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
 []|\OT1/ptm/m/n/12 Monitoring the net-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 975--975
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
 \OT1/ptm/m/n/12 work statis-tics for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 975--975
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
 \OT1/ptm/m/n/12 any anoma-lies us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 975--975
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
 \OT1/ptm/m/n/12 sFlow, Elas-tic-Search
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 975--976
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1075
 []|\OT1/ptm/m/n/12 The link be-tween
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 975--976
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1075
 \OT1/ptm/m/n/12 switches and the
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 975--976
+Underfull \hbox (badness 4846) in paragraph at lines 1074--1075
 \OT1/ptm/m/n/12 mon-i-tor-ing sys-tem is
  []
 
 
-Overfull \hbox (14.02989pt too wide) in paragraph at lines 969--978
+Overfull \hbox (14.02989pt too wide) in paragraph at lines 1068--1077
  [] 
  []
 
-<Images/use_case.png, id=787, 558.085pt x 436.63126pt>
+<Images/use_case.png, id=822, 558.085pt x 436.63126pt>
 File: Images/use_case.png Graphic file (type png)
 
 <use Images/use_case.png>
-Package pdftex.def Info: Images/use_case.png used on input line 985.
+Package pdftex.def Info: Images/use_case.png used on input line 1084.
 (pdftex.def)             Requested size: 279.04182pt x 218.3151pt.
- [21 <./Images/use_case.png>] [22]
-<Images/dataflow0.png, id=804, 618.31pt x 302.12875pt>
+ [22 <./Images/use_case.png>] [23]
+<Images/dataflow0.png, id=838, 618.31pt x 302.12875pt>
 File: Images/dataflow0.png Graphic file (type png)
 
 <use Images/dataflow0.png>
-Package pdftex.def Info: Images/dataflow0.png used on input line 1033.
+Package pdftex.def Info: Images/dataflow0.png used on input line 1132.
 (pdftex.def)             Requested size: 370.98886pt x 181.27864pt.
 
-<Images/dataflow1.png, id=805, 1335.99126pt x 422.57875pt>
+<Images/dataflow1.png, id=839, 1335.99126pt x 422.57875pt>
 File: Images/dataflow1.png Graphic file (type png)
 
 <use Images/dataflow1.png>
-Package pdftex.def Info: Images/dataflow1.png used on input line 1043.
+Package pdftex.def Info: Images/dataflow1.png used on input line 1142.
 (pdftex.def)             Requested size: 534.38704pt x 169.0285pt.
 
-Overfull \hbox (44.99928pt too wide) in paragraph at lines 1043--1044
+Overfull \hbox (44.99928pt too wide) in paragraph at lines 1142--1143
  [] 
  []
 
-[23 <./Images/dataflow0.png> <./Images/dataflow1.png>]
-<Images/activity.png, id=814, 945.5325pt x 513.92pt>
+[24 <./Images/dataflow0.png> <./Images/dataflow1.png>]
+<Images/activity.png, id=849, 945.5325pt x 513.92pt>
 File: Images/activity.png Graphic file (type png)
  <use Images/activity.png>
-Package pdftex.def Info: Images/activity.png used on input line 1053.
+Package pdftex.def Info: Images/activity.png used on input line 1152.
 (pdftex.def)             Requested size: 472.76509pt x 256.95937pt.
 
-[24 <./Images/activity.png>]
-<Images/state.png, id=827, 729.72626pt x 357.335pt>
+[25 <./Images/activity.png>]
+<Images/state.png, id=862, 729.72626pt x 357.335pt>
 File: Images/state.png Graphic file (type png)
  <use Images/state.png>
-Package pdftex.def Info: Images/state.png used on input line 1101.
+Package pdftex.def Info: Images/state.png used on input line 1200.
 (pdftex.def)             Requested size: 437.83914pt x 214.40265pt.
 
-[25 <./Images/state.png>]
+[26 <./Images/state.png>]
 Chapter 7.
-[26
+[27
 
-] <Images/architecture.png, id=839, 736.7525pt x 472.76625pt>
+] <Images/architecture.png, id=875, 736.7525pt x 472.76625pt>
 File: Images/architecture.png Graphic file (type png)
 
 <use Images/architecture.png>
-Package pdftex.def Info: Images/architecture.png used on input line 1125.
+Package pdftex.def Info: Images/architecture.png used on input line 1224.
 (pdftex.def)             Requested size: 442.05492pt x 283.66193pt.
- [27 <./Images/architecture.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1159--1161
+ [28 <./Images/architecture.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1258--1260
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 1234--1236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1271--1273
-
- []
-
 [29]
-Overfull \hbox (30.0728pt too wide) in paragraph at lines 1275--1279
+Underfull \hbox (badness 10000) in paragraph at lines 1333--1335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1370--1372
+
+ []
+
+[30]
+Overfull \hbox (30.0728pt too wide) in paragraph at lines 1374--1378
 \OML/ztmcm/m/it/12 cookie \OT1/ztmcm/m/n/12 = 0\OML/ztmcm/m/it/12 x\OT1/ztmcm/m
 /n/12 0\OML/ztmcm/m/it/12 ; duration \OT1/ztmcm/m/n/12 = 240\OML/ztmcm/m/it/12 
 :\OT1/ztmcm/m/n/12 478\OML/ztmcm/m/it/12 s; table \OT1/ztmcm/m/n/12 = 0\OML/ztm
@@ -1239,315 +1239,315 @@ m/n/12 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1275--1279
+Underfull \hbox (badness 10000) in paragraph at lines 1374--1378
 
  []
 
-[30]
+[31]
 Chapter 8.
-[31
+[32
 
 ]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 1325.
+put line 1424.
 
 
-LaTeX Warning: Float too large for page by 10.7741pt on input line 1486.
+LaTeX Warning: Float too large for page by 10.7741pt on input line 1585.
 
-[32] [33] [34]
+[33] [34] [35]
 Chapter 9.
-[35
+[36
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1527--1527
+Underfull \hbox (badness 10000) in paragraph at lines 1626--1626
 []|\OT1/ptm/b/n/12 Expected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1527--1528
+Underfull \hbox (badness 10000) in paragraph at lines 1626--1627
 []|\OT1/ptm/b/n/12 Generated
  []
 
 
-Underfull \hbox (badness 7203) in paragraph at lines 1530--1530
+Underfull \hbox (badness 7203) in paragraph at lines 1629--1629
 []|\OT1/ptm/m/n/12 Alert gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1530--1531
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1630
 []|\OT1/ptm/m/n/12 Alert Gen-er-
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 1533--1533
+Underfull \hbox (badness 1728) in paragraph at lines 1632--1632
 \OT1/ptm/m/n/12 ing in nor-mal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1533--1534
+Underfull \hbox (badness 10000) in paragraph at lines 1632--1633
 []|\OT1/ptm/m/n/12 Alert is not
  []
 
 
-Underfull \hbox (badness 7203) in paragraph at lines 1536--1536
+Underfull \hbox (badness 7203) in paragraph at lines 1635--1635
 []|\OT1/ptm/m/n/12 Alert gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1536--1537
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1636
 []|\OT1/ptm/m/n/12 Alert Gen-er-
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 1539--1539
+Underfull \hbox (badness 1728) in paragraph at lines 1638--1638
 \OT1/ptm/m/n/12 ing in nor-mal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1539--1540
+Underfull \hbox (badness 10000) in paragraph at lines 1638--1639
 []|\OT1/ptm/m/n/12 Alert is not
  []
 
 
-Underfull \hbox (badness 7203) in paragraph at lines 1542--1542
+Underfull \hbox (badness 7203) in paragraph at lines 1641--1641
 []|\OT1/ptm/m/n/12 Alert gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1542--1543
+Underfull \hbox (badness 10000) in paragraph at lines 1641--1642
 []|\OT1/ptm/m/n/12 Alert Gen-er-
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 1545--1545
+Underfull \hbox (badness 1728) in paragraph at lines 1644--1644
 \OT1/ptm/m/n/12 ing in nor-mal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1545--1546
+Underfull \hbox (badness 10000) in paragraph at lines 1644--1645
 []|\OT1/ptm/m/n/12 Alert is not
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1525--1550
+Underfull \hbox (badness 10000) in paragraph at lines 1624--1649
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1525--1550
+Underfull \hbox (badness 10000) in paragraph at lines 1624--1649
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1556--1556
+Underfull \hbox (badness 10000) in paragraph at lines 1655--1655
 []|\OT1/ptm/b/n/12 Expected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1556--1557
+Underfull \hbox (badness 10000) in paragraph at lines 1655--1656
 []|\OT1/ptm/b/n/12 Generated
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 1559--1559
+Underfull \hbox (badness 2318) in paragraph at lines 1658--1658
 \OT1/ptm/m/n/12 ne-ously and at-tack
  []
 
 
-Underfull \hbox (badness 4927) in paragraph at lines 1559--1559
+Underfull \hbox (badness 4927) in paragraph at lines 1658--1658
 []|\OT1/ptm/m/n/12 Attack has oc-
  []
 
 
-Underfull \hbox (badness 7203) in paragraph at lines 1559--1559
+Underfull \hbox (badness 7203) in paragraph at lines 1658--1658
 []|\OT1/ptm/m/n/12 Alert gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1559--1560
+Underfull \hbox (badness 10000) in paragraph at lines 1658--1659
 []|\OT1/ptm/m/n/12 Alert Gen-er-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1562--1563
+Underfull \hbox (badness 10000) in paragraph at lines 1661--1662
 []|\OT1/ptm/m/n/12 Alert is not
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1567
+Underfull \hbox (badness 10000) in paragraph at lines 1653--1666
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1567
+Underfull \hbox (badness 10000) in paragraph at lines 1653--1666
 
  []
 
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 1573--1573
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 1672--1672
 []|\OT1/ptm/b/n/12 Expected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1573--1574
+Underfull \hbox (badness 10000) in paragraph at lines 1672--1673
 []|\OT1/ptm/b/n/12 Generated
  []
 
 
-Underfull \hbox (badness 4927) in paragraph at lines 1576--1576
+Underfull \hbox (badness 4927) in paragraph at lines 1675--1675
 []|\OT1/ptm/m/n/12 Attack has oc-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1576--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1675--1675
 []|\OT1/ptm/m/n/12 Instantaneous
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1576--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1675--1675
 \OT1/ptm/m/n/12 alert gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1576--1577
+Underfull \hbox (badness 10000) in paragraph at lines 1675--1676
 []|\OT1/ptm/m/n/12 Alert gen-er-
  []
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 1576--1577
+Underfull \hbox (badness 1297) in paragraph at lines 1675--1676
 \OT1/ptm/m/n/12 ated within 1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1579--1579
+Underfull \hbox (badness 10000) in paragraph at lines 1678--1678
 []|\OT1/ptm/m/n/12 Normal Net-work
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1579--1580
+Underfull \hbox (badness 10000) in paragraph at lines 1678--1679
 []|\OT1/ptm/m/n/12 Alert is not
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1590--1590
+Underfull \hbox (badness 10000) in paragraph at lines 1689--1689
 []|\OT1/ptm/b/n/12 Expected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1590--1591
+Underfull \hbox (badness 10000) in paragraph at lines 1689--1690
 []|\OT1/ptm/b/n/12 Generated
  []
 
 
-Underfull \hbox (badness 4927) in paragraph at lines 1593--1593
+Underfull \hbox (badness 4927) in paragraph at lines 1692--1692
 []|\OT1/ptm/m/n/12 Attack has oc-
  []
 
 
-Underfull \hbox (badness 7203) in paragraph at lines 1593--1593
+Underfull \hbox (badness 7203) in paragraph at lines 1692--1692
 []|\OT1/ptm/m/n/12 Alert gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1593--1594
+Underfull \hbox (badness 10000) in paragraph at lines 1692--1693
 []|\OT1/ptm/m/n/12 Alert Gen-er-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1598
+Underfull \hbox (badness 10000) in paragraph at lines 1687--1697
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1598
+Underfull \hbox (badness 10000) in paragraph at lines 1687--1697
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1604--1604
+Underfull \hbox (badness 10000) in paragraph at lines 1703--1703
 []|\OT1/ptm/b/n/12 Expected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1604--1605
+Underfull \hbox (badness 10000) in paragraph at lines 1703--1704
 []|\OT1/ptm/b/n/12 Generated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1607--1607
+Underfull \hbox (badness 10000) in paragraph at lines 1706--1706
 []|\OT1/ptm/m/n/12 Normal Net-work
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1607--1608
+Underfull \hbox (badness 10000) in paragraph at lines 1706--1707
 []|\OT1/ptm/m/n/12 Alert is not
  []
 
-[37]
+[38]
 Chapter 10.
-[38
+[39
 
-] <Images/Kibana.png, id=911, 1371.1225pt x 770.88pt>
+] <Images/Kibana.png, id=946, 1371.1225pt x 770.88pt>
 File: Images/Kibana.png Graphic file (type png)
 
 <use Images/Kibana.png>
-Package pdftex.def Info: Images/Kibana.png used on input line 1635.
+Package pdftex.def Info: Images/Kibana.png used on input line 1734.
 (pdftex.def)             Requested size: 411.33992pt x 231.26578pt.
 
-<Images/Controller.png, id=912, 1371.1225pt x 770.88pt>
+<Images/Controller.png, id=947, 1371.1225pt x 770.88pt>
 File: Images/Controller.png Graphic file (type png)
 
 <use Images/Controller.png>
-Package pdftex.def Info: Images/Controller.png used on input line 1641.
+Package pdftex.def Info: Images/Controller.png used on input line 1740.
 (pdftex.def)             Requested size: 411.33992pt x 231.26578pt.
- [39 <./Images/Kibana.png (PNG copy)> <./Images/Controller.png (PNG copy)>]
-<Images/SVMOutput.png, id=918, 885.3075pt x 585.18625pt>
+ [40 <./Images/Kibana.png (PNG copy)> <./Images/Controller.png (PNG copy)>]
+<Images/SVMOutput.png, id=953, 885.3075pt x 585.18625pt>
 File: Images/SVMOutput.png Graphic file (type png)
 
 <use Images/SVMOutput.png>
-Package pdftex.def Info: Images/SVMOutput.png used on input line 1651.
+Package pdftex.def Info: Images/SVMOutput.png used on input line 1750.
 (pdftex.def)             Requested size: 354.11671pt x 234.07034pt.
 
-<Images/EBDOutput.png, id=919, 964.60374pt x 612.2875pt>
+<Images/EBDOutput.png, id=954, 964.60374pt x 612.2875pt>
 File: Images/EBDOutput.png Graphic file (type png)
 
 <use Images/EBDOutput.png>
-Package pdftex.def Info: Images/EBDOutput.png used on input line 1658.
+Package pdftex.def Info: Images/EBDOutput.png used on input line 1757.
 (pdftex.def)             Requested size: 385.83466pt x 244.91066pt.
 
-<Images/FuzzyOutput.png, id=920, 886.31125pt x 587.19376pt>
+<Images/FuzzyOutput.png, id=955, 886.31125pt x 587.19376pt>
 File: Images/FuzzyOutput.png Graphic file (type png)
 
 <use Images/FuzzyOutput.png>
-Package pdftex.def Info: Images/FuzzyOutput.png used on input line 1665.
+Package pdftex.def Info: Images/FuzzyOutput.png used on input line 1764.
 (pdftex.def)             Requested size: 354.51822pt x 234.87334pt.
- [40 <./Images/SVMOutput.png>] [41 <./Images/EBDOutput.png> <./Images/FuzzyOutp
+ [41 <./Images/SVMOutput.png>] [42 <./Images/EBDOutput.png> <./Images/FuzzyOutp
 ut.png>]
 Chapter 11.
-[42
+[43
 
-] [43]
+] [44]
 Chapter 12.
-[44
+[45
 
-] [45]
+] [46]
 Chapter 13.
-[46
+[47
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1765--1769
+Underfull \hbox (badness 10000) in paragraph at lines 1868--1872
 []\OT1/ptm/m/n/12 Rishikesh Sa-hay, Gre-gory Blanc, Zonghua Zhang, Herve De-bar
 , ``To-wards Au-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1765--1769
+Underfull \hbox (badness 10000) in paragraph at lines 1868--1872
 \OT1/ptm/m/n/12 to-nomic DDoS Mit-i-ga-tion us-ing Soft-ware De-fined Net-work-
 ing", Feb 2015,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1765--1769
+Underfull \hbox (badness 10000) in paragraph at lines 1868--1872
 \OT1/ptm/m/n/12 http://www.internetsociety.org/doc/towards-autonomic-DDoS-mitig
 ation-using-software-defined-
  []
@@ -1555,266 +1555,266 @@ ation-using-software-defined-
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no à in font ptmr7t!
 Missing character: There is no ó in font ptmr7t!
-[47]
+[48]
 Missing character: There is no √ in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no √ in font ptmr7t!
 Missing character: There is no ≠ in font ptmr7t!
- [48]
+ [49]
 Chapter 14.
-[49
+[50
 
 ]
-Underfull \hbox (badness 2538) in paragraph at lines 1920--1921
+Underfull \hbox (badness 2538) in paragraph at lines 2023--2024
 []|\OT1/ptm/m/n/12 The sys-tem will \OT1/ptm/b/n/12 de-pict \OT1/ptm/m/n/12 ap-
 pro-pri-ately
  []
 
-[50] [51] [52]
-Underfull \hbox (badness 10000) in paragraph at lines 2048--2051
-
- []
-
-[53]
-Underfull \hbox (badness 10000) in paragraph at lines 2097--2104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2162--2168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2162--2168
+[51] [52] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 2151--2154
 
  []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 2178--2180
+Underfull \hbox (badness 10000) in paragraph at lines 2200--2207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2184--2187
+Underfull \hbox (badness 10000) in paragraph at lines 2265--2271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2200--2202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2205--2207
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2208--2210
+Underfull \hbox (badness 10000) in paragraph at lines 2265--2271
 
  []
 
 [55]
-Underfull \hbox (badness 10000) in paragraph at lines 2214--2218
+Underfull \hbox (badness 10000) in paragraph at lines 2281--2283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2218--2222
+Underfull \hbox (badness 10000) in paragraph at lines 2287--2290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2303--2305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2308--2310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2311--2313
 
  []
 
 [56]
-Underfull \hbox (badness 10000) in paragraph at lines 2263--2266
+Underfull \hbox (badness 10000) in paragraph at lines 2317--2321
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2266--2271
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2266--2271
+Underfull \hbox (badness 10000) in paragraph at lines 2321--2325
 
  []
 
 [57]
-Underfull \hbox (badness 10000) in paragraph at lines 2299--2301
+Underfull \hbox (badness 10000) in paragraph at lines 2366--2369
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2303--2308
+Underfull \hbox (badness 10000) in paragraph at lines 2369--2374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2369--2374
 
  []
 
 [58]
+Underfull \hbox (badness 10000) in paragraph at lines 2402--2404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2406--2411
+
+ []
+
+[59]
 Chapter 15.
-[59
+[60
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2331--2332
+Underfull \hbox (badness 10000) in paragraph at lines 2434--2435
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2333--2334
+Underfull \hbox (badness 10000) in paragraph at lines 2436--2437
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2335--2336
+Underfull \hbox (badness 10000) in paragraph at lines 2438--2439
 
  []
 
-<Images/functionalDependency.png, id=1092, 467.7475pt x 161.60374pt>
+<Images/functionalDependency.png, id=1126, 467.7475pt x 161.60374pt>
 File: Images/functionalDependency.png Graphic file (type png)
 
 <use Images/functionalDependency.png>
-Package pdftex.def Info: Images/functionalDependency.png used on input line 235
-5.
+Package pdftex.def Info: Images/functionalDependency.png used on input line 245
+8.
 (pdftex.def)             Requested size: 233.87317pt x 80.80167pt.
- [60 <./Images/functionalDependency.png>]
+ [61 <./Images/functionalDependency.png>]
 File: Images/use_case.png Graphic file (type png)
 
 <use Images/use_case.png>
-Package pdftex.def Info: Images/use_case.png used on input line 2362.
+Package pdftex.def Info: Images/use_case.png used on input line 2465.
 (pdftex.def)             Requested size: 279.04182pt x 218.3151pt.
 File: Images/state.png Graphic file (type png)
  <use Images/state.png>
-Package pdftex.def Info: Images/state.png used on input line 2366.
+Package pdftex.def Info: Images/state.png used on input line 2469.
 (pdftex.def)             Requested size: 364.86224pt x 178.66705pt.
 File: Images/activity.png Graphic file (type png)
  <use Images/activity.png>
-Package pdftex.def Info: Images/activity.png used on input line 2373.
+Package pdftex.def Info: Images/activity.png used on input line 2476.
 (pdftex.def)             Requested size: 472.76509pt x 256.95937pt.
 
-<Images/sequence.png, id=1103, 700.6175pt x 541.02126pt>
+<Images/sequence.png, id=1137, 700.6175pt x 541.02126pt>
 File: Images/sequence.png Graphic file (type png)
 
 <use Images/sequence.png>
-Package pdftex.def Info: Images/sequence.png used on input line 2377.
+Package pdftex.def Info: Images/sequence.png used on input line 2480.
 (pdftex.def)             Requested size: 350.30789pt x 270.50996pt.
 File: Images/dataflow0.png Graphic file (type png)
  <use Images/dataflow0.png>
-Package pdftex.def Info: Images/dataflow0.png used on input line 2384.
+Package pdftex.def Info: Images/dataflow0.png used on input line 2487.
 (pdftex.def)             Requested size: 309.15424pt x 151.064pt.
 File: Images/dataflow1.png Graphic file (type png)
 
 <use Images/dataflow1.png>
-Package pdftex.def Info: Images/dataflow1.png used on input line 2388.
+Package pdftex.def Info: Images/dataflow1.png used on input line 2491.
 (pdftex.def)             Requested size: 534.38704pt x 169.0285pt.
 
-Overfull \hbox (44.99928pt too wide) in paragraph at lines 2388--2389
+Overfull \hbox (44.99928pt too wide) in paragraph at lines 2491--2492
  [][] 
  []
 
-[61] [62 <./Images/sequence.png>] [63]
+[62] [63 <./Images/sequence.png>] [64]
 Chapter 16.
-[64
+[65
 
-] <Images/gantchart.png, id=1122, 1428.33624pt x 374.39874pt>
+] <Images/gantchart.png, id=1156, 1428.33624pt x 374.39874pt>
 File: Images/gantchart.png Graphic file (type png)
 
 <use Images/gantchart.png>
-Package pdftex.def Info: Images/gantchart.png used on input line 2411.
+Package pdftex.def Info: Images/gantchart.png used on input line 2514.
 (pdftex.def)             Requested size: 512.15196pt x 227.6231pt.
 
-Overfull \hbox (22.7642pt too wide) in paragraph at lines 2411--2412
+Overfull \hbox (22.7642pt too wide) in paragraph at lines 2514--2515
 [][] 
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 2428--2428
+Underfull \hbox (badness 5374) in paragraph at lines 2531--2531
 []|\OT1/ptm/m/n/12 Project Re-port Sub-mis-sion
  []
 
 
-Underfull \hbox (badness 7133) in paragraph at lines 2429--2429
+Underfull \hbox (badness 7133) in paragraph at lines 2532--2532
 []|\OT1/ptm/m/n/12 Discussion about Plat-form
  []
 
-[65 <./Images/gantchart.png (PNG copy)>]
+[66 <./Images/gantchart.png (PNG copy)>]
 Chapter 17.
-[66
+[67
 
-] [67]
+] [68]
 Chapter 18.
-[68
+[69
 
-] [69]
+] [70]
 Chapter 19.
-[70
+[71
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2525--2527
+Underfull \hbox (badness 10000) in paragraph at lines 2628--2630
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2543--2545
+Underfull \hbox (badness 10000) in paragraph at lines 2646--2648
 
  []
 
-[71] [72]
+[72] [73]
 Chapter 20.
-[73
+[74
 
-] <Images/Achyuth.jpg, id=1180, 662.475pt x 887.315pt>
+] <Images/Achyuth.jpg, id=1214, 662.475pt x 887.315pt>
 File: Images/Achyuth.jpg Graphic file (type jpg)
 
 <use Images/Achyuth.jpg>
-Package pdftex.def Info: Images/Achyuth.jpg used on input line 2602.
+Package pdftex.def Info: Images/Achyuth.jpg used on input line 2705.
 (pdftex.def)             Requested size: 60.0pt x 80.35585pt.
- [74 <./Images/Achyuth.jpg>]
-<Images/akib.png, id=1193, 471.7625pt x 418.56375pt>
+ [75 <./Images/Achyuth.jpg>]
+<Images/akib.png, id=1228, 471.7625pt x 418.56375pt>
 File: Images/akib.png Graphic file (type png)
  <use Images/akib.png>
-Package pdftex.def Info: Images/akib.png used on input line 2619.
+Package pdftex.def Info: Images/akib.png used on input line 2722.
 (pdftex.def)             Requested size: 60.0pt x 53.23364pt.
 
-[75 <./Images/akib.png>] <Images/arun.jpg, id=1207, 1417.295pt x 1577.895pt>
+[76 <./Images/akib.png>] <Images/arun.jpg, id=1241, 1417.295pt x 1577.895pt>
 File: Images/arun.jpg Graphic file (type jpg)
 
 <use Images/arun.jpg>
-Package pdftex.def Info: Images/arun.jpg used on input line 2635.
+Package pdftex.def Info: Images/arun.jpg used on input line 2738.
 (pdftex.def)             Requested size: 60.0pt x 66.78879pt.
- [76 <./Images/arun.jpg>]
-<Images/pranav.JPG, id=1220, 327.2225pt x 420.57124pt>
+ [77 <./Images/arun.jpg>]
+<Images/pranav.JPG, id=1254, 327.2225pt x 420.57124pt>
 File: Images/pranav.JPG Graphic file (type jpg)
  <use Images/pranav.JPG>
-Package pdftex.def Info: Images/pranav.JPG used on input line 2652.
+Package pdftex.def Info: Images/pranav.JPG used on input line 2755.
 (pdftex.def)             Requested size: 60.0pt x 77.11137pt.
 
-[77 <./Images/pranav.JPG>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2666.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2666.
+[78 <./Images/pranav.JPG>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2769.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2769.
  (./second_sem.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2666.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2666.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2769.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2769.
 
 Package rerunfilecheck Info: File `second_sem.out' has not changed.
-(rerunfilecheck)             Checksum: D164FE90A7AAB2015BA5F997E5DA42D0;6981.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2666.
+(rerunfilecheck)             Checksum: 20CC5E1B01A7E8AA48F815420A3E454B;7182.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2769.
  )
 (\end occurred inside a group at level 5)
 
-### simple group (level 5) entered at line 2006 ({)
-### simple group (level 4) entered at line 1999 ({)
-### simple group (level 3) entered at line 1992 ({)
-### simple group (level 2) entered at line 1978 ({)
-### simple group (level 1) entered at line 1966 ({)
+### simple group (level 5) entered at line 2109 ({)
+### simple group (level 4) entered at line 2102 ({)
+### simple group (level 3) entered at line 2095 ({)
+### simple group (level 2) entered at line 2081 ({)
+### simple group (level 1) entered at line 2069 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 19479 strings out of 493029
- 347515 string characters out of 6136234
- 444461 words of memory out of 5000000
- 22104 multiletter control sequences out of 15000+600000
+ 19375 strings out of 494977
+ 344875 string characters out of 6180183
+ 436855 words of memory out of 5000000
+ 21667 multiletter control sequences out of 15000+600000
  46748 words of font info for 95 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 55i,13n,54p,1018b,840s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36 hyphenation exceptions out of 8191
+ 55i,13n,54p,1018b,811s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -1825,10 +1825,10 @@ t/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on second_sem.pdf (87 pages, 2247900 bytes).
+Output written on second_sem.pdf (88 pages, 2250665 bytes).
 PDF statistics:
- 1374 PDF objects out of 1440 (max. 8388607)
- 1234 compressed objects within 13 object streams
- 483 named destinations out of 1000 (max. 500000)
- 956 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1411 PDF objects out of 1440 (max. 8388607)
+ 1270 compressed objects within 13 object streams
+ 502 named destinations out of 1000 (max. 500000)
+ 980 words of extra memory for PDF output out of 10000 (max. 10000000)
 

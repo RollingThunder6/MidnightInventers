@@ -910,24 +910,122 @@ Filebeat Agent
 \newpage
 \section{Project Estimates}
 
+Prototyping model has been used in this project. Initially, the model of our project was developed using mininet, a SDN simulator software to check the feasibility of the project. The algorithms were deployed on the simulated switches with network traffic generated manually using an open-source tool Ostinato. During the later stages the project was migrated from a simulation environment to a production environment.
+
+
 \subsection{Reconciled Estimates}
 \begin{enumerate}
 \item
-\textbf{
-Cost Estimate : No hardware cost involved, the only constraint is that SDN should already be set up by the orgranization.
-}
+\textbf{Cost Estimate :} No hardware cost involved, the only constraint is that SDN should already be set up by the orgranization.
+
 
 \item
-\textbf{
-Time Estimate : 
-}
+\textbf{Time Estimate :} The project can be divided into two phases Design phase and the Implementation phase. 
+
+\begin{enumerate}
+\item
+The design phase which started in the month of June and extended till the month of September. This phase included documenting the project and listing out the modules and programming interfaces required to implement the project.
+
+\item
+The implementation started in the month of December through February. 
+
+\end{enumerate}
+
+The detailed time line for our project has been given in the Annexure C.
+
 \end{enumerate}
 
 \subsection{Project Resources}
+Project resources that will be required are:
 
-\section{Risk Management w.r.t. NP Hard analysis}
-\subsection{Risk Identification}
+\begin{itemize}
+\item
+A dedicated team of developers.
+\item
+A network setup with specifications as mentioned in hardware specification.
+\item
+Softwares with specifications as mentioned in software specification.
+\end{itemize}
+
+%\newpage
+\section{Project Schedule}
+
+\subsection{Project Task Set}
+
+\begin{enumerate}
+\item
+Domain Selection(Networking, Machine Learning, Data Mining, Physics).
+\item
+Topic Finalization.
+\item
+Feasibility Study and Market Potential Analysis.
+\item
+Abstract Submission.
+\item
+System Architecture Design.
+\item
+Preparing Synopsis.
+\item
+Project Report Submission for Stage I.
+\item
+Discussion about Platform Selection.
+\item
+System Design and Coding.
+\item
+Testing.
+\item
+Final Report Preparation.
+\end{enumerate}
+
+\section{Team Organisation}
+
+\subsection{Team Structure}
+
+The project team consists of four people:
+
+\begin{itemize}
+\item
+Achyuth Rao - Responsible for developing the Support Vector Machine algorithm for the project.
+
+\item
+Akib Shaikh - Responsible for the deployment of the Software Defined Network.
+
+\item
+Arun Pottekat - Responsible for developing the Fuzzy C-Means algorithm for the project.
+
+\item
+Pranav Tale - Responsible for developing the Entropy based algorithm for the project.
+
+\end{itemize}
+
+\subsection{Management reporting and communication}
+
+The two guides that we will be reporting to are:
+
+\begin{enumerate}
+\item
+External Guide
+\item
+Internal Guide
+\end{enumerate}
+
+\begin{itemize}
+\item
+Any progress is to be first reported to the internal co-guide.
+\item
+Upon approval, reporting is done to the internal guide.
+\item 
+Any changes or suggestions are made/adhered to.
+\item
+The presentation is given to the external guide and any further changes are
+made.
+\end{itemize}
+
+
 \newpage
+
+
+
 
 \AddToShipoutPictureBG*{%
 \begin{tikzpicture}[overlay,remember picture]
@@ -1722,7 +1820,11 @@ sequence diagram, use case diagram etc.
 We then give a description of the system components, system architecture as well as the functioning of the whole
 network environment. We also specify two cases of the DDoS attack scenarios namely, internal and external attacks and the method in which we detect the attack using the proposed algorithmic strategies. After the detection of the attack, the network administrator will be notified by the mechanism and a graphical interface would be provided for the administrator for finding the point of attack.
 
-This project will be a step towards solving the security issues faced right now. This will be a challenging endevour for us as we try to incorporate concepts like networking, machine learning and data mining.  
+%This project will be a step towards solving the security issues faced right now. This will be a challenging endevour for us as we try to incorporate concepts like networking, machine learning and data mining.  
+
+The current implementation of our project does not include the mitigation of DDoS attacks due to the chances of false positives being generated, this would  result in blocking out legitimate users which will seriously impact the organization. So, the future scope of our project includes developing a module for mitigation, increasing the accuracy of the system to remove false positives.
+
+
 \newpage
 
 \AddToShipoutPictureBG*{%
