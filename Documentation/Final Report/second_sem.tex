@@ -1416,7 +1416,7 @@ c $=$ number of centroids
 \State $testing\_data \leftarrow dataframe\ for\ testing\ data$
 \State $membership \leftarrow calculate\_membership(cluster\_count, centroids, testing\_data)$
 \State $attack\_packets \leftarrow $ Total packets having membership value above $min\_membership$ value.
-\If {$attack\_packets >= threshold * total\_packets$}
+\If {$attack\_packets \geq threshold * total\_packets$}
 \State \Return DDoS
 \EndIf
 \EndWhile
