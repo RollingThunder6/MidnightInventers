@@ -1421,9 +1421,70 @@ There was always an option to implement the project by creating a Software Defin
 
 \section{Methodologies}
 \begin{algorithm}
-\caption{Support Vector Machine}
+\caption{Entropy Based Discretization}
 \begin{algorithmic}[1]
-\State
+
+\Function{Collect\_Flow}{}
+
+\State Collect the flows from switch and store it in a text file.
+
+\State Read this text file line by line and for every line do,
+
+\State Seperate $dest\_ip$ and $no\_of\_packet$
+
+\State Calculate total number of packets for every $dest\_ip$ in current interval.
+
+\EndFunction
+
+\Function{Calc\_Entropy}{}'
+
+\State First, calculate the probabilily using,
+$P_{i} = \frac{X_{i}}{\sum_{i=1}^{N} X_{i}} $
+\newline
+\hspace*{1cm}
+where, 
+\newline
+\hspace*{1cm}
+$P_{i} = $Probability of $i^{th} dest\_ip $
+\newline
+\hspace*{1cm}
+$X_{i} = $Packet count on $i^{th} dest\_ip$
+\newline
+\hspace*{1cm}
+$N = $Total number of $ dest\_ip$
+
+\State Now, Calculate entropy of network using, 
+$H(S_{j}) = -\sum_{i=1}^{N} p_{i} log p_{i} $
+\newline
+\hspace*{1cm}
+where, 
+\newline
+\hspace*{1cm}
+$H(S_{j}) = $Entropy of $j^{th} $ switch
+
+\State Calculate the difference between above calculated entropy value and normal entropy value and stored it in $diff$
+
+\EndFunction
+
+\Function{ddos\_detection}{}
+
+\State Compare the above calculated $diff$ with predefined $threshold$ value.
+
+\If{$diff > threshold$}
+\State Increment $ddos\_detected\_count$ 
+
+	\If {$ ddos\_detected\_count > min\_ddos\_detected $ in perticular window}
+        \State \textbf{Generate alert of DDoS attack}
+    \EndIf
+
+\Else
+\State Increment program counter.
+
+\EndIf
+
+\EndFunction
+
+
 \end{algorithmic}
 \end{algorithm}
 
