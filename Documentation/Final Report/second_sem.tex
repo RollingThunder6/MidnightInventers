@@ -909,16 +909,17 @@ Filebeat Agent
 \thispagestyle{empty}
 \newpage
 \section{Project Estimates}
+
 \subsection{Reconciled Estimates}
 \begin{enumerate}
 \item
 \textbf{
-Cost Estimate :
+Cost Estimate : No hardware cost involved, the only constraint is that SDN should already be set up by the orgranization.
 }
 
 \item
 \textbf{
-Time Estimate :
+Time Estimate : 
 }
 \end{enumerate}
 
@@ -1329,11 +1330,72 @@ There was always an option to implement the project by creating a Software Defin
 \end{algorithm}
 
 \begin{algorithm}
-\caption{Entropy Based Discretization}
+\caption{Support Vector Machine}
 \begin{algorithmic}[1]
-\State
+
+\Function{Predict}{$features, w, b$}
+\State $classification \leftarrow \textbf{sign}(\textbf{dot}(features,w)) + b)$
+\State \Return $classification$
+\EndFunction
+
+\Function{Train}{$Data$}
+\State $optimized\_sv \leftarrow \textbf{dict()}$
+%\State $all\_data = [\ ]$
+\For{$y_i $ in $data$}
+	\For{$featureset$ in $data[y_i]$}
+		\For{$feature$ in $featureset$}
+			\State all\_data.\textbf{append}($feature$)
+			\Comment{$all\_data$ is a list}
+		\EndFor
+	\EndFor
+\EndFor
+%\State $max\_feature\_value \leftarrow \textbf{max}(all\_data)$
+%\State $min\_feature\_value \leftarrow \textbf{min}(all\_data)$
+\State $all\_data \leftarrow \textbf{None}$
+\State $step\_size \leftarrow [\textbf{max}(all\_data)*0.1]$
+\State $b\_range\_multiple, b\_multiple \leftarrow 2, 5$
+\State $latest\_optimum \leftarrow \textbf{max}(all\_data) * 10$ 
+\State $range\_value \leftarrow \textbf{max}(all\_data) * b\_range\_multiple$
+\For{$step$ in $step\_size$}
+	\State $w \leftarrow [latest\_optimum,latest\_optimum]$ 
+	\State $optimized \leftarrow \textbf{False}$
+	\While{$\textbf{not}$ $optimized$}
+		\For{$b$ \textbf{in range}($-range\_value, range\_value, step*b\_multiple$) }
+	
+			\For{$transformation\ \textbf{in}\ transforms$}
+				\State $w\_t \leftarrow w * transformation		$	
+				\State $found\_option \leftarrow \textbf{True}$
+				\For{$i\ \textbf{in}\ data$}
+					\For{$x_i\ \textbf{in}\ data[i]$}
+						\State $y_i \leftarrow I$ 		
+						\If{$\textbf{not}\ y_i*(\textbf{dot}(w_t,x_i) + b \geq 1)$}
+						\State $found\_option \leftarrow \textbf{False}$
+						\EndIf
+									
+					\EndFor
+				\EndFor			
+				\If {$found\_option$}
+					\State \textbf{normalize}($optimized\_sv[w\_t]$) $\leftarrow [w_t, b]$ 			 	
+				\EndIf			
+			\EndFor		
+	
+	\EndFor
+	\If {$w[0] < 0$}
+		\State $optimized \leftarrow \textbf{True}$	
+	\Else
+		\State $w \leftarrow w - step$
+	\EndIf
+	\EndWhile
+	\State $norms \leftarrow \textbf{sort}(optimized\_sv)$
+	\State $w \leftarrow optimized\_sv[norms[0]][0]$
+	\State $b \leftarrow optimized\_sv[norms[0]][1]$
+	\State $final\_optimum \leftarrow optimized\_sv[norms[0]][0]$
+\EndFor
+	
+\EndFunction
 \end{algorithmic}
 \end{algorithm}
+
 
 \begin{algorithm}
 \caption{Fuzzy C Means Clustering}
@@ -1592,23 +1654,20 @@ Negative Testing
 \end{figure}
 
 
-\begin{figure}[h]
+\begin{figure}
 \centering
 \includegraphics[scale=0.4]{EBDOutput.png}
 \caption{Entropy Based Discretization Algorithm Output}
 \end{figure}
 
 
-\begin{figure}[h]
+\begin{figure}
 \centering
 \includegraphics[scale=0.4]{FuzzyOutput.png}
 \caption{Fuzzy C-Means Algorithm Output}
 \end{figure}
 
-
-
 \newpage
-
 \AddToShipoutPictureBG*{%
 \begin{tikzpicture}[overlay,remember picture]
 \draw[line width=1.5pt]
