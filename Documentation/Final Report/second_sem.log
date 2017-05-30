@@ -1,19 +1,11 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.25)  29 MAY 2017 14:44
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.27)  29 MAY 2017 16:56
->>>>>>> f3b266af5afbf77f20354a01dbafd90f518e8905
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.25)  30 MAY 2017 10:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **second_sem.tex
 (./second_sem.tex
 LaTeX2e <2016/02/01>
-<<<<<<< HEAD
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-=======
-Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
->>>>>>> f3b266af5afbf77f20354a01dbafd90f518e8905
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -987,12 +979,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.376 \newpage
+l.375 \newpage
                [1
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <16> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 377.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 376.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1004,7 +996,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.446 
+l.445 
        [2]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
@@ -1019,15 +1011,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.476 \newpage
+l.475 \newpage
                [3]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 479.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 478.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 479.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 478.
 
 [4] [5]
 Chapter 2.
@@ -1039,9 +1031,9 @@ Chapter 3.
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 647.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 646.
 
-Overfull \hbox (3.99724pt too wide) in paragraph at lines 650--651
+Overfull \hbox (3.99724pt too wide) in paragraph at lines 649--650
 []\OT1/ptm/m/n/12 Software De-fined Net-work-ing[1][2][3] is a new and promis-i
 ng ap-proach that in-tro-duces pro-gramma-
  []
@@ -1051,7 +1043,7 @@ Chapter 4.
 [13
 
 ] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 793--794
+Underfull \hbox (badness 10000) in paragraph at lines 792--793
 
  []
 
@@ -1070,102 +1062,102 @@ Chapter 6.
 [20
 
 ] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 1070--1070
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
 []|\OT1/ptm/b/n/12 Sr.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1071
 []|\OT1/ptm/m/n/12 DDoS No-ti-fi-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1071
 \OT1/ptm/m/n/12 the three al-go-rithms
  []
 
 
-Underfull \hbox (badness 3302) in paragraph at lines 1072--1072
+Underfull \hbox (badness 3302) in paragraph at lines 1071--1071
 \OT1/ptm/m/n/12 i.e. Sup-port Vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1071
 \OT1/ptm/m/n/12 Ma-chine, En-tropy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1071
 \OT1/ptm/m/n/12 based dis-cretiza-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1071
 \OT1/ptm/m/n/12 and Fuzzy C-Means
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1071
 []|\OT1/ptm/m/n/12 Network Ad-min-is-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1073
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
 []|\OT1/ptm/m/n/12 SDN is es-tab-lished
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1073
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
 \OT1/ptm/m/n/12 within the en-vi-ron-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1072--1073
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
 \OT1/ptm/m/n/12 is launched on the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1073
 []|\OT1/ptm/m/n/12 Network Mon-i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1073
 []|\OT1/ptm/m/n/12 Monitoring the net-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1073
 \OT1/ptm/m/n/12 work statis-tics for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1073
 \OT1/ptm/m/n/12 any anoma-lies us-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1073
 \OT1/ptm/m/n/12 sFlow, Elas-tic-Search
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1075
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
 []|\OT1/ptm/m/n/12 The link be-tween
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1075
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
 \OT1/ptm/m/n/12 switches and the
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 1074--1075
+Underfull \hbox (badness 4846) in paragraph at lines 1073--1074
 \OT1/ptm/m/n/12 mon-i-tor-ing sys-tem is
  []
 
 
-Overfull \hbox (14.02989pt too wide) in paragraph at lines 1068--1077
+Overfull \hbox (14.02989pt too wide) in paragraph at lines 1067--1076
  [] 
  []
 
@@ -1173,24 +1165,24 @@ Overfull \hbox (14.02989pt too wide) in paragraph at lines 1068--1077
 File: Images/use_case.png Graphic file (type png)
 
 <use Images/use_case.png>
-Package pdftex.def Info: Images/use_case.png used on input line 1084.
+Package pdftex.def Info: Images/use_case.png used on input line 1083.
 (pdftex.def)             Requested size: 279.04182pt x 218.3151pt.
  [22 <./Images/use_case.png>] [23]
 <Images/dataflow0.png, id=838, 618.31pt x 302.12875pt>
 File: Images/dataflow0.png Graphic file (type png)
 
 <use Images/dataflow0.png>
-Package pdftex.def Info: Images/dataflow0.png used on input line 1132.
+Package pdftex.def Info: Images/dataflow0.png used on input line 1131.
 (pdftex.def)             Requested size: 370.98886pt x 181.27864pt.
 
 <Images/dataflow1.png, id=839, 1335.99126pt x 422.57875pt>
 File: Images/dataflow1.png Graphic file (type png)
 
 <use Images/dataflow1.png>
-Package pdftex.def Info: Images/dataflow1.png used on input line 1142.
+Package pdftex.def Info: Images/dataflow1.png used on input line 1141.
 (pdftex.def)             Requested size: 534.38704pt x 169.0285pt.
 
-Overfull \hbox (44.99928pt too wide) in paragraph at lines 1142--1143
+Overfull \hbox (44.99928pt too wide) in paragraph at lines 1141--1142
  [] 
  []
 
@@ -1198,14 +1190,14 @@ Overfull \hbox (44.99928pt too wide) in paragraph at lines 1142--1143
 <Images/activity.png, id=849, 945.5325pt x 513.92pt>
 File: Images/activity.png Graphic file (type png)
  <use Images/activity.png>
-Package pdftex.def Info: Images/activity.png used on input line 1152.
+Package pdftex.def Info: Images/activity.png used on input line 1151.
 (pdftex.def)             Requested size: 472.76509pt x 256.95937pt.
 
 [25 <./Images/activity.png>]
 <Images/state.png, id=862, 729.72626pt x 357.335pt>
 File: Images/state.png Graphic file (type png)
  <use Images/state.png>
-Package pdftex.def Info: Images/state.png used on input line 1200.
+Package pdftex.def Info: Images/state.png used on input line 1199.
 (pdftex.def)             Requested size: 437.83914pt x 214.40265pt.
 
 [26 <./Images/state.png>]
@@ -1216,10 +1208,10 @@ Chapter 7.
 File: Images/architecture.png Graphic file (type png)
 
 <use Images/architecture.png>
-Package pdftex.def Info: Images/architecture.png used on input line 1224.
+Package pdftex.def Info: Images/architecture.png used on input line 1223.
 (pdftex.def)             Requested size: 442.05492pt x 283.66193pt.
  [28 <./Images/architecture.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1258--1260
+Underfull \hbox (badness 10000) in paragraph at lines 1257--1259
 
  []
 
@@ -1227,17 +1219,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1258--1260
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 1333--1335
+Underfull \hbox (badness 10000) in paragraph at lines 1332--1334
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1370--1372
+Underfull \hbox (badness 10000) in paragraph at lines 1369--1371
 
  []
 
 [30]
-Overfull \hbox (30.0728pt too wide) in paragraph at lines 1374--1378
+Overfull \hbox (30.0728pt too wide) in paragraph at lines 1373--1377
 \OML/ztmcm/m/it/12 cookie \OT1/ztmcm/m/n/12 = 0\OML/ztmcm/m/it/12 x\OT1/ztmcm/m
 /n/12 0\OML/ztmcm/m/it/12 ; duration \OT1/ztmcm/m/n/12 = 240\OML/ztmcm/m/it/12 
 :\OT1/ztmcm/m/n/12 478\OML/ztmcm/m/it/12 s; table \OT1/ztmcm/m/n/12 = 0\OML/ztm
@@ -1247,7 +1239,7 @@ m/n/12 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1374--1378
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1377
 
  []
 
@@ -1257,237 +1249,237 @@ Chapter 8.
 
 ]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 1424.
+put line 1423.
 
 
-LaTeX Warning: Float too large for page by 10.7741pt on input line 1646.
+LaTeX Warning: Float too large for page by 10.7741pt on input line 1645.
 
 [33] [34] [35]
 Chapter 9.
 [36
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1687
+Underfull \hbox (badness 10000) in paragraph at lines 1686--1686
 []|\OT1/ptm/b/n/12 Expected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1687--1688
+Underfull \hbox (badness 10000) in paragraph at lines 1686--1687
 []|\OT1/ptm/b/n/12 Generated
  []
 
 
-Underfull \hbox (badness 7203) in paragraph at lines 1690--1690
+Underfull \hbox (badness 7203) in paragraph at lines 1689--1689
 []|\OT1/ptm/m/n/12 Alert gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1690--1691
+Underfull \hbox (badness 10000) in paragraph at lines 1689--1690
 []|\OT1/ptm/m/n/12 Alert Gen-er-
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 1693--1693
+Underfull \hbox (badness 1728) in paragraph at lines 1692--1692
 \OT1/ptm/m/n/12 ing in nor-mal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1693--1694
+Underfull \hbox (badness 10000) in paragraph at lines 1692--1693
 []|\OT1/ptm/m/n/12 Alert is not
  []
 
 
-Underfull \hbox (badness 7203) in paragraph at lines 1696--1696
+Underfull \hbox (badness 7203) in paragraph at lines 1695--1695
 []|\OT1/ptm/m/n/12 Alert gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1696--1697
+Underfull \hbox (badness 10000) in paragraph at lines 1695--1696
 []|\OT1/ptm/m/n/12 Alert Gen-er-
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 1699--1699
+Underfull \hbox (badness 1728) in paragraph at lines 1698--1698
 \OT1/ptm/m/n/12 ing in nor-mal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1699--1700
+Underfull \hbox (badness 10000) in paragraph at lines 1698--1699
 []|\OT1/ptm/m/n/12 Alert is not
  []
 
 
-Underfull \hbox (badness 7203) in paragraph at lines 1702--1702
+Underfull \hbox (badness 7203) in paragraph at lines 1701--1701
 []|\OT1/ptm/m/n/12 Alert gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1702--1703
+Underfull \hbox (badness 10000) in paragraph at lines 1701--1702
 []|\OT1/ptm/m/n/12 Alert Gen-er-
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 1705--1705
+Underfull \hbox (badness 1728) in paragraph at lines 1704--1704
 \OT1/ptm/m/n/12 ing in nor-mal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1705--1706
+Underfull \hbox (badness 10000) in paragraph at lines 1704--1705
 []|\OT1/ptm/m/n/12 Alert is not
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1685--1710
+Underfull \hbox (badness 10000) in paragraph at lines 1684--1709
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1685--1710
+Underfull \hbox (badness 10000) in paragraph at lines 1684--1709
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1716--1716
+Underfull \hbox (badness 10000) in paragraph at lines 1715--1715
 []|\OT1/ptm/b/n/12 Expected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1716--1717
+Underfull \hbox (badness 10000) in paragraph at lines 1715--1716
 []|\OT1/ptm/b/n/12 Generated
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 1719--1719
+Underfull \hbox (badness 2318) in paragraph at lines 1718--1718
 \OT1/ptm/m/n/12 ne-ously and at-tack
  []
 
 
-Underfull \hbox (badness 4927) in paragraph at lines 1719--1719
+Underfull \hbox (badness 4927) in paragraph at lines 1718--1718
 []|\OT1/ptm/m/n/12 Attack has oc-
  []
 
 
-Underfull \hbox (badness 7203) in paragraph at lines 1719--1719
+Underfull \hbox (badness 7203) in paragraph at lines 1718--1718
 []|\OT1/ptm/m/n/12 Alert gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1719--1720
+Underfull \hbox (badness 10000) in paragraph at lines 1718--1719
 []|\OT1/ptm/m/n/12 Alert Gen-er-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1722--1723
+Underfull \hbox (badness 10000) in paragraph at lines 1721--1722
 []|\OT1/ptm/m/n/12 Alert is not
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1714--1727
+Underfull \hbox (badness 10000) in paragraph at lines 1713--1726
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1714--1727
+Underfull \hbox (badness 10000) in paragraph at lines 1713--1726
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1733--1733
+Underfull \hbox (badness 10000) in paragraph at lines 1732--1732
 []|\OT1/ptm/b/n/12 Expected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1733--1734
+Underfull \hbox (badness 10000) in paragraph at lines 1732--1733
 []|\OT1/ptm/b/n/12 Generated
  []
 
 
-Underfull \hbox (badness 4927) in paragraph at lines 1736--1736
+Underfull \hbox (badness 4927) in paragraph at lines 1735--1735
 []|\OT1/ptm/m/n/12 Attack has oc-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1736--1736
+Underfull \hbox (badness 10000) in paragraph at lines 1735--1735
 []|\OT1/ptm/m/n/12 Instantaneous
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1736--1736
+Underfull \hbox (badness 10000) in paragraph at lines 1735--1735
 \OT1/ptm/m/n/12 alert gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1736--1737
+Underfull \hbox (badness 10000) in paragraph at lines 1735--1736
 []|\OT1/ptm/m/n/12 Alert gen-er-
  []
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 1736--1737
+Underfull \hbox (badness 1297) in paragraph at lines 1735--1736
 \OT1/ptm/m/n/12 ated within 1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1739--1739
+Underfull \hbox (badness 10000) in paragraph at lines 1738--1738
 []|\OT1/ptm/m/n/12 Normal Net-work
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1739--1740
+Underfull \hbox (badness 10000) in paragraph at lines 1738--1739
 []|\OT1/ptm/m/n/12 Alert is not
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1750--1750
+Underfull \hbox (badness 10000) in paragraph at lines 1749--1749
 []|\OT1/ptm/b/n/12 Expected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1750--1751
+Underfull \hbox (badness 10000) in paragraph at lines 1749--1750
 []|\OT1/ptm/b/n/12 Generated
  []
 
 
-Underfull \hbox (badness 4927) in paragraph at lines 1753--1753
+Underfull \hbox (badness 4927) in paragraph at lines 1752--1752
 []|\OT1/ptm/m/n/12 Attack has oc-
  []
 
 
-Underfull \hbox (badness 7203) in paragraph at lines 1753--1753
+Underfull \hbox (badness 7203) in paragraph at lines 1752--1752
 []|\OT1/ptm/m/n/12 Alert gen-er-a-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1753--1754
+Underfull \hbox (badness 10000) in paragraph at lines 1752--1753
 []|\OT1/ptm/m/n/12 Alert Gen-er-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1748--1758
+Underfull \hbox (badness 10000) in paragraph at lines 1747--1757
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1748--1758
+Underfull \hbox (badness 10000) in paragraph at lines 1747--1757
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1764--1764
+Underfull \hbox (badness 10000) in paragraph at lines 1763--1763
 []|\OT1/ptm/b/n/12 Expected
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1764--1765
+Underfull \hbox (badness 10000) in paragraph at lines 1763--1764
 []|\OT1/ptm/b/n/12 Generated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1767--1767
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1766
 []|\OT1/ptm/m/n/12 Normal Net-work
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1767--1768
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
 []|\OT1/ptm/m/n/12 Alert is not
  []
 
@@ -1499,35 +1491,35 @@ Chapter 10.
 File: Images/Kibana.png Graphic file (type png)
 
 <use Images/Kibana.png>
-Package pdftex.def Info: Images/Kibana.png used on input line 1795.
+Package pdftex.def Info: Images/Kibana.png used on input line 1794.
 (pdftex.def)             Requested size: 411.33992pt x 231.26578pt.
 
 <Images/Controller.png, id=947, 1371.1225pt x 770.88pt>
 File: Images/Controller.png Graphic file (type png)
 
 <use Images/Controller.png>
-Package pdftex.def Info: Images/Controller.png used on input line 1801.
+Package pdftex.def Info: Images/Controller.png used on input line 1800.
 (pdftex.def)             Requested size: 411.33992pt x 231.26578pt.
  [40 <./Images/Kibana.png (PNG copy)> <./Images/Controller.png (PNG copy)>]
 <Images/SVMOutput.png, id=953, 885.3075pt x 585.18625pt>
 File: Images/SVMOutput.png Graphic file (type png)
 
 <use Images/SVMOutput.png>
-Package pdftex.def Info: Images/SVMOutput.png used on input line 1811.
+Package pdftex.def Info: Images/SVMOutput.png used on input line 1810.
 (pdftex.def)             Requested size: 354.11671pt x 234.07034pt.
 
 <Images/EBDOutput.png, id=954, 964.60374pt x 612.2875pt>
 File: Images/EBDOutput.png Graphic file (type png)
 
 <use Images/EBDOutput.png>
-Package pdftex.def Info: Images/EBDOutput.png used on input line 1818.
+Package pdftex.def Info: Images/EBDOutput.png used on input line 1817.
 (pdftex.def)             Requested size: 385.83466pt x 244.91066pt.
 
 <Images/FuzzyOutput.png, id=955, 886.31125pt x 587.19376pt>
 File: Images/FuzzyOutput.png Graphic file (type png)
 
 <use Images/FuzzyOutput.png>
-Package pdftex.def Info: Images/FuzzyOutput.png used on input line 1825.
+Package pdftex.def Info: Images/FuzzyOutput.png used on input line 1824.
 (pdftex.def)             Requested size: 354.51822pt x 234.87334pt.
  [41 <./Images/SVMOutput.png>] [42 <./Images/EBDOutput.png> <./Images/FuzzyOutp
 ut.png>]
@@ -1543,19 +1535,19 @@ Chapter 13.
 [47
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1929--1933
+Underfull \hbox (badness 10000) in paragraph at lines 1928--1932
 []\OT1/ptm/m/n/12 Rishikesh Sa-hay, Gre-gory Blanc, Zonghua Zhang, Herve De-bar
 , ``To-wards Au-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1929--1933
+Underfull \hbox (badness 10000) in paragraph at lines 1928--1932
 \OT1/ptm/m/n/12 to-nomic DDoS Mit-i-ga-tion us-ing Soft-ware De-fined Net-work-
 ing", Feb 2015,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1929--1933
+Underfull \hbox (badness 10000) in paragraph at lines 1928--1932
 \OT1/ptm/m/n/12 http://www.internetsociety.org/doc/towards-autonomic-DDoS-mitig
 ation-using-software-defined-
  []
@@ -1573,88 +1565,88 @@ Chapter 14.
 [50
 
 ]
-Underfull \hbox (badness 2538) in paragraph at lines 2084--2085
+Underfull \hbox (badness 2538) in paragraph at lines 2083--2084
 []|\OT1/ptm/m/n/12 The sys-tem will \OT1/ptm/b/n/12 de-pict \OT1/ptm/m/n/12 ap-
 pro-pri-ately
  []
 
 [51] [52] [53]
-Underfull \hbox (badness 10000) in paragraph at lines 2212--2215
+Underfull \hbox (badness 10000) in paragraph at lines 2211--2214
 
  []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 2261--2268
+Underfull \hbox (badness 10000) in paragraph at lines 2260--2267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2326--2332
+Underfull \hbox (badness 10000) in paragraph at lines 2325--2331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2326--2332
+Underfull \hbox (badness 10000) in paragraph at lines 2325--2331
 
  []
 
 [55]
-Underfull \hbox (badness 10000) in paragraph at lines 2342--2344
+Underfull \hbox (badness 10000) in paragraph at lines 2341--2343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2351
+Underfull \hbox (badness 10000) in paragraph at lines 2347--2350
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2364--2366
+Underfull \hbox (badness 10000) in paragraph at lines 2363--2365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2369--2371
+Underfull \hbox (badness 10000) in paragraph at lines 2368--2370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2372--2374
+Underfull \hbox (badness 10000) in paragraph at lines 2371--2373
 
  []
 
 [56]
-Underfull \hbox (badness 10000) in paragraph at lines 2378--2382
+Underfull \hbox (badness 10000) in paragraph at lines 2377--2381
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2382--2386
+Underfull \hbox (badness 10000) in paragraph at lines 2381--2385
 
  []
 
 [57]
-Underfull \hbox (badness 10000) in paragraph at lines 2427--2430
+Underfull \hbox (badness 10000) in paragraph at lines 2426--2429
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2430--2435
+Underfull \hbox (badness 10000) in paragraph at lines 2429--2434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2430--2435
+Underfull \hbox (badness 10000) in paragraph at lines 2429--2434
 
  []
 
 [58]
-Underfull \hbox (badness 10000) in paragraph at lines 2463--2465
+Underfull \hbox (badness 10000) in paragraph at lines 2462--2464
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2467--2472
+Underfull \hbox (badness 10000) in paragraph at lines 2466--2471
 
  []
 
@@ -1663,17 +1655,17 @@ Chapter 15.
 [60
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2495--2496
+Underfull \hbox (badness 10000) in paragraph at lines 2494--2495
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2497--2498
+Underfull \hbox (badness 10000) in paragraph at lines 2496--2497
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2499--2500
+Underfull \hbox (badness 10000) in paragraph at lines 2498--2499
 
  []
 
@@ -1682,40 +1674,40 @@ File: Images/functionalDependency.png Graphic file (type png)
 
 <use Images/functionalDependency.png>
 Package pdftex.def Info: Images/functionalDependency.png used on input line 251
-9.
+8.
 (pdftex.def)             Requested size: 233.87317pt x 80.80167pt.
  [61 <./Images/functionalDependency.png>]
 File: Images/use_case.png Graphic file (type png)
 
 <use Images/use_case.png>
-Package pdftex.def Info: Images/use_case.png used on input line 2526.
+Package pdftex.def Info: Images/use_case.png used on input line 2525.
 (pdftex.def)             Requested size: 279.04182pt x 218.3151pt.
 File: Images/state.png Graphic file (type png)
  <use Images/state.png>
-Package pdftex.def Info: Images/state.png used on input line 2530.
+Package pdftex.def Info: Images/state.png used on input line 2529.
 (pdftex.def)             Requested size: 364.86224pt x 178.66705pt.
 File: Images/activity.png Graphic file (type png)
  <use Images/activity.png>
-Package pdftex.def Info: Images/activity.png used on input line 2537.
+Package pdftex.def Info: Images/activity.png used on input line 2536.
 (pdftex.def)             Requested size: 472.76509pt x 256.95937pt.
 
 <Images/sequence.png, id=1137, 700.6175pt x 541.02126pt>
 File: Images/sequence.png Graphic file (type png)
 
 <use Images/sequence.png>
-Package pdftex.def Info: Images/sequence.png used on input line 2541.
+Package pdftex.def Info: Images/sequence.png used on input line 2540.
 (pdftex.def)             Requested size: 350.30789pt x 270.50996pt.
 File: Images/dataflow0.png Graphic file (type png)
  <use Images/dataflow0.png>
-Package pdftex.def Info: Images/dataflow0.png used on input line 2548.
+Package pdftex.def Info: Images/dataflow0.png used on input line 2547.
 (pdftex.def)             Requested size: 309.15424pt x 151.064pt.
 File: Images/dataflow1.png Graphic file (type png)
 
 <use Images/dataflow1.png>
-Package pdftex.def Info: Images/dataflow1.png used on input line 2552.
+Package pdftex.def Info: Images/dataflow1.png used on input line 2551.
 (pdftex.def)             Requested size: 534.38704pt x 169.0285pt.
 
-Overfull \hbox (44.99928pt too wide) in paragraph at lines 2552--2553
+Overfull \hbox (44.99928pt too wide) in paragraph at lines 2551--2552
  [][] 
  []
 
@@ -1727,20 +1719,20 @@ Chapter 16.
 File: Images/gantchart.png Graphic file (type png)
 
 <use Images/gantchart.png>
-Package pdftex.def Info: Images/gantchart.png used on input line 2575.
+Package pdftex.def Info: Images/gantchart.png used on input line 2574.
 (pdftex.def)             Requested size: 512.15196pt x 227.6231pt.
 
-Overfull \hbox (22.7642pt too wide) in paragraph at lines 2575--2576
+Overfull \hbox (22.7642pt too wide) in paragraph at lines 2574--2575
 [][] 
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 2592--2592
+Underfull \hbox (badness 5374) in paragraph at lines 2591--2591
 []|\OT1/ptm/m/n/12 Project Re-port Sub-mis-sion
  []
 
 
-Underfull \hbox (badness 7133) in paragraph at lines 2593--2593
+Underfull \hbox (badness 7133) in paragraph at lines 2592--2592
 []|\OT1/ptm/m/n/12 Discussion about Plat-form
  []
 
@@ -1757,12 +1749,12 @@ Chapter 19.
 [71
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2689--2691
+Underfull \hbox (badness 10000) in paragraph at lines 2688--2690
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2707--2709
+Underfull \hbox (badness 10000) in paragraph at lines 2706--2708
 
  []
 
@@ -1774,63 +1766,54 @@ Chapter 20.
 File: Images/Achyuth.jpg Graphic file (type jpg)
 
 <use Images/Achyuth.jpg>
-Package pdftex.def Info: Images/Achyuth.jpg used on input line 2766.
+Package pdftex.def Info: Images/Achyuth.jpg used on input line 2765.
 (pdftex.def)             Requested size: 60.0pt x 80.35585pt.
  [75 <./Images/Achyuth.jpg>]
 <Images/akib.png, id=1228, 471.7625pt x 418.56375pt>
 File: Images/akib.png Graphic file (type png)
  <use Images/akib.png>
-Package pdftex.def Info: Images/akib.png used on input line 2783.
+Package pdftex.def Info: Images/akib.png used on input line 2782.
 (pdftex.def)             Requested size: 60.0pt x 53.23364pt.
 
 [76 <./Images/akib.png>] <Images/arun.jpg, id=1241, 1417.295pt x 1577.895pt>
 File: Images/arun.jpg Graphic file (type jpg)
 
 <use Images/arun.jpg>
-Package pdftex.def Info: Images/arun.jpg used on input line 2799.
+Package pdftex.def Info: Images/arun.jpg used on input line 2798.
 (pdftex.def)             Requested size: 60.0pt x 66.78879pt.
  [77 <./Images/arun.jpg>]
 <Images/pranav.JPG, id=1254, 327.2225pt x 420.57124pt>
 File: Images/pranav.JPG Graphic file (type jpg)
  <use Images/pranav.JPG>
-Package pdftex.def Info: Images/pranav.JPG used on input line 2816.
+Package pdftex.def Info: Images/pranav.JPG used on input line 2815.
 (pdftex.def)             Requested size: 60.0pt x 77.11137pt.
 
 [78 <./Images/pranav.JPG>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2830.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2830.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2829.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2829.
  (./second_sem.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2830.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2830.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2829.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2829.
 
 Package rerunfilecheck Info: File `second_sem.out' has not changed.
 (rerunfilecheck)             Checksum: 20CC5E1B01A7E8AA48F815420A3E454B;7182.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2830.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2829.
  )
 (\end occurred inside a group at level 5)
 
-### simple group (level 5) entered at line 2170 ({)
-### simple group (level 4) entered at line 2163 ({)
-### simple group (level 3) entered at line 2156 ({)
-### simple group (level 2) entered at line 2142 ({)
-### simple group (level 1) entered at line 2130 ({)
+### simple group (level 5) entered at line 2169 ({)
+### simple group (level 4) entered at line 2162 ({)
+### simple group (level 3) entered at line 2155 ({)
+### simple group (level 2) entered at line 2141 ({)
+### simple group (level 1) entered at line 2129 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 19501 strings out of 493029
- 347734 string characters out of 6136234
- 444461 words of memory out of 5000000
- 22107 multiletter control sequences out of 15000+600000
+ 19503 strings out of 493029
+ 347760 string characters out of 6136234
+ 449461 words of memory out of 5000000
+ 22109 multiletter control sequences out of 15000+600000
  46748 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
-=======
- 19503 strings out of 494910
- 347760 string characters out of 6179836
- 444770 words of memory out of 5000000
- 21865 multiletter control sequences out of 15000+600000
- 46748 words of font info for 95 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
->>>>>>> f3b266af5afbf77f20354a01dbafd90f518e8905
  55i,13n,54p,1018b,840s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
@@ -1842,11 +1825,7 @@ t/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmri8a.pfb>
-<<<<<<< HEAD
-Output written on second_sem.pdf (88 pages, 2250889 bytes).
-=======
-Output written on second_sem.pdf (88 pages, 2252943 bytes).
->>>>>>> f3b266af5afbf77f20354a01dbafd90f518e8905
+Output written on second_sem.pdf (88 pages, 2252908 bytes).
 PDF statistics:
  1411 PDF objects out of 1440 (max. 8388607)
  1270 compressed objects within 13 object streams
