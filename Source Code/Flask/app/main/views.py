@@ -33,7 +33,7 @@ def index():
 
 @main.route("/devices", methods=['GET', 'POST'])
 def devices():
-	resp = requests.get("http://localhost:8002/web/jsonrest/host_tracker/devices")
+	resp = requests.get("http://localhost:8082/web/jsonrest/host_tracker/devices")
 
 	# [ 'Logging functionality' ]
 	# logger = logging.getLogger(__name__)
@@ -52,14 +52,14 @@ def devices():
 
 @main.route("/switches", methods=['GET'])
 def switches():
-	resp = requests.get("http://localhost:8002/web/jsonrest/of/switches")
+	resp = requests.get("http://localhost:8082/web/jsonrest/of/switches")
 	return render_template("switches.html", resp=resp.json(), name=session.get("name")), 200
 
 @main.route("/links", methods=['GET'])
 def links():
-	links_rest = requests.get("http://localhost:8002/web/jsonrest/discovery/links")
-	switches_rest = requests.get("http://localhost:8002/web/jsonrest/of/switches")
-	devices_rest = requests.get("http://localhost:8002/web/jsonrest/host_tracker/devices")
+	links_rest = requests.get("http://localhost:8082/web/jsonrest/discovery/links")
+	switches_rest = requests.get("http://localhost:8082/web/jsonrest/of/switches")
+	devices_rest = requests.get("http://localhost:8082/web/jsonrest/host_tracker/devices")
 	
 	links_json = links_rest.json()
 	switches_json = switches_rest.json()
