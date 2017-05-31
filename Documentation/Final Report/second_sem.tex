@@ -1842,8 +1842,124 @@ Negative Testing
 \thispagestyle{empty}
 \newpage
 \section{Installation and un-installation}
+\subsection{Installation}
+Given the required hardware is present along with root priveleges (sudo) the following softwares can be installed. We illustrate the installation procedure considering Ubuntu 14.04 is installed, however any Linux Operating System will work well with little changes in the procedure.
 
-\section{User Help}
+According to the Software Requirements the installation procedure is as follows:
+\begin{enumerate}
+\item
+Oracle VirtualBox
+\newline
+It can either be installed from the software center of Ubuntu or more advanced users can install it from the command line.
+\newline
+Step 1: Go to the Ubuntu Software Center and search for VirtualBox
+\newline
+Step 2: Click on Install and provide the password
+
+\item
+Open vSwitch
+\newline
+You can install it from the command line for Ubuntu 14.04. However if you prefer the latest version which is not updated in its repository, you can install from tar file
+\begin{center}
+\$ sudo apt-get install openvswitch-switch
+\end{center}
+
+\item
+tshark
+\newline
+If you simply need tshark then it can be installed using the following command. If you need Wireshark then tshark will be installed along with it by default.
+\begin{center}
+\$ sudo apt-get install tshark
+\end{center}
+
+\item
+Ubuntu VM's
+\newline
+After VirtualBox or any hypervisor is available you need to install 4 virtual machines ech having at least 1 logical core, 1.5 GB RAM and 10 GB minimum hard disk. 
+
+For VirtualBox select the downloaed ISO of Ubuntu 14.04 along with the suitable VM specifications to install them.
+
+\item
+Apache Web Server
+\newline
+After the VM's have been installed install the Apache web server using simple command.
+\begin{center}
+\$ sudo apt-get install apache2
+\end{center}
+
+\item
+Ostinato
+\newline
+This is an open source packet generation tool which can be installed using
+\begin{center}
+\$ sudo apt-get install ostinato
+\end{center}
+
+\item
+Elasticsearch
+\begin{center}
+\$ sudo apt-get install elasticsearch 
+\end{center}
+
+\item
+Logstash
+\begin{center}
+\$ sudo apt-get install logstash
+\end{center}
+
+\item
+Kibana
+\begin{center}
+\$ sudo apt-get install kibana
+\end{center}
+
+\item
+hsflowd
+\newline
+Download the debian file for hsflowd from the official site. For any further queries read the documentation. This need to be installed on both the physical machines.
+\begin{center}
+\$ sudo dpkg -i hsflowd.deb
+\end{center}
+
+\item
+sFlow-RT
+\newline
+Download the sflow-rt application from the official site. You just need to run the main program of sflow-rt.
+
+\item
+POX
+\newline
+Download the POX controller from the GitHub repo which also includes the json-rest  part integrated with it. You just need to enter the directory and run the controller using the pox.py program.
+
+\item
+Python Flask
+\newline
+You will need python pip for installing Flask. Install pip using
+\begin{center}
+\$ sudo apt-get install python-pip \\
+\$ sudo pip install Flask
+\end{center}
+
+\item
+Filebeat Agent
+\newline
+Install the filebeat agent for tailing the log file and sending to the elasticsearch server
+\begin{center}
+\$ sudo apt-get install filebeat
+\end{center}
+
+\item
+Watcher
+\newline
+This is available as a plugin for elasticsearch. Refer elasticsearch documentation for installing watcher plugin.
+\end{enumerate}
+
+\subsection{Uninstallation}
+Remove the VM's from VirtualBox and free the used space
+For all other softwares a simple purge command will work well.
+\begin{center}
+\$ sudo apt-get purge --remove $<$name\_of\_software$>$
+\end{center}
 \newpage
 
 \AddToShipoutPictureBG*{%
@@ -2015,6 +2131,52 @@ Alexander Gelbukh, Félix Castro Espinoza, Sofía N. Galicia-Haro,
 ``Nature-Inspired Computation and Machine Learning",
 Springer,
 2014
+
+\bibitem{BasePaper19}
+Vapnik, Vladimir,
+``The Nature of Statistical Learning Theory",
+Springer,
+2000
+
+\bibitem{BasePaper20}
+Jose Valente de Oliveira, Witold Pedrycz,
+``Advances in Fuzzy Clustering an its Applcations",
+Wiley,
+2007
+
+\bibitem{BasePaper21}
+Sindhu Arumugam, Dr. V Vanitha, Ms. V.P. Sumathi,
+``Detection of BotNet using Fuzzy C-Means Clustering by Analysing the network traffic",
+International Journal of Scientific \& Engineering Research, Vol. 6 Issue 4,
+April 2015
+
+\bibitem{BasePaper22}
+Disha Sharma, 
+``Fuzzy Clustering as an Intrusion Detection Technique",
+International Journal of Computer Science \& Communication Network, Vol. 1(1),
+September-October 2011
+
+\bibitem{BasePaper23}
+Jerzy W. Grzymala Busse, 
+``Discretization Based on Entropy \& Multiple Scanning", 
+Entropy,
+2013.
+
+\bibitem{BasePaper24}
+Claudio Rebelo De Sa, Carlos Soares, Arno Knobbe , 
+``Entropy Based Discretization methods for ranking data", 
+Elsevier Vol. 329.
+
+\bibitem{BasePaper25}
+Jiawei Han, Micheline Kamber, Jian Pei, 
+``Data Mining: Conepts and Techniques 3rd ed.", 
+Morgan Kaufmann, 
+July 2011.
+
+\bibitem{BasePaper26}
+Kevin Meurer, 
+``A Simple Guide to Entropy-Based Discretization", 
+URL: http://kevinmeurer.com/a-simple-guide-to-entropy-based-discretization/
 \end{thebibliography}
 \endgroup
 \newpage
