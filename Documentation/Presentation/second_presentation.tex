@@ -8,6 +8,7 @@
 \usepackage{wrapfig}
 \usepackage{graphicx}
 \usepackage{array}
+\graphicspath{ {Images/} }
 \author{
 \footnotesize
 \textbf{
@@ -24,7 +25,7 @@ Guide:- Prof. Mrs. Aparna Junnarkar
 \title{
 \small
 \textbf{
-Detection of DDoS in SDN environment using Support Vector Machine, Entropy based discretization and Fuzzy C Means Clustering
+Detection of DDoS in SDN environment using SVM and Entropy based discretization.
 }
 }
 \date{}
@@ -46,6 +47,8 @@ Detection of DDoS in SDN environment using Support Vector Machine, Entropy based
 \footnotesize
 \tableofcontents
 \end{frame}
+
+
 
 \begin{frame}
 
@@ -80,7 +83,7 @@ DDoS attack makes the network resources unavailable.
 \begin{itemize}
 \footnotesize
 \item
-To provide a solution for the detection of DDoS attack in SDN environment using Support Vector Machine, Entropy based mechanism, Fuzzy C Means Clustering and monitoring OpenFlow statistics.
+To provide a solution for the detection of DDoS attack in SDN environment using SVM and Entropy based mechanism and monitoring OpenFlow statistics.
 \end{itemize}
 \end{frame}
 
@@ -177,9 +180,9 @@ To grasp an overview about the different network monitoring tools.
 %OpenFlow protocol in SDN switches.
 Set up of SDN environment.
 \item
-Entropy, Fuzzy C Means and SVM based DDoS detection method.
+Entropy and SVM based DDoS detection method.
 \item
-OpenFlow Monitoring application using POX API.
+OpenFlow Monitoring application using OpenDaylight API.
 \end{itemize}
 \end{center}
 \end{frame}
@@ -276,10 +279,10 @@ Open Networking Foundation &
 ONF White Paper, 2012 & 
 Description about Software Defined Networks\\
 \hline
-Advances in Fuzzy Clustering and its Applications & 
-Jose Valente de Oliveira, Witold Pedrycz &
-Wiley 2007 &
-This book provides information about the algorithm for Fuzzy C Means Clustering.\\
+Detection of DDoS Attacks using Enhanced Support Vector Machines with Real Time Generated Dataset & 
+T.Subbulakshmi, Dr. S. Mercy Shalinie, D. AnandK,  K.Kannatha&
+IEEE 2013 &
+Provided information how to create and use datasets for SVM.\\
 \hline
 OpenFlow Switch Specification& 
 Open Networking Foundation &
@@ -335,10 +338,10 @@ $T = \lbrace $ Flow Table $ \rbrace$, \\
 $F \subseteq N$
 \newline
 
-$P = \lbrace P_{EBD}, P_{SVM}, P_{FCM} \rbrace$
+$P = \lbrace P_{EBD}, P_{SVM} \rbrace$
 \newline
 
-$O = \lbrace O_{EBD} \cup O_{SVM} \cup O_{FCM} \rbrace$
+$O = \lbrace O_{EBD} \cup O_{SVM} \rbrace$
 
 \end{frame}
 
@@ -351,15 +354,13 @@ $\lbrace$
 
 \begin{itemize}
 \footnotesize
-\item $I_{EBD} = \lbrace U_{i} \mid U_{i} = ($ Dest. Addr., Count$),  $ $ U_{i}  \subset F_{i} \rbrace$
+\item $I_{EBD} = \lbrace U_{i} \mid U_{i} = ($ Src. Addr., Dest. Addr., Port no., Count$),  $ $ U_{i}  \subset F_{i} \rbrace$
 
 \item $P_{i} = \frac{C_{i}}{N}$  
 
 \item $\varepsilon = \sum_{i=0}^{n} - P_{i} log P_{i}$
 
-\item $\varepsilon_{n} = \frac{\varepsilon}{N} $
-
-\item $(\lambda < \varepsilon_{n}) \rightarrow  $ $ (\beta = 0)$ \\ $(\lambda > \varepsilon_{n}) \rightarrow  $ $ (\beta = 1)$
+\item $(\lambda < \varepsilon) \rightarrow  $ $ (\beta = 0)$ \\ $(\lambda > \varepsilon) \rightarrow  $ $ (\beta = 1)$
 
 \item $ O_{EBD} = \lbrace \beta \mid \beta \in (0, $ $1) \rbrace$
 \end{itemize}
@@ -371,36 +372,15 @@ $\lbrace$
 \indent
 \begin{itemize}
 \footnotesize
-\item $I_{SVM} = \lbrace V_{i} \mid V_{i} = ($ Src. Addr., Dest. Addr., Time, Prot.$) \rbrace$
+\item $I_{SVM} = \lbrace V_{i} \mid V_{i} = ($ Src. Addr., Dest. Addr., Port no., Time, Prot., Count$) \rbrace$
+
+\item $RBF = e^{-\gamma(\mid x_{1}-x_{2} \mid)+c}$ 
 
 \item $y = \overline{\omega} * x + b$ 
 
 \item $(y \leq -1) \rightarrow  $ $ (\alpha = 1)$ \\ $(y \geq 1) \rightarrow  $ $ (\alpha = 0)$
 
 \item $ O_{SVM} = \lbrace \alpha \mid \alpha \in (0, $ $1) \rbrace$
-\end{itemize}
-$ \rbrace$
-\end{frame}
-
-\begin{frame}
-\frametitle{Mathematical Model}
-\footnotesize
-$P_{FCM} $ $ (I_{FCM},$ $O_{FCM})$\\
-$\lbrace$
-\indent
-\begin{itemize}
-\footnotesize
-\item $I_{FCM} = \lbrace W_{i} \mid W_{i} = ($ Time, Dest. Addr., X $) \rbrace$
-
-\item $P_{l}(z_{i}) = \sum_{j=1}^{X}  \epsilon ^ -{ \alpha || z_{i} - z_{l} ||}^{2} $ 
-
-\item $ u_{ij} = \frac{d_{ij}^{-\frac{2}{m-1}}}{\sum_{l=1}^{c} d_{lj}^{- \frac{2}{m-1}}} $
-
-\item $ c_{ij} = \frac{\sum_{j=1}^{X} u_{ij}^{m}C_{j}}{\sum_{j=1}^{X} u_{ij}^{m}} $
-
-\item $(y \leq u_{attack}) \rightarrow  $ $ (\gamma = 0)$ \\ $(y \geq u_{attack}) \rightarrow  $ $ (\gamma = 1)$
-
-\item $ O_{FCM} = \lbrace \gamma \mid \gamma \in (0, $ $1) \rbrace$
 \end{itemize}
 $ \rbrace$
 
@@ -411,10 +391,10 @@ $ \rbrace$
 \section[]{Algorithmic Strategies}
 \frametitle{Algorithmic Strategies}
 \begin{figure}
-\includegraphics[scale=0.2]{SVM.png}
+\includegraphics[scale=0.25]{SVM.png}
 \caption{\footnotesize Flowchart: Support Vector Machine Algorithm}
 
-\includegraphics[scale=0.15]{SVM_Image.png}
+\includegraphics[scale=0.17]{SVM_Image.png}
 \caption{\footnotesize Support Vector Machine Graph}
 \end{figure}
 \end{frame}
@@ -429,16 +409,6 @@ $ \rbrace$
 \end{figure}
 \end{frame}
 
-
-\begin{frame}
-\section[]{Algorithmic Strategies}
-\frametitle{Algorithmic Strategies}
-\begin{figure}
-\includegraphics[scale=0.27]{fuzzy.png}
-\caption{\footnotesize Flowchart: Fuzzy C Means Clustering}
-\end{figure}
-\end{frame}
-
 	
 
 \begin{frame}
@@ -449,21 +419,25 @@ $ \rbrace$
 \item
 Linux based Operating System.
 \item
+OpenDayLight Controller - 0.4.2 Berrylium SR2.
+\item
 Open vSwitch (OVS).
+\item
+PicOS / OpenSwitch.
 \item
 Oracle VirtualBox.
 \item
+Mininet 2.2.1.
+\item
 POX Controller.
+\item
+LibSVM.
 \item
 Python 2.7 or above.
 \item
-Mininet 2.2.1
+Nagios Core.
 \item
-Flask
-\item
-Numpy, Pandas [Data analysis tools]
-\item
-tshark [CLI version of wireshark]
+NodeJS + AngularJS (JavaScript Framework). 
 \end{itemize}
 \end{frame}
 
@@ -473,7 +447,7 @@ tshark [CLI version of wireshark]
 \begin{itemize}
 \footnotesize
 \item
-Any Enterprise/ Data Center/ Campus Network Topology with 1000+ Mbps.
+Any Enterprise/ Data Center/ Campus Network Topology with 100/1000 Mbps.
 \item
 Manageable switches that support OpenFlow Protocol / Whitebox Switches.
 \begin{itemize}
@@ -505,46 +479,51 @@ Dell PowerEdge R720
 \begin{itemize}
 \footnotesize
 \item
-Dataset prepared using packet capturing tool tshark during both training and prediction phases.
-
+"DDoS attack 2007" dataset provided by the Center for Applied Internet Data Analysis(CAIDA).
 \item
-Training datasets include scenarios for both attack as well as normal nature of network.
+The 1998 DARPA's network traffic dataset provided by MIT Lincoln Lab.
+\item
+The 2000 DARPA intrusion detection scenario specific dataset provided by MIT Lincoln Lab which contains:
 \end{itemize}
 
 \begin{table}
 \scriptsize
 \begin{center}
-\begin{tabular}{ | m{1.5cm} | m{1.5cm}| m{1.5cm} | m{1cm} |} 
+\begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} |} 
 \hline
-\textbf{Time Interval} & \textbf{Src. IP.} & \textbf{Dst. IP} & \textbf{Protocol} \\
+\textbf{Data Category} & \textbf{No. of training instances} & \textbf{No. of test instances} \\
 \hline
-0.025412000 & 192.168.1.11 & 192.168.1.13 & 1 \\
+Break In &
+156 &
+374 \\
 \hline
-0.037555000 & 192.168.5.1 & 192.168.5.2,6 & 6 \\
+DDoS &
+963 &
+1035 \\
 \hline
-0.024478000 & 192.168.1.11 & 192.168.1.13 & 1 \\
+Installsw &
+318 &
+204 \\
+\hline
+IPSweep &
+101 &
+684 \\
+\hline
+Normal &
+2500 &
+2501 \\
+\hline
+Probe &
+54 &
+94 \\
+\hline
+Total &
+4092 &
+4892 \\
 \hline
 \end{tabular}
 \end{center}
-\caption{\footnotesize Normal Traffic Dataset}
-\end{table}
-
-\begin{table}
-\scriptsize
-\begin{center}
-\begin{tabular}{ | m{1.5cm} | m{1.5cm}| m{1.5cm} | m{1cm} |} 
-\hline
-\textbf{Time Interval} & \textbf{Src. IP.} & \textbf{Dst. IP} & \textbf{Protocol} \\
-\hline
-0.000001000 & 192.168.1.14 & 192.168.1.11 & 1 \\
-\hline
-0.000002000 & 192.168.1.14 & 192.168.1.11 & 1 \\
-\hline
-0.000001000 & 192.168.1.14 & 192.168.1.11 & 1 \\
-\hline
-\end{tabular}
-\end{center}
-\caption{\footnotesize Attack Traffic Dataset}
+\caption{\footnotesize 2000 DARPA Dataset details}
 \end{table}
 \end{frame}
 
@@ -588,41 +567,45 @@ Training datasets include scenarios for both attack as well as normal nature of 
 \begin{itemize}
 \footnotesize
 \item
-Switch configuration: Machine with Ubuntu 14.04, 8GB RAM, 4 logical cores
-\newline
-
-Host configuration: Virtual Machine with Ubuntu 14.04, 1.5GB RAM, single core. 
+Machine with Ubuntu 14.04, i5 CPU and 8G RAM.
+\item
+Mininet as a network simulator (Tree Topology, 800Mbps Link speed, 20 hosts).
+\item
+Open vSwitch.
 \item 
-POX controller.
+Floodlight controller.
 \item
-Flow Table Entries
-\item
-Normal traffic Rate: x pkts/second
+CAIDA's "DDoS Attack 2007" dataset.
 \end{itemize}
-
-\begin{table}
 \scriptsize
+\vspace{0.1cm}
+\begin{table}
 \begin{center}
-\begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} | m{2cm} |} 
+\begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} |} 
 \hline
-\textbf{Traffic Rate (pkts/second)} & \textbf{Entropy Values} \\
+\textbf{S. No} & \textbf{Average Traffic Rate(Mbps)} & \textbf{Attack Rate(pkts/s)} \\
 \hline
-x &
-0.854 \\
+Exp.1 &
+50 &
+50-200 \\
 \hline
-50x &
-0.633 \\
+Exp.2 &
+100 &
+300-500 \\ 
 \hline
-%100x &
-%0.517 \\
-%\hline
-200x &
-0.511 \\
+Exp.3 &
+500 &
+1000-2000 \\
 \hline
 \end{tabular}
 \end{center}
-\caption{\footnotesize Entropy Values for different traffic rates}
+\caption{parameter values of the Traffic}
 \end{table}
+\begin{figure}[h]
+\includegraphics[scale=0.2]{Entropy.png}
+\caption{\footnotesize The normalized entropy value of IPdst Flow}
+\end{figure}
+
 \end{frame}
 
 \begin{frame}
@@ -632,10 +615,11 @@ x &
 \begin{itemize}
 \footnotesize
 \item
-Normal and attack traffic datasets are generated at run time using tshark.
-
+%The 2000 DARPA intrusion detection scenario specific dataset %provided by MIT Lincoln lab is taken for evaluation.
+The normal traffic data is included from 1998 DARPA dataset.
 \item
-Normal to Total Ratio: Total normal classifications / Total number of packets
+
+The attack traffic data is included from 2000 DARPA dataset.
 \end{itemize}
 
 \begin{table}
@@ -643,89 +627,35 @@ Normal to Total Ratio: Total normal classifications / Total number of packets
 \begin{center}
 \begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} | m{2cm} |} 
 \hline
-\textbf{Traffic Rate (pkts/second)} & \textbf{SVM Ratio Values} \\
+\textbf{Cost} & \textbf{Gamma} & \textbf{Classification Accuracy(\%)} & \textbf{False Positive} \\
 \hline
-x &
-0.33 \\
+10 &
+0.1 &
+94.23 &
+0.011 \\
 \hline
-50x &
-0.004 \\
+10 &
+0.01 &
+95.11 &
+0.008 \\
 \hline
-% 100x &
-% 0.00002 \\
-% \hline
-200x &
-0.00002 \\
-\hline
-\end{tabular}
-\end{center}
-\caption{\footnotesize SVM Ratio Values for different traffic rates}
-\end{table}
-\end{frame}
-
-
-
-\begin{frame}
-\section[]{Results of Fuzzy C Means Clustering}
-\frametitle{Results of Fuzzy C Means Clustering}
-
-\begin{itemize}
-\footnotesize
-\item
-Normal and attack traffic datasets are generated at run time using tshark.
-
-\item
-Normal Traffic: x pkts/second
-\newline
-Normal Centroids: 0.00146, 2.1613
-
-\item
-Attack Traffic: 200x pkts/second
-\newline
-Attack Centroid: 0.000014
-\end{itemize}
-
-\begin{table}
-\scriptsize
-\begin{center}
-\begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} | m{2cm} |} 
-\hline
-\textbf{Traffic Rate(pkts/second)} & \textbf{\% packets in attack cluster} \\
-\hline
-x &
-56\% \\
-\hline
-50x &
-78\% \\
-\hline
-% 100x &
-% 87\% \\
-% \hline
-200x &
-99\% \\
+10 &
+0.001 &
+93.86 &
+0.013 \\
 \hline
 \end{tabular}
 \end{center}
 \caption{\footnotesize Accuracy with different parameters}
 \end{table}
+
+\begin{figure}[h]
+\includegraphics[scale=0.35]{svm.png}
+\caption{Camparison of classification methods	}
+
+\end{figure}
 \end{frame}
 
-
-\begin{frame}
-\frametitle{Performance Analysis}
-\section[]{Performance Analysis}
-\begin{itemize}
-\footnotesize
-\item
-Accuracy: 95.33\%
-
-\item
-Detection Rate: 97.43\%
-
-\item
-False Positive Rate: 6.9\%
-\end{itemize}
-\end{frame}
 
 
 \begin{frame}
@@ -735,7 +665,7 @@ False Positive Rate: 6.9\%
 \footnotesize
 \begin{itemize}
 \item
-Proposing a solution for DDoS detection in SDN environment and also comparing the effectiveness of both methods (SVM, Entropy based Discretization and Fuzzy C Means Clustering) in a specific environment which would be a step towards solving the security issues and accelerating the adoption of SDN.
+Proposing a solution for DDoS detection in SDN environment and also comparing the effectiveness of both methods (SVM and Entropy based Discretization) in a specific environment which would be a step towards solving the security issues and accelerating the adoption of SDN.
 \end{itemize}
 \end{frame}
 
@@ -754,11 +684,6 @@ Proposing a solution for DDoS detection in SDN environment and also comparing th
 \item
 "Software-Defined Networking:The New Norm for Networks and 
 Open Networking Foundation" - Open Networking Foundation - ONF White Paper April 13, 2012.
-
-\item
-"Advances in Fuzzy Clustering and its Applications" -
-Jose Valente de Oliveira, Witold Pedrycz
-Wiley 2007
 
 \item
 T.Subbulakshmi , Dr. S. Mercy Shalinie, V.GanapathiSubramanian, K.BalaKrishnan, D. AnandK, K.Kannathal - IEEE-ICoAC 2011 - Department of CSE, TCE Madurai, India.

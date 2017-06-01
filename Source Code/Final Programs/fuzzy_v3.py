@@ -269,7 +269,6 @@ def main():
 			for centroid in centroids:
 				packet_arrangement[centroid] = (testing_membership_df[centroid] >= 0.999)
 
-			print(float((packet_arrangement[centroids[0]] == True).sum()) / total_packets)
 			for values in attack_clusters:
 				if (packet_arrangement[centroids[values]] == True).sum() >= (0.95 * total_packets):
 					print("Inside DDoS")
@@ -280,6 +279,7 @@ def main():
 							fh.write("DDoS Detected")
 						counter = 0
 			end = timeit.default_timer()
+			print(end - start)
 
 if __name__ == '__main__':
 	main()
