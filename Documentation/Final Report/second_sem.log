@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.3.21)  5 JUN 2017 11:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.3.21)  6 JUN 2017 11:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1804,38 +1804,45 @@ Chapter 20.
 File: Images/Achyuth.jpg Graphic file (type jpg)
 
 <use Images/Achyuth.jpg>
-Package pdftex.def Info: Images/Achyuth.jpg used on input line 2953.
+Package pdftex.def Info: Images/Achyuth.jpg used on input line 2952.
 (pdftex.def)             Requested size: 60.0pt x 80.35585pt.
  [77 <./Images/Achyuth.jpg>]
 <Images/akib.jpg, id=1278, 1038.88126pt x 1122.1925pt>
 File: Images/akib.jpg Graphic file (type jpg)
  <use Images/akib.jpg>
-Package pdftex.def Info: Images/akib.jpg used on input line 2970.
+Package pdftex.def Info: Images/akib.jpg used on input line 2969.
 (pdftex.def)             Requested size: 60.0pt x 64.81152pt.
 
 [78 <./Images/akib.jpg>] <Images/arun.jpg, id=1291, 1417.295pt x 1577.895pt>
 File: Images/arun.jpg Graphic file (type jpg)
 
 <use Images/arun.jpg>
-Package pdftex.def Info: Images/arun.jpg used on input line 2986.
+Package pdftex.def Info: Images/arun.jpg used on input line 2985.
 (pdftex.def)             Requested size: 60.0pt x 66.78879pt.
  [79 <./Images/arun.jpg>]
 <Images/pranav.JPG, id=1304, 327.2225pt x 420.57124pt>
 File: Images/pranav.JPG Graphic file (type jpg)
  <use Images/pranav.JPG>
-Package pdftex.def Info: Images/pranav.JPG used on input line 3003.
+Package pdftex.def Info: Images/pranav.JPG used on input line 3002.
 (pdftex.def)             Requested size: 60.0pt x 77.11137pt.
 
 [80 <./Images/pranav.JPG>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3017.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3017.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3016.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3016.
  (./second_sem.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3017.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3017.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3016.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3016.
 
-Package rerunfilecheck Info: File `second_sem.out' has not changed.
-(rerunfilecheck)             Checksum: C19522DFBA64D83D8851D1AA6C7BA918;7263.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3017.
+
+
+Package rerunfilecheck Warning: File `second_sem.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `second_sem.out':
+(rerunfilecheck)             Before: C19522DFBA64D83D8851D1AA6C7BA918;7263
+(rerunfilecheck)             After:  A03550D9A9CE9F53A7F6717825813234;7176.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3016.
  )
 (\end occurred inside a group at level 5)
 
@@ -1852,18 +1859,21 @@ Here is how much of TeX's memory you used:
  21698 multiletter control sequences out of 15000+600000
  46748 words of font info for 95 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 55i,13n,54p,1018b,811s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on second_sem.pdf (90 pages, 2895718 bytes).
+ 55i,13n,54p,1018b,807s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsection.19.1.3} has been referen
+ced but does not exist, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/times/utmri8a.pfb>
+Output written on second_sem.pdf (90 pages, 2895693 bytes).
 PDF statistics:
  1467 PDF objects out of 1728 (max. 8388607)
  1318 compressed objects within 14 object streams
