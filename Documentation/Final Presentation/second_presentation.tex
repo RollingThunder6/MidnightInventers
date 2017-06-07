@@ -11,10 +11,10 @@
 \author{
 \footnotesize
 \textbf{
-\linebreak Achyuth Rao - 41056
-\linebreak Akib Shaikh - 41062
-\linebreak Arun Pottekat - 41054
-\linebreak Pranav Tale - 41070
+\linebreak Achyuth Rao - B120314254
+\linebreak Akib Shaikh - B120314257
+\linebreak Arun Pottekat - B120314203
+\linebreak Pranav Tale - B120314249
 \linebreak 
 \linebreak
 Guide:- Prof. Mrs. Aparna Junnarkar
@@ -24,12 +24,12 @@ Guide:- Prof. Mrs. Aparna Junnarkar
 \title{
 \small
 \textbf{
-Detection of DDoS in SDN environment using Support Vector Machine, Entropy based discretization and Fuzzy C Means Clustering
+Detection of DDoS in SDN environment using Support Vector Machine, Entropy based discretization and Fuzzy C-Means Clustering
 }
 }
 \date{}
 \institute{
-\includegraphics[width=2.75cm, height=2.9cm]{logo.png}\\ \textbf{PES's Modern College Of Engineering}} 
+\includegraphics[width=2.3cm, height=2.9cm]{logo.png}\\ \textbf{PES's Modern College Of Engineering}} 
 \setbeamertemplate{footline}[frame number]{}
 \setbeamertemplate{navigation symbols}{} 
 \setbeamertemplate{caption}[numbered]
@@ -80,7 +80,7 @@ DDoS attack makes the network resources unavailable.
 \begin{itemize}
 \footnotesize
 \item
-To provide a solution for the detection of DDoS attack in SDN environment using Support Vector Machine, Entropy based mechanism, Fuzzy C Means Clustering and monitoring OpenFlow statistics.
+To develop a solution for the detection of DDoS attack in SDN environment using Support Vector Machine, Entropy based mechanism, Fuzzy C Means Clustering and monitoring OpenFlow statistics.
 \end{itemize}
 \end{frame}
 
@@ -155,14 +155,16 @@ Integration of Machine Learning and Data Mining with SDN.
 \begin{center}
 \begin{itemize}
 \footnotesize
+%\item
+%To compare different types of DDoS detection techniques.
 \item
-To apprehend different types of network attacks which can be launched on SDN.
+%To propose the best effective method for a specific environment.
+To develop a system to detect DDoS attack in SDN.
 \item
-To compare different types of DDoS detection techniques.
+%To grasp an overview about the different network monitoring tools.
+To monitor the network using ElasticSearch, Logstash and Kibana.
 \item
-To propose the best effective method for a specific environment.
-\item
-To grasp an overview about the different network monitoring tools.
+To develop an adaptive solution for change in the  network.
 \end{itemize}
 \end{center}
 \end{frame}
@@ -177,7 +179,7 @@ To grasp an overview about the different network monitoring tools.
 %OpenFlow protocol in SDN switches.
 Set up of SDN environment.
 \item
-Entropy, Fuzzy C Means and SVM based DDoS detection method.
+SVM, Entropy and Fuzzy C Means based DDoS detection method.
 \item
 OpenFlow Monitoring application using POX API.
 \end{itemize}
@@ -409,20 +411,28 @@ $ \rbrace$
 
 \begin{frame}
 \section[]{Algorithmic Strategies}
-\frametitle{Algorithmic Strategies}
+\frametitle{Algorithmic Strategies : Support Vector Machine}
 \begin{figure}
-\includegraphics[scale=0.2]{SVM.png}
+\includegraphics[scale=0.3]{SVM.png}
 \caption{\footnotesize Flowchart: Support Vector Machine Algorithm}
+\end{figure}
+\end{frame}
 
-\includegraphics[scale=0.15]{SVM_Image.png}
+
+
+\begin{frame}
+\frametitle{Algorithmic Strategies : Support Vector Machine}
+\begin{figure}
+\includegraphics[scale=0.5]{Support_Vector_Machine.png}
 \caption{\footnotesize Support Vector Machine Graph}
 \end{figure}
 \end{frame}
 
 
+
 \begin{frame}
-\section[]{Algorithmic Strategies}
-\frametitle{Algorithmic Strategies}
+%\section[]{Algorithmic Strategies}
+\frametitle{Algorithmic Strategies : Entropy Based Discretization}
 \begin{figure}
 \includegraphics[scale=0.3]{EBD.png}
 \caption{\footnotesize Flowchart: Entropy Based Discretization Mechanism}
@@ -431,8 +441,8 @@ $ \rbrace$
 
 
 \begin{frame}
-\section[]{Algorithmic Strategies}
-\frametitle{Algorithmic Strategies}
+%\section[]{Algorithmic Strategies}
+\frametitle{Algorithmic Strategies : Fuzzy C-Means Clustering}
 \begin{figure}
 \includegraphics[scale=0.27]{fuzzy.png}
 \caption{\footnotesize Flowchart: Fuzzy C Means Clustering}
@@ -583,50 +593,7 @@ Training datasets include scenarios for both attack as well as normal nature of 
 
 
 \begin{frame}
-\section[]{Results of Entropy Based Discretization}
-\frametitle{Results of Entropy Based Discretization}
-\begin{itemize}
-\footnotesize
-\item
-Switch configuration: Machine with Ubuntu 14.04, 8GB RAM, 4 logical cores
-\newline
-
-Host configuration: Virtual Machine with Ubuntu 14.04, 1.5GB RAM, single core. 
-\item 
-POX controller.
-\item
-Flow Table Entries
-\item
-Normal traffic Rate: x pkts/second
-\end{itemize}
-
-\begin{table}
-\scriptsize
-\begin{center}
-\begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} | m{2cm} |} 
-\hline
-\textbf{Traffic Rate (pkts/second)} & \textbf{Entropy Values} \\
-\hline
-x &
-0.854 \\
-\hline
-50x &
-0.633 \\
-\hline
-%100x &
-%0.517 \\
-%\hline
-200x &
-0.511 \\
-\hline
-\end{tabular}
-\end{center}
-\caption{\footnotesize Entropy Values for different traffic rates}
-\end{table}
-\end{frame}
-
-\begin{frame}
-\section[]{Results of SVM based Method}
+%\section[]{Results of SVM based Method}
 \frametitle{Results of SVM based Method}
 
 \begin{itemize}
@@ -664,10 +631,54 @@ x &
 \end{frame}
 
 
+\begin{frame}
+\section[]{Results}
+\frametitle{Results of Entropy Based Discretization}
+\begin{itemize}
+\footnotesize
+\item
+Switch configuration: Machine with Ubuntu 14.04, 8GB RAM, 4 logical cores
+\item
+Host configuration: Virtual Machine with Ubuntu 14.04, 1.5GB RAM, single core. 
+\item 
+POX controller.
+\item
+Flow Table Entries
+\item
+Normal traffic Rate: x pkts/second
+\end{itemize}
+
+\begin{table}
+\scriptsize
+\begin{center}
+\begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} | m{2cm} |} 
+\hline
+\textbf{Traffic Rate (pkts/second)} & \textbf{Entropy Values} \\
+\hline
+x &
+0.854 \\
+\hline
+50x &
+0.633 \\
+\hline
+%100x &
+%0.517 \\
+%\hline
+200x &
+0.511 \\
+\hline
+\end{tabular}
+\end{center}
+\caption{\footnotesize Entropy Values for different traffic rates}
+\end{table}
+\end{frame}
+
+
+
 
 \begin{frame}
-\section[]{Results of Fuzzy C Means Clustering}
-\frametitle{Results of Fuzzy C Means Clustering}
+%\section[]{Results of Fuzzy C Means Clustering}
+\frametitle{Results of Fuzzy C-Means Clustering}
 
 \begin{itemize}
 \footnotesize
@@ -713,9 +724,17 @@ x &
 
 \begin{frame}
 \frametitle{Performance Analysis}
-\section[]{Performance Analysis}
-\begin{itemize}
+%\section[]{Performance Analysis}
 \footnotesize
+
+\begin{figure}
+\includegraphics[scale=0.251]{2.png}
+\caption{Reciever Operating Characteristic Curve}
+\end{figure}
+
+The performance analysis factors for the system are:
+\begin{itemize}
+
 \item
 Accuracy: 95.33\%
 
@@ -735,7 +754,10 @@ False Positive Rate: 6.9\%
 \footnotesize
 \begin{itemize}
 \item
-Proposing a solution for DDoS detection in SDN environment and also comparing the effectiveness of both methods (SVM, Entropy based Discretization and Fuzzy C Means Clustering) in a specific environment which would be a step towards solving the security issues and accelerating the adoption of SDN.
+%Proposing a solution for DDoS detection in SDN environment and also comparing the effectiveness of both methods (SVM, Entropy based Discretization and Fuzzy C Means Clustering) in a specific environment which would be a step towards solving the security issues and accelerating the adoption of SDN.
+
+Hence, we build a solution which can be used for detecting flooding type of DDoS attacks. For this purpose we use three algorithms operating during runtime that utilize less resources with high accuracy and high detection rate. Thus taking a step towards solving the security issues and accelerating the adoption of SDN.
+
 \end{itemize}
 \end{frame}
 
@@ -771,6 +793,15 @@ T.Subbulakshmi , Dr. S. Mercy Shalinie, V.GanapathiSubramanian, K.BalaKrishnan, 
 
 \begin{frame}{}
 \Huge
-Thank You\ldots
+\centering
+\textbf{Thank You\ldots}
 \end{frame}
+
+\begin{frame}{}
+\Huge
+\centering
+\textbf{Demo}
+\end{frame}
+
+
 \end{document}
