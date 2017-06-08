@@ -56,9 +56,9 @@ Detection of DDoS in SDN environment using Support Vector Machine, Entropy based
 \item
 SDN separates intelligence from the hardware.
 \item
-SDN controller acts as network Operating System.
+SDN controller acts as Network Operating System.
 \item
-This networking paradigm faces some issues.
+This networking paradigm faces security issues.
 %\item
 \item
 DDoS attack makes the network resources unavailable.
@@ -80,7 +80,7 @@ DDoS attack makes the network resources unavailable.
 \begin{itemize}
 \footnotesize
 \item
-To develop a solution for the detection of DDoS attack in SDN environment using Support Vector Machine, Entropy based mechanism, Fuzzy C Means Clustering and monitoring OpenFlow statistics.
+To develop a solution for the detection of DDoS attack in SDN environment using Support Vector Machine, Entropy Based Discretization, Fuzzy C Means Clustering and monitoring OpenFlow statistics.
 \end{itemize}
 \end{frame}
 
@@ -162,7 +162,7 @@ Integration of Machine Learning and Data Mining with SDN.
 To develop a system to detect DDoS attack in SDN.
 \item
 %To grasp an overview about the different network monitoring tools.
-To monitor the network using ElasticSearch, Logstash and Kibana.
+To monitor the network using Elasticsearch, Logstash and Kibana.
 \item
 To develop an adaptive solution for change in the  network.
 \end{itemize}
@@ -394,7 +394,7 @@ $\lbrace$
 \footnotesize
 \item $I_{FCM} = \lbrace W_{i} \mid W_{i} = ($ Time, Dest. Addr., X $) \rbrace$
 
-\item $P_{l}(z_{i}) = \sum_{j=1}^{X}  \epsilon ^ -{ \alpha || z_{i} - z_{l} ||}^{2} $ 
+\item $P_{l}(z_{i}) = \sum_{j=1}^{X}  \epsilon ^ { - \alpha || z_{i} - z_{l} || ^{2}} $ 
 
 \item $ u_{ij} = \frac{d_{ij}^{-\frac{2}{m-1}}}{\sum_{l=1}^{c} d_{lj}^{- \frac{2}{m-1}}} $
 
@@ -474,6 +474,12 @@ Flask
 Numpy, Pandas [Data analysis tools]
 \item
 tshark [CLI version of wireshark]
+\item
+Elasticsearch, Logstash, Kibana(ELK Stack)
+\item
+Watcher or ElastAlert
+\item
+sFlow-RT and hsflowd
 \end{itemize}
 \end{frame}
 
@@ -530,7 +536,7 @@ Training datasets include scenarios for both attack as well as normal nature of 
 \hline
 0.025412000 & 192.168.1.11 & 192.168.1.13 & 1 \\
 \hline
-0.037555000 & 192.168.5.1 & 192.168.5.2,6 & 6 \\
+0.037555000 & 192.168.5.1 & 192.168.5.2 & 6 \\
 \hline
 0.024478000 & 192.168.1.11 & 192.168.1.13 & 1 \\
 \hline
@@ -701,7 +707,7 @@ Attack Centroid: 0.000014
 \begin{center}
 \begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} | m{2cm} |} 
 \hline
-\textbf{Traffic Rate(pkts/second)} & \textbf{\% packets in attack cluster} \\
+\textbf{Traffic Rate(pkts/second)} & \textbf{\% attack packets in attack cluster} \\
 \hline
 x &
 56\% \\
