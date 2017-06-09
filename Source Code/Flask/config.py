@@ -5,7 +5,7 @@ class Config():
 	SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 	def init_app(app):
-		pass
+		pass		
 
 class development_config(Config):
 	"""configuration in development mode"""

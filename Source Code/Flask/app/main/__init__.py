@@ -1,3 +1,4 @@
+# Organizing application into distinct components.
 from flask import Blueprint
 
 main = Blueprint("main", __name__)
