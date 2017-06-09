@@ -408,6 +408,25 @@ $ \rbrace$
 
 \end{frame}
 
+\begin{frame}
+%\section[]{Algorithmic Strategies}
+\frametitle{Algorithmic Strategies : Entropy Based Discretization}
+\begin{figure}
+\includegraphics[scale=0.3]{EBD.png}
+\caption{\footnotesize Flowchart: Entropy Based Discretization Mechanism}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+%\section[]{Algorithmic Strategies}
+\frametitle{Algorithmic Strategies : Fuzzy C-Means Clustering}
+\begin{figure}
+\includegraphics[scale=0.27]{fuzzy.png}
+\caption{\footnotesize Flowchart: Fuzzy C Means Clustering}
+\end{figure}
+\end{frame}
+
 
 \begin{frame}
 \section[]{Algorithmic Strategies}
@@ -425,27 +444,6 @@ $ \rbrace$
 \begin{figure}
 \includegraphics[scale=0.5]{Support_Vector_Machine.png}
 \caption{\footnotesize Support Vector Machine Graph}
-\end{figure}
-\end{frame}
-
-
-
-\begin{frame}
-%\section[]{Algorithmic Strategies}
-\frametitle{Algorithmic Strategies : Entropy Based Discretization}
-\begin{figure}
-\includegraphics[scale=0.3]{EBD.png}
-\caption{\footnotesize Flowchart: Entropy Based Discretization Mechanism}
-\end{figure}
-\end{frame}
-
-
-\begin{frame}
-%\section[]{Algorithmic Strategies}
-\frametitle{Algorithmic Strategies : Fuzzy C-Means Clustering}
-\begin{figure}
-\includegraphics[scale=0.27]{fuzzy.png}
-\caption{\footnotesize Flowchart: Fuzzy C Means Clustering}
 \end{figure}
 \end{frame}
 
@@ -599,45 +597,6 @@ Training datasets include scenarios for both attack as well as normal nature of 
 
 
 \begin{frame}
-%\section[]{Results of SVM based Method}
-\frametitle{Results of SVM based Method}
-
-\begin{itemize}
-\footnotesize
-\item
-Normal and attack traffic datasets are generated at run time using tshark.
-
-\item
-Normal to Total Ratio: Total normal classifications / Total number of packets
-\end{itemize}
-
-\begin{table}
-\scriptsize
-\begin{center}
-\begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} | m{2cm} |} 
-\hline
-\textbf{Traffic Rate (pkts/second)} & \textbf{SVM Ratio Values} \\
-\hline
-x &
-0.33 \\
-\hline
-50x &
-0.004 \\
-\hline
-% 100x &
-% 0.00002 \\
-% \hline
-200x &
-0.00002 \\
-\hline
-\end{tabular}
-\end{center}
-\caption{\footnotesize SVM Ratio Values for different traffic rates}
-\end{table}
-\end{frame}
-
-
-\begin{frame}
 \section[]{Results}
 \frametitle{Results of Entropy Based Discretization}
 \begin{itemize}
@@ -648,8 +607,7 @@ Switch configuration: Machine with Ubuntu 14.04, 8GB RAM, 4 logical cores
 Host configuration: Virtual Machine with Ubuntu 14.04, 1.5GB RAM, single core. 
 \item 
 POX controller.
-\item
-Flow Table Entries
+
 \item
 Normal traffic Rate: x pkts/second
 \end{itemize}
@@ -724,6 +682,45 @@ x &
 \end{tabular}
 \end{center}
 \caption{\footnotesize Accuracy with different parameters}
+\end{table}
+\end{frame}
+
+\begin{frame}
+%\section[]{Results of SVM based Method}
+\frametitle{Results of SVM based Method}
+
+\begin{itemize}
+\footnotesize
+
+\item
+Normal and attack traffic datasets are generated at run time using tshark.
+
+\item
+Attack to Total Ratio: Total attack classifications / Total number of packets
+\end{itemize}
+
+\begin{table}
+\scriptsize
+\begin{center}
+\begin{tabular}{ | m{2cm} | m{2cm}| m{2cm} | m{2cm} |} 
+\hline
+\textbf{Traffic Rate (pkts/second)} & \textbf{SVM percentage Values} \\
+\hline
+x &
+71\% \\
+\hline
+50x &
+80\% \\
+\hline
+% 100x &
+% 0.00002 \\
+% \hline
+200x &
+99\% \\
+\hline
+\end{tabular}
+\end{center}
+\caption{\footnotesize SVM Ratio Values for different traffic rates}
 \end{table}
 \end{frame}
 

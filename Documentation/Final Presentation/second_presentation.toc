@@ -9,11 +9,11 @@
 \beamer@sectionintoc {7}{Architecture Diagram}{9}{0}{7}
 \beamer@sectionintoc {8}{UML Diagrams}{10}{0}{8}
 \beamer@sectionintoc {9}{Mathematical Model}{12}{0}{9}
-\beamer@sectionintoc {10}{Algorithmic Strategies}{15}{0}{10}
+\beamer@sectionintoc {10}{Algorithmic Strategies}{17}{0}{10}
 \beamer@sectionintoc {11}{Software Specifications}{19}{0}{11}
 \beamer@sectionintoc {12}{Hardware Specifications}{20}{0}{12}
 \beamer@sectionintoc {13}{Dataset Specifications}{21}{0}{13}
 \beamer@sectionintoc {14}{Test Cases}{22}{0}{14}
-\beamer@sectionintoc {15}{Results}{24}{0}{15}
+\beamer@sectionintoc {15}{Results}{23}{0}{15}
 \beamer@sectionintoc {16}{Conclusion}{27}{0}{16}
 \beamer@sectionintoc {17}{References}{28}{0}{17}
